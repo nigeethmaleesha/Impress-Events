@@ -1,0 +1,4407 @@
+[
+  {
+    "id": "twht01",
+    "sku": "TWHT01",
+    "sourceSku": "TWHT01",
+    "title": "White Crinkle Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "140 x 120 XL"
+    ],
+    "description": "Explore the white crinkle for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "twht02",
+    "sku": "TWHT02",
+    "sourceSku": "TWHT02",
+    "title": "White Velvet Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Velvet",
+    "variants": [
+      "120 x 120 Square"
+    ],
+    "description": "Explore the white velvet for carefully considered weddings and special events. Material: Velvet. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "twht03",
+    "sku": "TWHT03",
+    "sourceSku": "TWHT03",
+    "title": "White Linen Texture Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Cotton",
+    "variants": [
+      "154 x 90 Long Rectangle"
+    ],
+    "description": "Explore the white linen texture for carefully considered weddings and special events. Material: Cotton. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "twht04",
+    "sku": "TWHT04",
+    "sourceSku": "TWHT04",
+    "title": "White Leaf Lace Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Net",
+    "variants": [
+      "Round"
+    ],
+    "description": "Explore the white leaf lace for carefully considered weddings and special events. Material: Net. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "twht05",
+    "sku": "TWHT05",
+    "sourceSku": "TWHT05",
+    "title": "Classic Off White Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "Round",
+      "120 x 120 Square",
+      "154 x 90 Long Rectangle",
+      "150 x 120 2XL"
+    ],
+    "description": "Explore the classic off white for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": true
+  },
+  {
+    "id": "twht06",
+    "sku": "TWHT06",
+    "sourceSku": "TWHT06",
+    "title": "Warm White Linen Texture Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Cotton",
+    "variants": [
+      "154 x 90 Long Rectangle"
+    ],
+    "description": "Explore the warm white linen texture for carefully considered weddings and special events. Material: Cotton. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tamr01",
+    "sku": "TAMR01",
+    "sourceSku": "TAMR01",
+    "title": "Amuredi Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Cotton",
+    "variants": [
+      "132 x 90 Short Rectangle"
+    ],
+    "description": "Explore the amuredi for carefully considered weddings and special events. Material: Cotton. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tcrm01",
+    "sku": "TCRM01",
+    "sourceSku": "TCRM01",
+    "title": "Cream Pinwheel Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "132 x 90 Short Rectangle"
+    ],
+    "description": "Explore the cream pinwheel for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tcrm02",
+    "sku": "TCRM02",
+    "sourceSku": "TCRM02",
+    "title": "Cream Petal Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "150 x 120 2XL"
+    ],
+    "description": "Explore the cream petal for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tcrm03",
+    "sku": "TCRM03",
+    "sourceSku": "TCRM03",
+    "title": "Cream Rosette Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "Round"
+    ],
+    "description": "Explore the cream rosette for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Table Cloth",
+    "featured": true
+  },
+  {
+    "id": "tcrm04",
+    "sku": "TCRM04",
+    "sourceSku": "TCRM04",
+    "title": "Cream Crinkle Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "132 x 90 Short Rectangle"
+    ],
+    "description": "Explore the cream crinkle for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not clear",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tcrm05",
+    "sku": "TCRM05",
+    "sourceSku": "TCRM05",
+    "title": "Coffee Cream Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "120 x 120 Square",
+      "150 x 120 2XL"
+    ],
+    "description": "Explore the coffee cream for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not clear",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tbge01",
+    "sku": "TBGE01",
+    "sourceSku": "TBGE01",
+    "title": "Beige Shine Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Valentina",
+    "variants": [
+      "120 x 120 Square",
+      "154 x 90 Long Rectangle"
+    ],
+    "description": "Explore the beige shine for carefully considered weddings and special events. Material: Valentina. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tbge02",
+    "sku": "TBGE02",
+    "sourceSku": "TBGE02",
+    "title": "Beige Matt Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Pajero",
+    "variants": [
+      "154 x 90 Long Rectangle"
+    ],
+    "description": "Explore the beige matt for carefully considered weddings and special events. Material: Pajero. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tbge03",
+    "sku": "TBGE03",
+    "sourceSku": "TBGE03",
+    "title": "Beige Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "140 x 120 XL"
+    ],
+    "description": "Explore the beige for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tbge04",
+    "sku": "TBGE04",
+    "sourceSku": "TBGE04",
+    "title": "Khaki Beige Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Cotton",
+    "variants": [
+      "120 x 120 Square"
+    ],
+    "description": "Explore the khaki beige for carefully considered weddings and special events. Material: Cotton. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tbge05",
+    "sku": "TBGE05",
+    "sourceSku": "TBGE05",
+    "title": "Nude Cloth Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "154 x 90 Long Rectangle"
+    ],
+    "description": "Explore the nude cloth for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tgld01",
+    "sku": "TGLD01",
+    "sourceSku": "TGLD01",
+    "title": "Champain Gold Plain Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "120 x 120 Square",
+      "154 x 90 Long Rectangle"
+    ],
+    "description": "Explore the champain gold plain for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tgld02",
+    "sku": "TGLD02",
+    "sourceSku": "TGLD02",
+    "title": "Champain Gold Crinkle Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "120 x 120 Square",
+      "154 x 90 Long Rectangle"
+    ],
+    "description": "Explore the champain gold crinkle for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tgld03",
+    "sku": "TGLD03",
+    "sourceSku": "TGLD03",
+    "title": "Champage Gold Pintuck Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "140 x 120 XL"
+    ],
+    "description": "Explore the champage gold pintuck for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tgld04",
+    "sku": "TGLD04",
+    "sourceSku": "TGLD04",
+    "title": "Champain Gold Pinwheel Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "150 x 120 2XL"
+    ],
+    "description": "Explore the champain gold pinwheel for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tgld05",
+    "sku": "TGLD05",
+    "sourceSku": "TGLD05",
+    "title": "Gold Rain Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "154 x 90 Long Rectangle"
+    ],
+    "description": "Explore the gold rain for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tgld06",
+    "sku": "TGLD06",
+    "sourceSku": "TGLD06",
+    "title": "Dark Gold Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "140 x 120 XL"
+    ],
+    "description": "Explore the dark gold for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tgld07",
+    "sku": "TGLD07",
+    "sourceSku": "TGLD07",
+    "title": "Antique Gold Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Valentina",
+    "variants": [
+      "Round",
+      "140 x 120 XL"
+    ],
+    "description": "Explore the antique gold for carefully considered weddings and special events. Material: Valentina. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not clear",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tgld08",
+    "sku": "TGLD08",
+    "sourceSku": "TGLD08",
+    "title": "Gold Sequin Embroidery Lace Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Net",
+    "variants": [
+      "120 x 120 Square"
+    ],
+    "description": "Explore the gold sequin embroidery lace for carefully considered weddings and special events. Material: Net. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tgld09",
+    "sku": "TGLD09",
+    "sourceSku": "TGLD09",
+    "title": "Rose Gold Sequin Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Sequin",
+    "variants": [
+      "120 x 120 Square",
+      "150 x 120 2XL"
+    ],
+    "description": "Explore the rose gold sequin for carefully considered weddings and special events. Material: Sequin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not clear",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tgld10",
+    "sku": "TGLD10",
+    "sourceSku": "TGLD10",
+    "title": "Copper Crinkle Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "120 x 120 Square"
+    ],
+    "description": "Explore the copper crinkle for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tbrw01",
+    "sku": "TBRW01",
+    "sourceSku": "TBRW01",
+    "title": "Chocolate Brown Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "150 x 120 2XL"
+    ],
+    "description": "Explore the chocolate brown for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tylw01",
+    "sku": "TYLW01",
+    "sourceSku": "TYLW01",
+    "title": "Buttermilk Yellow Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "Round"
+    ],
+    "description": "Explore the buttermilk yellow for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not clear",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tylw02",
+    "sku": "TYLW02",
+    "sourceSku": "TYLW02",
+    "title": "Canary Yellow Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "120 x 120 Square",
+      "154 x 90 Long Rectangle"
+    ],
+    "description": "Explore the canary yellow for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tylw03",
+    "sku": "TYLW03",
+    "sourceSku": "TYLW03",
+    "title": "Yellow & white Floral Print Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "150 x 120 2XL"
+    ],
+    "description": "Explore the yellow & white floral print for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tylw04",
+    "sku": "TYLW04",
+    "sourceSku": "TYLW04",
+    "title": "Mustard Crinkle Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "140 x 120 XL"
+    ],
+    "description": "Explore the mustard crinkle for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not clear",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tylw05",
+    "sku": "TYLW05",
+    "sourceSku": "TYLW05",
+    "title": "Island Citrus Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "150 x 120 2XL"
+    ],
+    "description": "Explore the island citrus for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "torg01",
+    "sku": "TORG01",
+    "sourceSku": "TORG01",
+    "title": "Orange Velvet Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Velvet",
+    "variants": [
+      "120 x 120 Square"
+    ],
+    "description": "Explore the orange velvet for carefully considered weddings and special events. Material: Velvet. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "torg02",
+    "sku": "TORG02",
+    "sourceSku": "TORG02",
+    "title": "Brick Orange Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Satin",
+    "variants": [
+      "140 x 120 XL",
+      "150 x 120 2XL"
+    ],
+    "description": "Explore the brick orange for carefully considered weddings and special events. Material: Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tred01",
+    "sku": "TRED01",
+    "sourceSku": "TRED01",
+    "title": "Christmas Red Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "154 x 90 Long Rectangle"
+    ],
+    "description": "Explore the christmas red for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not clear",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tred02",
+    "sku": "TRED02",
+    "sourceSku": "TRED02",
+    "title": "Maroon Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "140 x 120 XL"
+    ],
+    "description": "Explore the maroon for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tred03",
+    "sku": "TRED03",
+    "sourceSku": "TRED03",
+    "title": "Deep Red Velvet Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Velvet",
+    "variants": [
+      "120 x 120 Square",
+      "150 x 120 2XL"
+    ],
+    "description": "Explore the deep red velvet for carefully considered weddings and special events. Material: Velvet. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tred04",
+    "sku": "TRED04",
+    "sourceSku": "TRED04",
+    "title": "Red and White Thick Stripe Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "150 x 120 2XL"
+    ],
+    "description": "Explore the red and white thick stripe for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tred05",
+    "sku": "TRED05",
+    "sourceSku": "TRED05",
+    "title": "Red Christmas Checkers Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Cotton",
+    "variants": [
+      "132 x 90 Short Rectangle"
+    ],
+    "description": "Explore the red christmas checkers for carefully considered weddings and special events. Material: Cotton. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tpch01",
+    "sku": "TPCH01",
+    "sourceSku": "TPCH01",
+    "title": "Peach Sequin Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Sequin",
+    "variants": [
+      "132 x 90 Short Rectangle",
+      "140 x 120 XL"
+    ],
+    "description": "Explore the peach sequin for carefully considered weddings and special events. Material: Sequin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tpch02",
+    "sku": "TPCH02",
+    "sourceSku": "TPCH02",
+    "title": "Peach Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "140 x 120 XL"
+    ],
+    "description": "Explore the peach for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not clear",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tpnk01",
+    "sku": "TPNK01",
+    "sourceSku": "TPNK01",
+    "title": "Misty Rose Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Satin",
+    "variants": [
+      "Round",
+      "154 x 90 Long Rectangle"
+    ],
+    "description": "Explore the misty rose for carefully considered weddings and special events. Material: Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not clear",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tpnk02",
+    "sku": "TPNK02",
+    "sourceSku": "TPNK02",
+    "title": "Blush Pink Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "140 x 120 XL"
+    ],
+    "description": "Explore the blush pink for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not clear",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tpnk03",
+    "sku": "TPNK03",
+    "sourceSku": "TPNK03",
+    "title": "Ice Pink Crinkle Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "120 x 120 Square",
+      "132 x 90 Short Rectangle"
+    ],
+    "description": "Explore the ice pink crinkle for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tpnk04",
+    "sku": "TPNK04",
+    "sourceSku": "TPNK04",
+    "title": "Baby Pink Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "154 x 90 Long Rectangle"
+    ],
+    "description": "Explore the baby pink for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not clear",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tpnk05",
+    "sku": "TPNK05",
+    "sourceSku": "TPNK05",
+    "title": "Dark Dusty Pink Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Valentina",
+    "variants": [
+      "120 x 120 Square"
+    ],
+    "description": "Explore the dark dusty pink for carefully considered weddings and special events. Material: Valentina. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tpnk06",
+    "sku": "TPNK06",
+    "sourceSku": "TPNK06",
+    "title": "Hot Pink Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Satin",
+    "variants": [
+      "Round",
+      "154 x 90 Long Rectangle",
+      "140 x 120 XL"
+    ],
+    "description": "Explore the hot pink for carefully considered weddings and special events. Material: Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tpnk07",
+    "sku": "TPNK07",
+    "sourceSku": "TPNK07",
+    "title": "Hot Pink & Orange Indi Print Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "150 x 120 2XL"
+    ],
+    "description": "Explore the hot pink & orange indi print for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tpnk08",
+    "sku": "TPNK08",
+    "sourceSku": "TPNK08",
+    "title": "Hot Pink Sequin Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Sequin",
+    "variants": [
+      "120 x 120 Square"
+    ],
+    "description": "Explore the hot pink sequin for carefully considered weddings and special events. Material: Sequin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tpnk09",
+    "sku": "TPNK09",
+    "sourceSku": "TPNK09",
+    "title": "Dusty Pink Floral Printed Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "140 x 120 XL"
+    ],
+    "description": "Explore the dusty pink floral printed for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tppl01",
+    "sku": "TPPL01",
+    "sourceSku": "TPPL01",
+    "title": "Mauve (Purple) Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "140 x 120 XL"
+    ],
+    "description": "Explore the mauve (purple) for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tppl02",
+    "sku": "TPPL02",
+    "sourceSku": "TPPL02",
+    "title": "Lilac Purple Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Satin",
+    "variants": [
+      "Round"
+    ],
+    "description": "Explore the lilac purple for carefully considered weddings and special events. Material: Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tppl03",
+    "sku": "TPPL03",
+    "sourceSku": "TPPL03",
+    "title": "Orchid Purple Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Valentina",
+    "variants": [
+      "150 x 120 2XL"
+    ],
+    "description": "Explore the orchid purple for carefully considered weddings and special events. Material: Valentina. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tppl04",
+    "sku": "TPPL04",
+    "sourceSku": "TPPL04",
+    "title": "Dark Purple Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Satin",
+    "variants": [
+      "154 x 90 Long Rectangle"
+    ],
+    "description": "Explore the dark purple for carefully considered weddings and special events. Material: Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not clear",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tppl05",
+    "sku": "TPPL05",
+    "sourceSku": "TPPL05",
+    "title": "Dark Greyish Purple Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the dark greyish purple for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tgrn01",
+    "sku": "TGRN01",
+    "sourceSku": "TGRN01",
+    "title": "Light Sage Green Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "140 x 120 XL"
+    ],
+    "description": "Explore the light sage green for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tgrn02",
+    "sku": "TGRN02",
+    "sourceSku": "TGRN02",
+    "title": "Mint Green (Charm extra) Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "150 x 120 2XL"
+    ],
+    "description": "Explore the mint green (charm extra) for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tgrn03",
+    "sku": "TGRN03",
+    "sourceSku": "TGRN03",
+    "title": "Dark Sage Green Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "140 x 120 XL"
+    ],
+    "description": "Explore the dark sage green for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tgrn04",
+    "sku": "TGRN04",
+    "sourceSku": "TGRN04",
+    "title": "Lime Green Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "120 x 120 Square"
+    ],
+    "description": "Explore the lime green for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tgrn05",
+    "sku": "TGRN05",
+    "sourceSku": "TGRN05",
+    "title": "Olive Green Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "150 x 120 2XL"
+    ],
+    "description": "Explore the olive green for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tgrn06",
+    "sku": "TGRN06",
+    "sourceSku": "TGRN06",
+    "title": "Emerald Green Velvet Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Velvet",
+    "variants": [
+      "140 x 120 XL"
+    ],
+    "description": "Explore the emerald green velvet for carefully considered weddings and special events. Material: Velvet. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tgrn07",
+    "sku": "TGRN07",
+    "sourceSku": "TGRN07",
+    "title": "Emerald Green Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "140 x 120 XL"
+    ],
+    "description": "Explore the emerald green for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tgrn08",
+    "sku": "TGRN08",
+    "sourceSku": "TGRN08",
+    "title": "Forest Green Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Satin",
+    "variants": [
+      "120 x 120 Square",
+      "154 x 90 Long Rectangle"
+    ],
+    "description": "Explore the forest green for carefully considered weddings and special events. Material: Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tgrn09",
+    "sku": "TGRN09",
+    "sourceSku": "TGRN09",
+    "title": "Green Leaf Print Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Cotton",
+    "variants": [
+      "150 x 120 2XL"
+    ],
+    "description": "Explore the green leaf print for carefully considered weddings and special events. Material: Cotton. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not clear",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tgrn10",
+    "sku": "TGRN10",
+    "sourceSku": "TGRN10",
+    "title": "Green & White Forest Print Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "150 x 120 2XL"
+    ],
+    "description": "Explore the green & white forest print for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tgrn11",
+    "sku": "TGRN11",
+    "sourceSku": "TGRN11",
+    "title": "Teal Cloth Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "120 x 120 Square"
+    ],
+    "description": "Explore the teal cloth for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tblu01",
+    "sku": "TBLU01",
+    "sourceSku": "TBLU01",
+    "title": "Turquoise Blue Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Satin",
+    "variants": [
+      "Round"
+    ],
+    "description": "Explore the turquoise blue for carefully considered weddings and special events. Material: Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tblu02",
+    "sku": "TBLU02",
+    "sourceSku": "TBLU02",
+    "title": "Turquoise & Black Floral Velvet Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Velvet",
+    "variants": [
+      "150 x 120 2XL"
+    ],
+    "description": "Explore the turquoise & black floral velvet for carefully considered weddings and special events. Material: Velvet. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tblu03",
+    "sku": "TBLU03",
+    "sourceSku": "TBLU03",
+    "title": "Blue & Peach Sprinkles Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "150 x 120 2XL"
+    ],
+    "description": "Explore the blue & peach sprinkles for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not clear",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tblu04",
+    "sku": "TBLU04",
+    "sourceSku": "TBLU04",
+    "title": "Dusty Blue Matt Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Stretch",
+    "variants": [
+      "140 x 120 XL"
+    ],
+    "description": "Explore the dusty blue matt for carefully considered weddings and special events. Material: Stretch. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tblu05",
+    "sku": "TBLU05",
+    "sourceSku": "TBLU05",
+    "title": "Dusty Blue Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "120 x 120 Square",
+      "132 x 90 Short Rectangle",
+      "154 x 90 Long Rectangle",
+      "140 x 120 XL"
+    ],
+    "description": "Explore the dusty blue for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tblu06",
+    "sku": "TBLU06",
+    "sourceSku": "TBLU06",
+    "title": "Dusty Blue & White Damask Print Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "150 x 120 2XL"
+    ],
+    "description": "Explore the dusty blue & white damask print for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tblu07",
+    "sku": "TBLU07",
+    "sourceSku": "TBLU07",
+    "title": "Sky Blue Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "Round",
+      "154 x 90 Long Rectangle"
+    ],
+    "description": "Explore the sky blue for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tblu08",
+    "sku": "TBLU08",
+    "sourceSku": "TBLU08",
+    "title": "Ocean Blue Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "Round"
+    ],
+    "description": "Explore the ocean blue for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tblu09",
+    "sku": "TBLU09",
+    "sourceSku": "TBLU09",
+    "title": "Dark Dusty Blue Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "120 x 120 Square",
+      "150 x 120 2XL"
+    ],
+    "description": "Explore the dark dusty blue for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tblu10",
+    "sku": "TBLU10",
+    "sourceSku": "TBLU10",
+    "title": "Dark Bluish Gray Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "120 x 120 Square",
+      "140 x 120 XL"
+    ],
+    "description": "Explore the dark bluish gray for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tblu11",
+    "sku": "TBLU11",
+    "sourceSku": "TBLU11",
+    "title": "Royal Blue Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Stretch",
+    "variants": [
+      "150 x 120 2XL"
+    ],
+    "description": "Explore the royal blue for carefully considered weddings and special events. Material: Stretch. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tblu12",
+    "sku": "TBLU12",
+    "sourceSku": "TBLU12",
+    "title": "Navy Blue Velvet Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Velvet",
+    "variants": [
+      "120 x 120 Square"
+    ],
+    "description": "Explore the navy blue velvet for carefully considered weddings and special events. Material: Velvet. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tblu13",
+    "sku": "TBLU13",
+    "sourceSku": "TBLU13",
+    "title": "Navy Blue Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "Round",
+      "154 x 90 Long Rectangle"
+    ],
+    "description": "Explore the navy blue for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tblu14",
+    "sku": "TBLU14",
+    "sourceSku": "TBLU14",
+    "title": "Blue & White Floral Print Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "140 x 120 XL"
+    ],
+    "description": "Explore the blue & white floral print for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tblu15",
+    "sku": "TBLU15",
+    "sourceSku": "TBLU15",
+    "title": "Blue and White Stripe Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Cotton",
+    "variants": [
+      "154 x 90 Long Rectangle"
+    ],
+    "description": "Explore the blue and white stripe for carefully considered weddings and special events. Material: Cotton. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tgry01",
+    "sku": "TGRY01",
+    "sourceSku": "TGRY01",
+    "title": "Silver Sequin Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Sequin",
+    "variants": [
+      "120 x 120 Square",
+      "140 x 120 XL"
+    ],
+    "description": "Explore the silver sequin for carefully considered weddings and special events. Material: Sequin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not clear",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tgry02",
+    "sku": "TGRY02",
+    "sourceSku": "TGRY02",
+    "title": "Light Grey Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "Round",
+      "132 x 90 Short Rectangle",
+      "154 x 90 Long Rectangle",
+      "140 x 120 XL"
+    ],
+    "description": "Explore the light grey for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tgry03",
+    "sku": "TGRY03",
+    "sourceSku": "TGRY03",
+    "title": "Light Grey Pinwheel Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "150 x 120 2XL"
+    ],
+    "description": "Explore the light grey pinwheel for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tgry04",
+    "sku": "TGRY04",
+    "sourceSku": "TGRY04",
+    "title": "Grey Velvet Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Velvet",
+    "variants": [
+      "150 x 120 2XL"
+    ],
+    "description": "Explore the grey velvet for carefully considered weddings and special events. Material: Velvet. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tgry05",
+    "sku": "TGRY05",
+    "sourceSku": "TGRY05",
+    "title": "Charcoal Grey Crinkle Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "120 x 120 Square",
+      "154 x 90 Long Rectangle"
+    ],
+    "description": "Explore the charcoal grey crinkle for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tgry06",
+    "sku": "TGRY06",
+    "sourceSku": "TGRY06",
+    "title": "Charcoal Grey Pintuck Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "140 x 120 XL"
+    ],
+    "description": "Explore the charcoal grey pintuck for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tblk01",
+    "sku": "TBLK01",
+    "sourceSku": "TBLK01",
+    "title": "Black Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "120 x 120 Square",
+      "132 x 90 Short Rectangle",
+      "140 x 120 XL",
+      "150 x 120 2XL"
+    ],
+    "description": "Explore the black for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": true
+  },
+  {
+    "id": "tblk02",
+    "sku": "TBLK02",
+    "sourceSku": "TBLK02",
+    "title": "Black Velvet Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Velvet",
+    "variants": [
+      "140 x 120 XL"
+    ],
+    "description": "Explore the black velvet for carefully considered weddings and special events. Material: Velvet. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tblk03",
+    "sku": "TBLK03",
+    "sourceSku": "TBLK03",
+    "title": "Black Sequin Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Sequin",
+    "variants": [
+      "150 x 120 2XL"
+    ],
+    "description": "Explore the black sequin for carefully considered weddings and special events. Material: Sequin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": false
+  },
+  {
+    "id": "tblk04",
+    "sku": "TBLK04",
+    "sourceSku": "TBLK04",
+    "title": "Black & White Stripe Tablecloth",
+    "category": "Tablecloths",
+    "subcategory": "Table Linen",
+    "fabric": "Cotton",
+    "variants": [
+      "154 x 90 Long Rectangle",
+      "150 x 120 2XL"
+    ],
+    "description": "Explore the black & white stripe for carefully considered weddings and special events. Material: Cotton. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Cloth",
+    "featured": true
+  },
+  {
+    "id": "rwht01",
+    "sku": "RWHT01",
+    "sourceSku": "RWHT01",
+    "title": "Brilliant White Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Chiffon",
+    "variants": [
+      "120' x 30'"
+    ],
+    "description": "Explore the brilliant white for carefully considered weddings and special events. Material: Chiffon. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rwht02",
+    "sku": "RWHT02",
+    "sourceSku": "RWHT02",
+    "title": "Off White Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Chiffon",
+    "variants": [
+      "72' x 60'"
+    ],
+    "description": "Explore the off white for carefully considered weddings and special events. Material: Chiffon. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Runners",
+    "featured": true
+  },
+  {
+    "id": "ramr01",
+    "sku": "RAMR01",
+    "sourceSku": "RAMR01",
+    "title": "Amuredi Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Cotton",
+    "variants": [
+      "134' x 12'"
+    ],
+    "description": "Explore the amuredi for carefully considered weddings and special events. Material: Cotton. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rbge01",
+    "sku": "RBGE01",
+    "sourceSku": "RBGE01",
+    "title": "Light Beige Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Cotton",
+    "variants": [
+      "114' x 11'"
+    ],
+    "description": "Explore the light beige for carefully considered weddings and special events. Material: Cotton. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rbge02",
+    "sku": "RBGE02",
+    "sourceSku": "RBGE02",
+    "title": "Bisque Beige Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Chiffon",
+    "variants": [
+      "120' x 30'"
+    ],
+    "description": "Explore the bisque beige for carefully considered weddings and special events. Material: Chiffon. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rbge03",
+    "sku": "RBGE03",
+    "sourceSku": "RBGE03",
+    "title": "Almond Beige Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Chiffon",
+    "variants": [
+      "120' x 30'"
+    ],
+    "description": "Explore the almond beige for carefully considered weddings and special events. Material: Chiffon. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rbge04",
+    "sku": "RBGE04",
+    "sourceSku": "RBGE04",
+    "title": "Tan Beige Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Chiffon",
+    "variants": [
+      "134' x 22'"
+    ],
+    "description": "Explore the tan beige for carefully considered weddings and special events. Material: Chiffon. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rbge05",
+    "sku": "RBGE05",
+    "sourceSku": "RBGE05",
+    "title": "French Beige Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Chiffon",
+    "variants": [
+      "138' x 30'"
+    ],
+    "description": "Explore the french beige for carefully considered weddings and special events. Material: Chiffon. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rgld01",
+    "sku": "RGLD01",
+    "sourceSku": "RGLD01",
+    "title": "Crinkle Champaign Gold Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "120' x 15'"
+    ],
+    "description": "Explore the crinkle champaign gold for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rgld02",
+    "sku": "RGLD02",
+    "sourceSku": "RGLD02",
+    "title": "Rose Gold Sequin Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Sequin",
+    "variants": [
+      "120' x 15'"
+    ],
+    "description": "Explore the rose gold sequin for carefully considered weddings and special events. Material: Sequin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rgld03",
+    "sku": "RGLD03",
+    "sourceSku": "RGLD03",
+    "title": "Yellow Gold Sequin Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Sequin",
+    "variants": [
+      "128' x 12'"
+    ],
+    "description": "Explore the yellow gold sequin for carefully considered weddings and special events. Material: Sequin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rgld04",
+    "sku": "RGLD04",
+    "sourceSku": "RGLD04",
+    "title": "Gold Floral Lace Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Lace",
+    "variants": [
+      "78' x 13'"
+    ],
+    "description": "Explore the gold floral lace for carefully considered weddings and special events. Material: Lace. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rylw01",
+    "sku": "RYLW01",
+    "sourceSku": "RYLW01",
+    "title": "Yellow & White Circle Print Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the yellow & white circle print for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rylw02",
+    "sku": "RYLW02",
+    "sourceSku": "RYLW02",
+    "title": "Yellow & White Floral Print Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the yellow & white floral print for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rorg01",
+    "sku": "RORG01",
+    "sourceSku": "RORG01",
+    "title": "Orange Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Raw Silk",
+    "variants": [
+      "60' x 14'"
+    ],
+    "description": "Explore the orange for carefully considered weddings and special events. Material: Raw Silk. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rorg02",
+    "sku": "RORG02",
+    "sourceSku": "RORG02",
+    "title": "Brick Orange Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Chiffon",
+    "variants": [
+      "120' x 30'"
+    ],
+    "description": "Explore the brick orange for carefully considered weddings and special events. Material: Chiffon. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rred01",
+    "sku": "RRED01",
+    "sourceSku": "RRED01",
+    "title": "Deep Red Velvet Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Velvet",
+    "variants": [
+      "133'x28'"
+    ],
+    "description": "Explore the deep red velvet for carefully considered weddings and special events. Material: Velvet. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rred02",
+    "sku": "RRED02",
+    "sourceSku": "RRED02",
+    "title": "Maroon Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "125' x 12'"
+    ],
+    "description": "Explore the maroon for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rpnk01",
+    "sku": "RPNK01",
+    "sourceSku": "RPNK01",
+    "title": "Blush Pink Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Chiffon",
+    "variants": [
+      "144' x 30'"
+    ],
+    "description": "Explore the blush pink for carefully considered weddings and special events. Material: Chiffon. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rpnk02",
+    "sku": "RPNK02",
+    "sourceSku": "RPNK02",
+    "title": "Hot Pink Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Chiffon",
+    "variants": [
+      "132' x 31'"
+    ],
+    "description": "Explore the hot pink for carefully considered weddings and special events. Material: Chiffon. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rpnk03",
+    "sku": "RPNK03",
+    "sourceSku": "RPNK03",
+    "title": "Hot Pink & Orange Indi Print Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "120' x 14'"
+    ],
+    "description": "Explore the hot pink & orange indi print for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rppl01",
+    "sku": "RPPL01",
+    "sourceSku": "RPPL01",
+    "title": "Mauve Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Chiffon",
+    "variants": [
+      "132' x 30'"
+    ],
+    "description": "Explore the mauve for carefully considered weddings and special events. Material: Chiffon. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rgrn01",
+    "sku": "RGRN01",
+    "sourceSku": "RGRN01",
+    "title": "Sage Green Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Chiffon",
+    "variants": [
+      "120' x 30'"
+    ],
+    "description": "Explore the sage green for carefully considered weddings and special events. Material: Chiffon. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rgrn02",
+    "sku": "RGRN02",
+    "sourceSku": "RGRN02",
+    "title": "Emerald Green Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Chiffon",
+    "variants": [
+      "120' x 30'"
+    ],
+    "description": "Explore the emerald green for carefully considered weddings and special events. Material: Chiffon. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rgrn03",
+    "sku": "RGRN03",
+    "sourceSku": "RGRN03",
+    "title": "Emerald Green Velvet Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Velvet",
+    "variants": [
+      "118' x 22'"
+    ],
+    "description": "Explore the emerald green velvet for carefully considered weddings and special events. Material: Velvet. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rgrn04",
+    "sku": "RGRN04",
+    "sourceSku": "RGRN04",
+    "title": "Mint Green Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the mint green for carefully considered weddings and special events. Material: Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rgrn05",
+    "sku": "RGRN05",
+    "sourceSku": "RGRN05",
+    "title": "Olive Green Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the olive green for carefully considered weddings and special events. Material: Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rblu01",
+    "sku": "RBLU01",
+    "sourceSku": "RBLU01",
+    "title": "Dusty Blue Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Chiffon",
+    "variants": [
+      "138' x 30'"
+    ],
+    "description": "Explore the dusty blue for carefully considered weddings and special events. Material: Chiffon. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rblu02",
+    "sku": "RBLU02",
+    "sourceSku": "RBLU02",
+    "title": "Navy Blue & White Stripe Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Cotton",
+    "variants": [
+      "96' x 14'"
+    ],
+    "description": "Explore the navy blue & white stripe for carefully considered weddings and special events. Material: Cotton. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rblu03",
+    "sku": "RBLU03",
+    "sourceSku": "RBLU03",
+    "title": "Navy Blue Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Chiffon",
+    "variants": [
+      "124' x 29'"
+    ],
+    "description": "Explore the navy blue for carefully considered weddings and special events. Material: Chiffon. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rblu04",
+    "sku": "RBLU04",
+    "sourceSku": "RBLU04",
+    "title": "Blue & Green Checkered Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Cotton",
+    "variants": [
+      "133' x 14'"
+    ],
+    "description": "Explore the blue & green checkered for carefully considered weddings and special events. Material: Cotton. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rgry01",
+    "sku": "RGRY01",
+    "sourceSku": "RGRY01",
+    "title": "Grey & White Stripe Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Cotton",
+    "variants": [
+      "132' x 14'"
+    ],
+    "description": "Explore the grey & white stripe for carefully considered weddings and special events. Material: Cotton. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rgry02",
+    "sku": "RGRY02",
+    "sourceSku": "RGRY02",
+    "title": "Dove Grey Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Cotton",
+    "variants": [
+      "120' x 14'"
+    ],
+    "description": "Explore the dove grey for carefully considered weddings and special events. Material: Cotton. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rgry03",
+    "sku": "RGRY03",
+    "sourceSku": "RGRY03",
+    "title": "Charcoal Grey Crinkle Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "120' x 15'"
+    ],
+    "description": "Explore the charcoal grey crinkle for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rgry04",
+    "sku": "RGRY04",
+    "sourceSku": "RGRY04",
+    "title": "Dark Grey Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Cotton",
+    "variants": [
+      "120' x 12'"
+    ],
+    "description": "Explore the dark grey for carefully considered weddings and special events. Material: Cotton. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rblk01",
+    "sku": "RBLK01",
+    "sourceSku": "RBLK01",
+    "title": "Black Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Chiffon",
+    "variants": [
+      "127' x 32'"
+    ],
+    "description": "Explore the black for carefully considered weddings and special events. Material: Chiffon. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not clear",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rblk02",
+    "sku": "RBLK02",
+    "sourceSku": "RBLK02",
+    "title": "Black & White Stripe Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Cotton",
+    "variants": [
+      "120\" x 13\""
+    ],
+    "description": "Explore the black & white stripe for carefully considered weddings and special events. Material: Cotton. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "rblk03",
+    "sku": "RBLK03",
+    "sourceSku": "RBLK03",
+    "title": "Black Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain Satin",
+    "variants": [
+      "108' x 11'"
+    ],
+    "description": "Explore the black for carefully considered weddings and special events. Material: Curtain Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Runners",
+    "featured": false
+  },
+  {
+    "id": "nwht01",
+    "sku": "NWHT01",
+    "sourceSku": "NWHT01",
+    "title": "White Tulle Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Organza",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the white tulle for carefully considered weddings and special events. Material: Organza. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": true
+  },
+  {
+    "id": "nwht02",
+    "sku": "NWHT02",
+    "sourceSku": "NWHT02",
+    "title": "White Single Rose Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the white single rose for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nwht03",
+    "sku": "NWHT03",
+    "sourceSku": "NWHT03",
+    "title": "Classic Off White Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the classic off white for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nwht04",
+    "sku": "NWHT04",
+    "sourceSku": "NWHT04",
+    "title": "Ivory Fringed Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Cotton",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the ivory fringed for carefully considered weddings and special events. Material: Cotton. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": true
+  },
+  {
+    "id": "namr01",
+    "sku": "NAMR01",
+    "sourceSku": "NAMR01",
+    "title": "Amuredi Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Amuredi",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the amuredi for carefully considered weddings and special events. Material: Amuredi. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not clear",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "ncrm01",
+    "sku": "NCRM01",
+    "sourceSku": "NCRM01",
+    "title": "Cream Crinkle Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Cheese Cloth",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the cream crinkle for carefully considered weddings and special events. Material: Cheese Cloth. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not clear",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "ncrm02",
+    "sku": "NCRM02",
+    "sourceSku": "NCRM02",
+    "title": "Classic Cream Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Twill",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the classic cream for carefully considered weddings and special events. Material: Twill. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "ncrm03",
+    "sku": "NCRM03",
+    "sourceSku": "NCRM03",
+    "title": "Coffee Cream Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Polyester",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the coffee cream for carefully considered weddings and special events. Material: Polyester. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nbge01",
+    "sku": "NBGE01",
+    "sourceSku": "NBGE01",
+    "title": "Light Beige Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Twill",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the light beige for carefully considered weddings and special events. Material: Twill. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nbge02",
+    "sku": "NBGE02",
+    "sourceSku": "NBGE02",
+    "title": "Sand Beige Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Twill",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the sand beige for carefully considered weddings and special events. Material: Twill. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nbge03",
+    "sku": "NBGE03",
+    "sourceSku": "NBGE03",
+    "title": "Beige Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the beige for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nbge04",
+    "sku": "NBGE04",
+    "sourceSku": "NBGE04",
+    "title": "Dark Beige Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Twill",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the dark beige for carefully considered weddings and special events. Material: Twill. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nbge05",
+    "sku": "NBGE05",
+    "sourceSku": "NBGE05",
+    "title": "Kakhi Beige Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Twill",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the kakhi beige for carefully considered weddings and special events. Material: Twill. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nbge06",
+    "sku": "NBGE06",
+    "sourceSku": "NBGE06",
+    "title": "Beige Floral Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Cotton",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the beige floral for carefully considered weddings and special events. Material: Cotton. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "ngld01",
+    "sku": "NGLD01",
+    "sourceSku": "NGLD01",
+    "title": "Light Gold Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the light gold for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "ngld02",
+    "sku": "NGLD02",
+    "sourceSku": "NGLD02",
+    "title": "Dark Gold Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the dark gold for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "ngld03",
+    "sku": "NGLD03",
+    "sourceSku": "NGLD03",
+    "title": "Gold Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Twill",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the gold for carefully considered weddings and special events. Material: Twill. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nbrw01",
+    "sku": "NBRW01",
+    "sourceSku": "NBRW01",
+    "title": "Chocolate Brown Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the chocolate brown for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nylw01",
+    "sku": "NYLW01",
+    "sourceSku": "NYLW01",
+    "title": "Buttermilk Yellow Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the buttermilk yellow for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nylw02",
+    "sku": "NYLW02",
+    "sourceSku": "NYLW02",
+    "title": "Canary Yellow Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the canary yellow for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nylw03",
+    "sku": "NYLW03",
+    "sourceSku": "NYLW03",
+    "title": "Saffron Yellow Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Twill",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the saffron yellow for carefully considered weddings and special events. Material: Twill. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nylw04",
+    "sku": "NYLW04",
+    "sourceSku": "NYLW04",
+    "title": "Mustard Yellow Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the mustard yellow for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "norg01",
+    "sku": "NORG01",
+    "sourceSku": "NORG01",
+    "title": "Burnt Orange Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the burnt orange for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "norg02",
+    "sku": "NORG02",
+    "sourceSku": "NORG02",
+    "title": "Brick Orange 1 Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Twill",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the brick orange 1 for carefully considered weddings and special events. Material: Twill. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "norg03",
+    "sku": "NORG03",
+    "sourceSku": "NORG03",
+    "title": "Brick Orange 2 Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the brick orange 2 for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nred01",
+    "sku": "NRED01",
+    "sourceSku": "NRED01",
+    "title": "Christmas Red Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the christmas red for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nred02",
+    "sku": "NRED02",
+    "sourceSku": "NRED02",
+    "title": "Maroon Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the maroon for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nred03",
+    "sku": "NRED03",
+    "sourceSku": "NRED03",
+    "title": "Dark Maroon Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Pajero",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the dark maroon for carefully considered weddings and special events. Material: Pajero. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "npch01",
+    "sku": "NPCH01",
+    "sourceSku": "NPCH01",
+    "title": "Peach Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Twill",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the peach for carefully considered weddings and special events. Material: Twill. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "npch02",
+    "sku": "NPCH02",
+    "sourceSku": "NPCH02",
+    "title": "Light Coral Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the light coral for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "npch03",
+    "sku": "NPCH03",
+    "sourceSku": "NPCH03",
+    "title": "Dark Coral Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the dark coral for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "npnk01",
+    "sku": "NPNK01",
+    "sourceSku": "NPNK01",
+    "title": "White Pink Piping Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the white pink piping for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "npnk02",
+    "sku": "NPNK02",
+    "sourceSku": "NPNK02",
+    "title": "Pale Pink Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Twill",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the pale pink for carefully considered weddings and special events. Material: Twill. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "npnk03",
+    "sku": "NPNK03",
+    "sourceSku": "NPNK03",
+    "title": "Blush Pink Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the blush pink for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "npnk04",
+    "sku": "NPNK04",
+    "sourceSku": "NPNK04",
+    "title": "Baby Pink Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Cotton",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the baby pink for carefully considered weddings and special events. Material: Cotton. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "npnk05",
+    "sku": "NPNK05",
+    "sourceSku": "NPNK05",
+    "title": "Ice Pink Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the ice pink for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not clear",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "npnk06",
+    "sku": "NPNK06",
+    "sourceSku": "NPNK06",
+    "title": "Dark Dusty Pink 1 Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Cotton",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the dark dusty pink 1 for carefully considered weddings and special events. Material: Cotton. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not clear",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "npnk07",
+    "sku": "NPNK07",
+    "sourceSku": "NPNK07",
+    "title": "Dark Dusty Pink 2 Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Valentina",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the dark dusty pink 2 for carefully considered weddings and special events. Material: Valentina. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "npnk08",
+    "sku": "NPNK08",
+    "sourceSku": "NPNK08",
+    "title": "Salmon pink Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the salmon pink for carefully considered weddings and special events. Material: Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nbge06-dup2",
+    "sku": "NBGE06-DUP2",
+    "sourceSku": "NBGE06",
+    "title": "Nude Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Twill",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the nude for carefully considered weddings and special events. Material: Twill. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "npnk09",
+    "sku": "NPNK09",
+    "sourceSku": "NPNK09",
+    "title": "Dark Blush Pink Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Twill",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the dark blush pink for carefully considered weddings and special events. Material: Twill. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not clear",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "npnk10",
+    "sku": "NPNK10",
+    "sourceSku": "NPNK10",
+    "title": "Hot Pink Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Twill",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the hot pink for carefully considered weddings and special events. Material: Twill. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "npnk11",
+    "sku": "NPNK11",
+    "sourceSku": "NPNK11",
+    "title": "Raspberry Pink Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Twill",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the raspberry pink for carefully considered weddings and special events. Material: Twill. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nppl01",
+    "sku": "NPPL01",
+    "sourceSku": "NPPL01",
+    "title": "Mauve Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the mauve for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nppl02",
+    "sku": "NPPL02",
+    "sourceSku": "NPPL02",
+    "title": "Lilac Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the lilac for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nppl03",
+    "sku": "NPPL03",
+    "sourceSku": "NPPL03",
+    "title": "Dark Purple Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Twill",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the dark purple for carefully considered weddings and special events. Material: Twill. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nppl04",
+    "sku": "NPPL04",
+    "sourceSku": "NPPL04",
+    "title": "Dark Plum Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Valentina",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the dark plum for carefully considered weddings and special events. Material: Valentina. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "ngrn01",
+    "sku": "NGRN01",
+    "sourceSku": "NGRN01",
+    "title": "Light Sage Green Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Cotton",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the light sage green for carefully considered weddings and special events. Material: Cotton. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "ngrn02",
+    "sku": "NGRN02",
+    "sourceSku": "NGRN02",
+    "title": "Dark Sage Green Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the dark sage green for carefully considered weddings and special events. Material: Satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "ngrn03",
+    "sku": "NGRN03",
+    "sourceSku": "NGRN03",
+    "title": "Mint Green Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the mint green for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "ngrn04",
+    "sku": "NGRN04",
+    "sourceSku": "NGRN04",
+    "title": "Pistachio Green Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Twill",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the pistachio green for carefully considered weddings and special events. Material: Twill. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "ngrn05",
+    "sku": "NGRN05",
+    "sourceSku": "NGRN05",
+    "title": "Lime Green Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the lime green for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "ngrn06",
+    "sku": "NGRN06",
+    "sourceSku": "NGRN06",
+    "title": "Olive Green Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the olive green for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "ngrn07",
+    "sku": "NGRN07",
+    "sourceSku": "NGRN07",
+    "title": "Jade Green Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Twill",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the jade green for carefully considered weddings and special events. Material: Twill. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "ngrn08",
+    "sku": "NGRN08",
+    "sourceSku": "NGRN08",
+    "title": "Emerald Green Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Twill",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the emerald green for carefully considered weddings and special events. Material: Twill. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "ngrn09",
+    "sku": "NGRN09",
+    "sourceSku": "NGRN09",
+    "title": "Army Green Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Twill",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the army green for carefully considered weddings and special events. Material: Twill. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "ngrn10",
+    "sku": "NGRN10",
+    "sourceSku": "NGRN10",
+    "title": "Juniper Green Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Valentina",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the juniper green for carefully considered weddings and special events. Material: Valentina. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "ngrn11",
+    "sku": "NGRN11",
+    "sourceSku": "NGRN11",
+    "title": "Green Leaf Print Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the green leaf print for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "ngrn12",
+    "sku": "NGRN12",
+    "sourceSku": "NGRN12",
+    "title": "Green & White Forest Print Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the green & white forest print for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "ngrn13",
+    "sku": "NGRN13",
+    "sourceSku": "NGRN13",
+    "title": "Green & Peach Water colour Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Cotton",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the green & peach water colour for carefully considered weddings and special events. Material: Cotton. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "ngrn14",
+    "sku": "NGRN14",
+    "sourceSku": "NGRN14",
+    "title": "Cactus Print Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Cotton",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the cactus print for carefully considered weddings and special events. Material: Cotton. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "ngrn15",
+    "sku": "NGRN15",
+    "sourceSku": "NGRN15",
+    "title": "Teal Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Cotton",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the teal for carefully considered weddings and special events. Material: Cotton. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nblu01",
+    "sku": "NBLU01",
+    "sourceSku": "NBLU01",
+    "title": "Cement Blue Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Twill",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the cement blue for carefully considered weddings and special events. Material: Twill. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nblu02",
+    "sku": "NBLU02",
+    "sourceSku": "NBLU02",
+    "title": "Dusty Blue Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the dusty blue for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nblu03",
+    "sku": "NBLU03",
+    "sourceSku": "NBLU03",
+    "title": "Light Blue Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the light blue for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nblu04",
+    "sku": "NBLU04",
+    "sourceSku": "NBLU04",
+    "title": "Royal Blue Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Twill",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the royal blue for carefully considered weddings and special events. Material: Twill. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nblu05",
+    "sku": "NBLU05",
+    "sourceSku": "NBLU05",
+    "title": "Navy Blue Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the navy blue for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nblu06",
+    "sku": "NBLU06",
+    "sourceSku": "NBLU06",
+    "title": "Dusty Blue & Cream Paisley Print Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Cotton",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the dusty blue & cream paisley print for carefully considered weddings and special events. Material: Cotton. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not clear",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nblu07",
+    "sku": "NBLU07",
+    "sourceSku": "NBLU07",
+    "title": "Blue & White flower print Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the blue & white flower print for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "ngry01",
+    "sku": "NGRY01",
+    "sourceSku": "NGRY01",
+    "title": "Light Grey Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the light grey for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "ngry02",
+    "sku": "NGRY02",
+    "sourceSku": "NGRY02",
+    "title": "Stone Grey Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Twill",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the stone grey for carefully considered weddings and special events. Material: Twill. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "ngry03",
+    "sku": "NGRY03",
+    "sourceSku": "NGRY03",
+    "title": "Pewter Grey Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Valentina",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the pewter grey for carefully considered weddings and special events. Material: Valentina. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nblk01",
+    "sku": "NBLK01",
+    "sourceSku": "NBLK01",
+    "title": "Grey & White stripe Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Cotton",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the grey & white stripe for carefully considered weddings and special events. Material: Cotton. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "nblk02",
+    "sku": "NBLK02",
+    "sourceSku": "NBLK02",
+    "title": "Black Napkin",
+    "category": "Napkins",
+    "subcategory": "Table Linen",
+    "fabric": "Curtain satin",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the black for carefully considered weddings and special events. Material: Curtain satin. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Napkins",
+    "featured": false
+  },
+  {
+    "id": "plt01",
+    "sku": "PLT01",
+    "sourceSku": "PLT01",
+    "title": "Gold Beaded Glass Chargers",
+    "category": "Chargers",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the gold beaded glass charges for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Charger Plates & Round Mats",
+    "featured": true
+  },
+  {
+    "id": "plt02",
+    "sku": "PLT02",
+    "sourceSku": "PLT02",
+    "title": "Gold Floral Glass Chargers",
+    "category": "Chargers",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the gold floral glass charges for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Charger Plates & Round Mats",
+    "featured": true
+  },
+  {
+    "id": "plt03",
+    "sku": "PLT03",
+    "sourceSku": "PLT03",
+    "title": "Gold Rimmed Glass Chargers",
+    "category": "Chargers",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the gold rimmed glass charges for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Charger Plates & Round Mats",
+    "featured": false
+  },
+  {
+    "id": "plt04",
+    "sku": "PLT04",
+    "sourceSku": "PLT04",
+    "title": "Gold Scalloped rimmed Glass Chargers",
+    "category": "Chargers",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the gold scalloped rimmed glass charges for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Charger Plates & Round Mats",
+    "featured": false
+  },
+  {
+    "id": "plt05",
+    "sku": "PLT05",
+    "sourceSku": "PLT05",
+    "title": "Gold Crystal rimmed Glass Chargers",
+    "category": "Chargers",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the gold crystal rimmed glass charges for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Charger Plates & Round Mats",
+    "featured": false
+  },
+  {
+    "id": "plt06",
+    "sku": "PLT06",
+    "sourceSku": "PLT06",
+    "title": "Copper / Rose Gold Painted edge Glass Chargers",
+    "category": "Chargers",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the copper / rose gold painted edge glass charges for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Charger Plates & Round Mats",
+    "featured": false
+  },
+  {
+    "id": "plt07",
+    "sku": "PLT07",
+    "sourceSku": "PLT07",
+    "title": "Silver Rimmed Glass Chargers",
+    "category": "Chargers",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the silver rimmed glass chargers for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Charger Plates & Round Mats",
+    "featured": true
+  },
+  {
+    "id": "plt08",
+    "sku": "PLT08",
+    "sourceSku": "PLT08",
+    "title": "Crystal Floral Glass Chargers",
+    "category": "Chargers",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the crystal floral glass chargers for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Charger Plates & Round Mats",
+    "featured": false
+  },
+  {
+    "id": "plt09",
+    "sku": "PLT09",
+    "sourceSku": "PLT09",
+    "title": "Light Pink Glass Chargers",
+    "category": "Chargers",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the light pink glass chargers for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Charger Plates & Round Mats",
+    "featured": false
+  },
+  {
+    "id": "mat01",
+    "sku": "MAT01",
+    "sourceSku": "MAT01",
+    "title": "Multi Color Floral Placemat",
+    "category": "Placemats",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the multi color floral for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Charger Plates & Round Mats",
+    "featured": false
+  },
+  {
+    "id": "mat02",
+    "sku": "MAT02",
+    "sourceSku": "MAT02",
+    "title": "Light Pink Placemat",
+    "category": "Placemats",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the light pink for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Charger Plates & Round Mats",
+    "featured": false
+  },
+  {
+    "id": "mat03",
+    "sku": "MAT03",
+    "sourceSku": "MAT03",
+    "title": "Hot Pink Placemat",
+    "category": "Placemats",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the hot pink for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Charger Plates & Round Mats",
+    "featured": false
+  },
+  {
+    "id": "mat04",
+    "sku": "MAT04",
+    "sourceSku": "MAT04",
+    "title": "Teal Placemat",
+    "category": "Placemats",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the teal for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Charger Plates & Round Mats",
+    "featured": false
+  },
+  {
+    "id": "mat05",
+    "sku": "MAT05",
+    "sourceSku": "MAT05",
+    "title": "Olive Green Placemat",
+    "category": "Placemats",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the olive green for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Charger Plates & Round Mats",
+    "featured": false
+  },
+  {
+    "id": "mat06",
+    "sku": "MAT06",
+    "sourceSku": "MAT06",
+    "title": "Light Gold Placemat",
+    "category": "Placemats",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the light gold for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Charger Plates & Round Mats",
+    "featured": false
+  },
+  {
+    "id": "mat07",
+    "sku": "MAT07",
+    "sourceSku": "MAT07",
+    "title": "Dark Beige Placemat",
+    "category": "Placemats",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the dark beige for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Charger Plates & Round Mats",
+    "featured": false
+  },
+  {
+    "id": "mat08",
+    "sku": "MAT08",
+    "sourceSku": "MAT08",
+    "title": "Dark Brown (Stretch - 268) Placemat",
+    "category": "Placemats",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the dark brown (stretch - 268) for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Charger Plates & Round Mats",
+    "featured": false
+  },
+  {
+    "id": "mat09",
+    "sku": "MAT09",
+    "sourceSku": "MAT09",
+    "title": "Black Placemat",
+    "category": "Placemats",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the black for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Charger Plates & Round Mats",
+    "featured": false
+  },
+  {
+    "id": "mat10",
+    "sku": "MAT10",
+    "sourceSku": "MAT10",
+    "title": "Rattan Mat",
+    "category": "Placemats",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the rattan mat for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Charger Plates & Round Mats",
+    "featured": true
+  },
+  {
+    "id": "mat11",
+    "sku": "MAT11",
+    "sourceSku": "MAT11",
+    "title": "Cane Floral Mat",
+    "category": "Placemats",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the cane floral mat for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Charger Plates & Round Mats",
+    "featured": false
+  },
+  {
+    "id": "gls01",
+    "sku": "GLS01",
+    "sourceSku": "GLS01",
+    "title": "Green Glass",
+    "category": "Glassware",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Small",
+      "Large"
+    ],
+    "description": "Explore the green glass for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Top Items",
+    "featured": true
+  },
+  {
+    "id": "gls02",
+    "sku": "GLS02",
+    "sourceSku": "GLS02",
+    "title": "Smoky Grey Glass",
+    "category": "Glassware",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Small",
+      "Large"
+    ],
+    "description": "Explore the smoky grey glass for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Top Items",
+    "featured": false
+  },
+  {
+    "id": "gls03",
+    "sku": "GLS03",
+    "sourceSku": "GLS03",
+    "title": "Dusty Blue Glass",
+    "category": "Glassware",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Small"
+    ],
+    "description": "Explore the dusty blue glass for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Top Items",
+    "featured": false
+  },
+  {
+    "id": "gls04",
+    "sku": "GLS04",
+    "sourceSku": "GLS04",
+    "title": "Dusty Pink Glass",
+    "category": "Glassware",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Small"
+    ],
+    "description": "Explore the dusty pink glass for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Top Items",
+    "featured": false
+  },
+  {
+    "id": "gls05",
+    "sku": "GLS05",
+    "sourceSku": "GLS05",
+    "title": "Transparent Glass",
+    "category": "Glassware",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the transparent glass for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Table Top Items",
+    "featured": false
+  },
+  {
+    "id": "tbn01",
+    "sku": "TBN01",
+    "sourceSku": "TBN01",
+    "title": "Gold Square",
+    "category": "Table Numbers",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the gold square for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Top Items",
+    "featured": false
+  },
+  {
+    "id": "tbn02",
+    "sku": "TBN02",
+    "sourceSku": "TBN02",
+    "title": "Gold Square (New)",
+    "category": "Table Numbers",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the gold square (new) for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Top Items",
+    "featured": false
+  },
+  {
+    "id": "tbn03",
+    "sku": "TBN03",
+    "sourceSku": "TBN03",
+    "title": "Plastic",
+    "category": "Table Numbers",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the plastic for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Top Items",
+    "featured": false
+  },
+  {
+    "id": "tbn04",
+    "sku": "TBN04",
+    "sourceSku": "TBN04",
+    "title": "Black Square",
+    "category": "Table Numbers",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the black square for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Top Items",
+    "featured": false
+  },
+  {
+    "id": "tbn05",
+    "sku": "TBN05",
+    "sourceSku": "TBN05",
+    "title": "Gray Square",
+    "category": "Table Numbers",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the gray square for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Top Items",
+    "featured": false
+  },
+  {
+    "id": "tbn06",
+    "sku": "TBN06",
+    "sourceSku": "TBN06",
+    "title": "Gold Vintage",
+    "category": "Table Numbers",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the gold vintage for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Top Items",
+    "featured": false
+  },
+  {
+    "id": "ctl01",
+    "sku": "CTL01",
+    "sourceSku": "CTL01",
+    "title": "Mirror Gold Old Cutlery (5pc)",
+    "category": "Cutlery",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the mirror gold old cutlery (5pc) for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not clear",
+    "source": "Table Top Items",
+    "featured": false
+  },
+  {
+    "id": "ctl02",
+    "sku": "CTL02",
+    "sourceSku": "CTL02",
+    "title": "Mat Gold Cutlery (8 pc)",
+    "category": "Cutlery",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the mat gold cutlery (8 pc) for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not clear",
+    "source": "Table Top Items",
+    "featured": false
+  },
+  {
+    "id": "ctl03",
+    "sku": "CTL03",
+    "sourceSku": "CTL03",
+    "title": "Mirror Gold Cutlery (new Stock) 8pc",
+    "category": "Cutlery",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the mirror gold cutlery (new stock) 8pc for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not clear",
+    "source": "Table Top Items",
+    "featured": false
+  },
+  {
+    "id": "ctl04",
+    "sku": "CTL04",
+    "sourceSku": "CTL04",
+    "title": "Rose Gold Cutlery (6pc)",
+    "category": "Cutlery",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the rose gold cutlery (6pc) for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not clear",
+    "source": "Table Top Items",
+    "featured": false
+  },
+  {
+    "id": "ctl05",
+    "sku": "CTL05",
+    "sourceSku": "CTL05",
+    "title": "Black Cutlery (6pc)",
+    "category": "Cutlery",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the black cutlery (6pc) for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Top Items",
+    "featured": false
+  },
+  {
+    "id": "nrg01",
+    "sku": "NRG01",
+    "sourceSku": "NRG01",
+    "title": "Gold Floral",
+    "category": "Napkin Rings",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the gold floral for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Top Items",
+    "featured": false
+  },
+  {
+    "id": "nrg02",
+    "sku": "NRG02",
+    "sourceSku": "NRG02",
+    "title": "Gold Leaf",
+    "category": "Napkin Rings",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the gold leaf for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Top Items",
+    "featured": false
+  },
+  {
+    "id": "nrg03",
+    "sku": "NRG03",
+    "sourceSku": "NRG03",
+    "title": "Gold Coil",
+    "category": "Napkin Rings",
+    "subcategory": "Tabletop",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the gold coil for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Table Top Items",
+    "featured": false
+  },
+  {
+    "id": "imp-chair-244",
+    "sku": "IMP-CHAIR-244",
+    "sourceSku": "IMP-CHAIR-244",
+    "title": "Gold Tiffany",
+    "category": "Chairs",
+    "subcategory": "Furniture",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the gold tiffany for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Tables, Chairs & Cushion cover",
+    "featured": false
+  },
+  {
+    "id": "imp-chair-245",
+    "sku": "IMP-CHAIR-245",
+    "sourceSku": "IMP-CHAIR-245",
+    "title": "White Tiffany",
+    "category": "Chairs",
+    "subcategory": "Furniture",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the white tiffany for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Tables, Chairs & Cushion cover",
+    "featured": false
+  },
+  {
+    "id": "imp-chair-246",
+    "sku": "IMP-CHAIR-246",
+    "sourceSku": "IMP-CHAIR-246",
+    "title": "Black Tiffany",
+    "category": "Chairs",
+    "subcategory": "Furniture",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the black tiffany for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Photo Good",
+    "source": "Tables, Chairs & Cushion cover",
+    "featured": false
+  },
+  {
+    "id": "imp-chair-247",
+    "sku": "IMP-CHAIR-247",
+    "sourceSku": "IMP-CHAIR-247",
+    "title": "Rainbow chairs",
+    "category": "Chairs",
+    "subcategory": "Furniture",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the rainbow chairs for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Tables, Chairs & Cushion cover",
+    "featured": false
+  },
+  {
+    "id": "imp-chair-248",
+    "sku": "IMP-CHAIR-248",
+    "sourceSku": "IMP-CHAIR-248",
+    "title": "Kids Chairs",
+    "category": "Chairs",
+    "subcategory": "Furniture",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the kids chairs for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Tables, Chairs & Cushion cover",
+    "featured": false
+  },
+  {
+    "id": "ccwrd01",
+    "sku": "CCWRD01",
+    "sourceSku": "CCWRD01",
+    "title": "White & Red Sripe Cushion Cover",
+    "category": "Cushion Covers",
+    "subcategory": "Accessories",
+    "fabric": "Cotton",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the white & red sripe for carefully considered weddings and special events. Material: Cotton. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Tables, Chairs & Cushion cover",
+    "featured": false
+  },
+  {
+    "id": "ccbgs01",
+    "sku": "CCBGS01",
+    "sourceSku": "CCBGS01",
+    "title": "Black & Gold Sequine Cushion Cover",
+    "category": "Cushion Covers",
+    "subcategory": "Accessories",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the black & gold sequine for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Tables, Chairs & Cushion cover",
+    "featured": false
+  },
+  {
+    "id": "ccgld01",
+    "sku": "CCGLD01",
+    "sourceSku": "CCGLD01",
+    "title": "Gold Cushion Cover",
+    "category": "Cushion Covers",
+    "subcategory": "Accessories",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the gold for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Not available",
+    "source": "Tables, Chairs & Cushion cover",
+    "featured": false
+  },
+  {
+    "id": "imp-table-252",
+    "sku": "IMP-TABLE-252",
+    "sourceSku": "IMP-TABLE-252",
+    "title": "Round Table",
+    "category": "Tables",
+    "subcategory": "Furniture",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the round table for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "(Stand - 24)",
+    "source": "Tables, Chairs & Cushion cover",
+    "featured": false
+  },
+  {
+    "id": "imp-table-253",
+    "sku": "IMP-TABLE-253",
+    "sourceSku": "IMP-TABLE-253",
+    "title": "Rectangle Table",
+    "category": "Tables",
+    "subcategory": "Furniture",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the rectangle table for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "(Stand - 20)",
+    "source": "Tables, Chairs & Cushion cover",
+    "featured": false
+  },
+  {
+    "id": "imp-table-254",
+    "sku": "IMP-TABLE-254",
+    "sourceSku": "IMP-TABLE-254",
+    "title": "Kids Table",
+    "category": "Tables",
+    "subcategory": "Furniture",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the kids table for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "",
+    "source": "Tables, Chairs & Cushion cover",
+    "featured": false
+  },
+  {
+    "id": "imp-chair-255",
+    "sku": "IMP-CHAIR-255",
+    "sourceSku": "IMP-CHAIR-255",
+    "title": "Mint Chair Sash",
+    "category": "Chair Sashes",
+    "subcategory": "Accessories",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the mint for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "",
+    "source": "Chair Sashes",
+    "featured": false
+  },
+  {
+    "id": "imp-chair-256",
+    "sku": "IMP-CHAIR-256",
+    "sourceSku": "IMP-CHAIR-256",
+    "title": "Olive green Chair Sash",
+    "category": "Chair Sashes",
+    "subcategory": "Accessories",
+    "fabric": "",
+    "variants": [
+      "Standard"
+    ],
+    "description": "Explore the olive green for carefully considered weddings and special events. Select your preferred option and quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "",
+    "source": "Chair Sashes",
+    "featured": false
+  },
+  {
+    "id": "rblk04",
+    "sku": "RBLK04",
+    "sourceSku": "RBLK04",
+    "title": "Black Table Runner",
+    "category": "Runners",
+    "subcategory": "Table Linen",
+    "fabric": "Satin",
+    "variants": [
+      "40 x 12"
+    ],
+    "description": "Explore the black satin table runner for your wedding or special event. Select your preferred quantity to request a personalised quotation. Final availability and pricing will be confirmed by our team.",
+    "image": "/images/product-placeholder.svg",
+    "imageStatus": "Category and dimension need client confirmation",
+    "source": "Chair Sashes",
+    "featured": false
+  }
+]

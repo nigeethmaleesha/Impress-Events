@@ -1,0 +1,2 @@
+import Link from 'next/link';import { ArrowRight } from 'lucide-react';
+export default function NotFound(){return <section className="empty-quote page-container"><span className="eyebrow">404 / PAGE NOT FOUND</span><h1>That detail is <em>out of place.</em></h1><p>We couldn't find the page you were looking for.</p><Link href="/" className="button button-dark">Return home <ArrowRight size={17}/></Link></section>}
