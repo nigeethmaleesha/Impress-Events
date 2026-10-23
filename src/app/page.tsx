@@ -19,19 +19,21 @@ export default function Home() {
     <>
       <QuoteRequestModal open={quoteOpen} onClose={() => setQuoteOpen(false)} />
       <section className="ie-hero" aria-labelledby="home-title">
-        <div className="ie-hero-copy">
-          <span className="ie-eyebrow">Impress Luxury Event Rentals</span>
-          <h1 id="home-title">Beautiful Details.<br />Memorable Moments.</h1>
-          <p>Discover considered rentals for weddings and celebrations, and see how they look in real settings.</p>
-          <div className="ie-hero-actions">
-            <Link href="/rentals" className="ie-button ie-button-dark">Explore The Collection <ArrowUpRight size={17} /></Link>
-            <Link href="/lookbook" className="ie-text-link">View Events In Use <ArrowRight size={17} /></Link>
+        <div className="ie-hero-inner page-container">
+          <div className="ie-hero-copy">
+            <span className="ie-eyebrow">Impress Luxury Event Rentals</span>
+            <h1 id="home-title">Beautiful Details.<br />Memorable Moments.</h1>
+            <p>Discover considered rentals for weddings and celebrations, and see how they look in real settings.</p>
+            <div className="ie-hero-actions">
+              <Link href="/rentals" className="ie-button ie-button-dark">Explore The Collection <ArrowUpRight size={17} /></Link>
+              <Link href="/lookbook" className="ie-text-link">View Events In Use <ArrowRight size={17} /></Link>
+            </div>
+            <span className="ie-hero-small">The Details Make The Difference.</span>
           </div>
-          <span className="ie-hero-small">The Details Make The Difference.</span>
-        </div>
-        <div className="ie-hero-media">
-          <Image src={eventPhotos[0].src} alt={eventPhotos[0].alt} fill priority sizes="(max-width:800px) 100vw, 64vw" className="ie-cover" />
-          <div className="ie-image-caption">Thoughtfully Styled Celebrations</div>
+          <div className="ie-hero-media">
+            <Image src={eventPhotos[0].src} alt={eventPhotos[0].alt} fill priority sizes="(max-width:700px) 100vw, (max-width:1400px) 50vw, 610px" className="ie-cover" />
+            <div className="ie-image-caption">Thoughtfully Styled Celebrations</div>
+          </div>
         </div>
       </section>
 

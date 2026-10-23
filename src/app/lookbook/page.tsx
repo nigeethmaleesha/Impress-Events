@@ -9,7 +9,7 @@ export const metadata: Metadata = { title: 'Real Event Lookbook' };
 export default function Lookbook() {
   return (
     <>
-      <header className="ie-page-heading page-container">
+      <header className="ie-page-heading ie-lookbook-heading page-container">
         <span className="ie-eyebrow">Event Inspiration</span>
         <h1>See The Details In Place</h1>
         <p>Explore real celebrations and imagine how our collections could look at yours.</p>
