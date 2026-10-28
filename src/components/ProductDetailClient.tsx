@@ -83,7 +83,7 @@ export default function ProductDetailClient({ product }: { product: Product }) {
               <span>{photo.label}</span>
             </button>)}
           </div>
-          {!hasVerifiedPhotos && <p className="im-gallery-disclaimer"><strong>Demo photography:</strong> These are different event-styling reference photos, not confirmed front / side / back photographs of this SKU. The interactive multi-view gallery is ready for actual item photography.</p>}
+          {/* {!hasVerifiedPhotos && <p className="im-gallery-disclaimer"><strong>Demo photography:</strong> These are different event-styling reference photos, not confirmed front / side / back photographs of this SKU. The interactive multi-view gallery is ready for actual item photography.</p>} */}
         </section>
         <section className="nd-detail-info im-detail-info">
           <span className="nd-kicker">IMPRESS EVENTS / {product.category.toUpperCase()}</span>
@@ -107,10 +107,10 @@ export default function ProductDetailClient({ product }: { product: Product }) {
             {added && <Link href="/quote" className="nd-line-link">VIEW YOUR INQUIRY BAG <ArrowUpRight size={15}/></Link>}
             <p className="im-pricing-note">Our team will confirm availability, product details and a personalized rental quotation before booking.</p>
           </div>
-          <details className="nd-detail-accordion" open><summary>ABOUT THIS RENTAL <Plus size={16}/></summary><p>Choose your preferred size and quantity, then add the item to your inquiry. We will confirm rental availability for your event date, along with delivery information.</p></details>
+          {/* <details className="nd-detail-accordion" open><summary>ABOUT THIS RENTAL <Plus size={16}/></summary><p>Choose your preferred size and quantity, then add the item to your inquiry. We will confirm rental availability for your event date, along with delivery information.</p></details>
           <details className="nd-detail-accordion"><summary>PRODUCT INFORMATION <Plus size={16}/></summary><p>Reference: {product.sku}. Material: {product.fabric || 'Awaiting confirmation'}. Product finishes, sizes and colours will be verified with Impress Events.</p></details>
           <details className="nd-detail-accordion"><summary>REQUEST A QUOTE <Plus size={16}/></summary><p>No payment is taken online. Browse the collection and send a single inquiry for all your selected pieces.</p><Link href="/quote" className="nd-line-link">YOUR INQUIRY BAG <ArrowRight size={14}/></Link></details>
-          <Link className="im-back-to-category" href={`/rentals?category=${encodeURIComponent(product.category)}`}><ArrowLeft size={16}/> BACK TO {product.category.toUpperCase()}</Link>
+          <Link className="im-back-to-category" href={`/rentals?category=${encodeURIComponent(product.category)}`}><ArrowLeft size={16}/> BACK TO {product.category.toUpperCase()}</Link> */}
         </section>
       </div>
     </div>
