@@ -8,11 +8,13 @@
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
-    "check:catalogue": "node scripts/check-catalogue.mjs"
+    "check:catalogue": "node scripts/check-catalogue.mjs",
+    "check:master": "node scripts/sync-master-catalogue.mjs --check",
+    "sync:master": "node scripts/sync-master-catalogue.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",
-    "next": "^16.4.0",
+    "next": "16.4.3",
     "nodemailer": "^7.0.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"

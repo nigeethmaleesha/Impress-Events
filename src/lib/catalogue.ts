@@ -1,4 +1,5 @@
 import productsJson from '@/data/products.json';
+import productViewsJson from '@/data/productViews.json';
 
 export type Product = {
   id: string;
@@ -44,4 +45,55 @@ export function getCategoryImage(cat: string) {
 
 export function titleCase(s: string) {
   return s.replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
+// Editorial photographs are styling references, NEVER a claim that a particular SKU
+// has a verified product photograph. Replace via master catalogue once supplied.
+const stylingImages: Record<string, string[]> = {
+  Tablecloths: ['/images/client-home/tablecloth-setting.jpg', '/images/client-home/romantic-florals.jpg', '/images/client-home/hero-event-table.jpg', '/images/client-home/soft-table.jpg'],
+  Runners: ['/images/client-home/warm-dining.jpg', '/images/client-home/long-table.jpg', '/images/client-home/tablecloth-setting.jpg'],
+  Napkins: ['/images/client-home/napkin-setting.jpg', '/images/client-home/neutral-place-setting.jpg', '/images/client-home/candle-centerpiece.jpg'],
+  Chargers: ['/images/client-home/charger-place-setting.jpg', '/images/client-home/candle-centerpiece.jpg', '/images/client-home/neutral-place-setting.jpg'],
+  Placemats: ['/images/client-home/neutral-place-setting.jpg', '/images/client-home/charger-place-setting.jpg'],
+  Glassware: ['/images/client-home/glassware-table.jpg', '/images/client-home/blush-table-detail.jpg', '/images/client-home/hero-event-table.jpg'],
+  Cutlery: ['/images/client-home/soft-table.jpg', '/images/client-home/neutral-place-setting.jpg'],
+  'Table Numbers': ['/images/client-home/brand-showcase-event.jpg', '/images/client-home/candle-centerpiece.jpg'],
+  'Napkin Rings': ['/images/client-home/napkin-setting.jpg', '/images/client-home/candle-centerpiece.jpg'],
+  Chairs: ['/images/client-home/chair-ceremony.jpg', '/images/client-home/outdoor-aisle.jpg', '/images/client-home/long-table.jpg'],
+  Tables: ['/images/client-home/long-table.jpg', '/images/client-home/warm-dining.jpg', '/images/client-home/luxury-hall.png'],
+  'Chair Sashes': ['/images/client-home/outdoor-aisle.jpg', '/images/client-home/chair-ceremony.jpg'],
+  'Cushion Covers': ['/images/client-home/luxury-hall.png', '/images/client-home/warm-dining.jpg'],
+};
+export function getProductStylingImages(product: Product): string[] {
+  const choices = stylingImages[product.category] ?? [getCategoryImage(product.category)];
+  const parsed = Array.from(product.sku).reduce((total, char) => total + char.charCodeAt(0), 0);
+  return [...choices.slice(parsed % choices.length), ...choices.slice(0, parsed % choices.length)];
+}
+export function getProductStylingImage(product: Product) {
+  return getProductStylingImages(product)[0];
+}
+
+
+export type ProductView = { src: string; alt: string; label: string; verified: boolean };
+/**
+ * Verified, SKU-specific photographs are referenced in src/data/productViews.json.
+ * Example entry: "CHAIR123": ["/images/products/CHAIR123/front.webp", "/images/products/CHAIR123/side.webp"]
+ * Never claim fallback editorial photos show different angles of the actual product.
+ */
+export function getProductGallery(product: Product): ProductView[] {
+  const productPhotos = (productViewsJson as Record<string, string[]>)[product.sku];
+  if (Array.isArray(productPhotos) && productPhotos.some(src => typeof src === 'string' && src.startsWith('/images/products/'))) {
+    return productPhotos.filter(src => typeof src === 'string' && src.startsWith('/images/products/')).map((src, index) => ({
+      src,
+      alt: `${product.title}, product photograph ${index + 1}`,
+      label: ['Front', 'Side', 'Back', 'Detail', 'Setting', 'Additional view'][index] ?? `View ${index + 1}`,
+      verified: true,
+    }));
+  }
+  return getProductStylingImages(product).map((src, index) => ({
+    src,
+    alt: `${product.category} editorial styling reference ${index + 1}; not a photograph of ${product.sku}`,
+    label: `Styling ${index + 1}`,
+    verified: false,
+  }));
 }

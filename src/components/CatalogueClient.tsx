@@ -43,6 +43,18 @@ export default function CatalogueClient({
   const filterTriggerRef = useRef<HTMLButtonElement>(null);
   const filterPanelRef = useRef<HTMLElement>(null);
 
+  // Next.js preserves client component state when only the URL's search parameters change.
+  // Keep the visible catalogue in sync with navigation from the category mega menu,
+  // search links and the browser's Back/Forward buttons.
+  useEffect(() => {
+    setCategory(initialCategory);
+    setQuery(initialQuery);
+    setGroup('All');
+    setPage(1);
+    setSortOpen(false);
+    setFiltersOpen(false);
+  }, [initialCategory, initialQuery]);
+
   const validCat = categories.some((c) => c.name === category) ? category : 'All';
   const filtered = useMemo(() => {
     const normalized = query.toLowerCase().trim();

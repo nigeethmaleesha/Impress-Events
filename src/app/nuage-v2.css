@@ -1,0 +1,272 @@
+/* Impress Events: original editorial design inspired by a premium event-catalogue browsing pattern.
+   Imagery remains Impress-owned/styling-reference imagery, never borrowed competitor artwork. */
+:root { --im-hero-cream:#f6f4ee; --im-gold:#dfd3bd; }
+/* Full-bleed home overlay header. Other pages retain the existing accessible navigation. */
+.im-home-header.nd-shell {position:absolute;inset:0 0 auto;z-index:160;background:transparent!important;border:0!important;color:white;box-shadow:none!important}
+.im-home-header .nd-announcement {display:none!important}
+.im-home-header.nd-shell .nd-header {background:transparent!important;border-color:transparent!important;max-width:none;height:94px;min-height:94px;display:flex;justify-content:flex-end;padding:14px clamp(22px,3.4vw,65px);gap:16px}
+.im-home-header.nd-shell .nd-brand,.im-home-header.nd-shell .nd-navigation {display:none!important}
+.im-home-header.nd-shell .nd-actions {margin-left:auto;gap:15px}
+.im-home-header.nd-shell .nd-actions .icon-button {color:#fff!important}
+.im-home-header.nd-shell .nd-actions .cart-count {background:#fff;color:#282a26}
+.im-header-contact {display:none;order:3;border:1px solid rgba(255,255,255,.86);padding:12px 22px;color:white;text-decoration:none;font:600 10px/1.1 var(--sans);letter-spacing:.11em}
+.im-home-header .im-header-contact {display:inline-flex}
+.im-home-header .nd-search {top:80px;right:clamp(22px,3.4vw,65px);color:#272b27;z-index:170}
+.im-home-header .nd-mobile-menu {color:#222}
+.im-hero {position:relative;height:min(950px,100svh);min-height:680px;background:#4c4740;isolation:isolate;color:white;overflow:hidden}
+.im-hero-slide {position:absolute;inset:0;opacity:0;transition:opacity 1100ms ease;z-index:-2}
+.im-hero-slide.is-current {opacity:1}
+.im-hero-slide img {object-fit:cover;object-position:center 50%;filter:saturate(.89)}
+.im-hero-shade {position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,17,13,.38) 0%,rgba(15,17,13,.06) 34%,rgba(8,11,9,.48) 72%,rgba(7,9,7,.37) 100%);z-index:-1}
+.im-hero-identity {position:absolute;top:clamp(116px,15vh,170px);left:50%;transform:translateX(-50%);text-align:center;display:flex;flex-direction:column;align-items:center;text-shadow:0 2px 16px #17191755;pointer-events:none}
+.im-hero-monogram {font:400 20px/1.25 Georgia,serif;letter-spacing:-.1em;border:1px solid rgba(255,255,255,.8);border-radius:50%;display:flex;align-items:center;justify-content:center;width:58px;height:58px;padding-right:3px;margin-bottom:14px}
+.im-hero-wordmark {font:400 clamp(43px,5vw,77px)/.87 Georgia,'Times New Roman',serif;letter-spacing:-.09em;white-space:nowrap}
+.im-hero-wordmark span {font-size:.35em;display:block;line-height:1.45;letter-spacing:.38em;margin-left:.4em;text-transform:uppercase}
+.im-hero-identity-line {display:block;width:33px;height:1px;background:#fff;margin:12px 0}
+.im-hero-descriptor {font:500 9px/1.5 var(--sans);letter-spacing:.32em}
+.im-hero-story {position:absolute;left:30px;right:30px;bottom:185px;text-align:center;display:flex;flex-direction:column;align-items:center}
+.im-hero-eyebrow {font:500 10px/1.5 var(--sans);letter-spacing:.25em;color:#faf5ed}
+.im-hero-story h1 {max-width:1160px;margin:14px 0 14px;font:400 clamp(43px,5.7vw,93px)/1.03 Georgia,'Times New Roman',serif;letter-spacing:-.055em;color:#fff;text-wrap:balance;animation:im-hero-title .65s ease}
+.im-hero-story p {font:400 14px/1.6 var(--sans);color:#f5f2ec;margin:0 0 17px}
+.im-hero-action {font:600 10px/1.4 var(--sans);letter-spacing:.13em;border-bottom:1px solid #fff;padding:7px 0;display:inline-flex;gap:13px;align-items:center;text-decoration:none;color:#fff}
+.im-hero-nav {position:absolute;bottom:41px;left:50%;transform:translateX(-50%);display:flex;justify-content:center;align-items:center;gap:3px;width:max-content;max-width:calc(100% - 90px);min-height:64px;padding:6px 15px;background:rgba(251,249,243,.88);border:1px solid rgba(255,255,255,.5);border-radius:3px;box-shadow:0 9px 30px #1b191429;backdrop-filter:blur(13px);-webkit-backdrop-filter:blur(13px)}
+.im-hero-nav a {display:inline-flex;align-items:center;justify-content:center;gap:8px;text-align:center;padding:13px clamp(10px,1.6vw,28px);font:600 11px/1.2 var(--sans);letter-spacing:.08em;color:#2f302a;text-decoration:none;white-space:nowrap;transition:background .18s}
+.im-hero-nav a:hover,.im-hero-nav a:focus-visible {background:#fff}
+.im-hero-nav a.im-hero-nav-all {border-left:1px solid #c8c6bf;margin-left:5px}
+.im-hero-controls {position:absolute;left:clamp(20px,3.4vw,65px);bottom:121px;display:flex;gap:10px;align-items:center}
+.im-hero-controls button {width:36px;height:36px;display:flex;justify-content:center;align-items:center;background:transparent;border:1px solid #ffffff8a;color:#fff;cursor:pointer;border-radius:50%}
+.im-hero-controls button:hover {background:#ffffff25}
+.im-hero-controls span {font:500 10px var(--sans);letter-spacing:.11em;min-width:57px;text-align:center}
+.im-hero-controls .im-hero-pause {border-color:transparent}
+.im-hero-scroll {position:absolute;right:clamp(20px,3.4vw,65px);bottom:131px;display:flex;align-items:center;gap:9px;color:white;font:500 9px var(--sans);letter-spacing:.14em;text-decoration:none}
+.im-new-arrivals {padding-top:18px;padding-bottom:96px}
+.im-new-arrivals .im-arrivals-grid {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+@keyframes im-hero-title {from {opacity:.4;transform:translateY(7px)} to {opacity:1;transform:translateY(0)}}
+@media (max-width:1100px){
+  .im-home-header.nd-shell .nd-header {height:78px;min-height:78px;padding:10px 22px}
+  .im-hero-nav {width:calc(100% - 40px);max-width:850px;overflow-x:auto;justify-content:flex-start;min-height:60px;bottom:24px}
+  .im-hero-nav a{padding:14px 17px}
+  .im-hero-story {bottom:160px}
+  .im-hero-controls {bottom:105px}
+  .im-hero-scroll {bottom:116px}
+}
+@media (max-width:700px){
+  .im-home-header.nd-shell .nd-header {height:68px;min-height:68px;padding:9px 18px}
+  .im-home-header .nd-actions{gap:4px!important}
+  .im-header-contact {padding:10px 12px;font-size:8px;letter-spacing:.07em}
+  .im-home-header .nd-search {top:68px;right:12px}
+  .im-hero {height:100svh;min-height:590px;max-height:850px}
+  .im-hero-identity {top:clamp(94px,14vh,132px)}
+  .im-hero-monogram {width:40px;height:40px;font-size:15px;margin-bottom:9px}
+  .im-hero-wordmark {font-size:42px}
+  .im-hero-descriptor {font-size:7px}
+  .im-hero-story {bottom:175px;left:18px;right:18px}
+  .im-hero-story h1 {font-size:clamp(36px,8.7vw,59px);margin:14px 0}
+  .im-hero-eyebrow {font-size:8px;letter-spacing:.13em}
+  .im-hero-story p {font-size:12px;max-width:310px}
+  .im-hero-action {font-size:9px}
+  .im-hero-nav {left:12px;right:12px;transform:none;bottom:18px;width:auto;max-width:none;min-height:58px;padding:5px;gap:0}
+  .im-hero-nav a {font-size:9px;padding:12px 16px}
+  .im-hero-controls {left:17px;bottom:104px;gap:7px}
+  .im-hero-controls button {width:29px;height:29px}
+  .im-hero-controls span {font-size:9px}
+  .im-hero-scroll {bottom:112px;right:17px;font-size:7px}
+  .im-new-arrivals {padding-bottom:64px}
+  .im-new-arrivals .im-arrivals-grid {grid-template-columns:repeat(2,minmax(0,1fr));gap:17px 11px}
+}
+@media (prefers-reduced-motion:reduce){.im-hero-slide,.im-hero-story h1 {transition:none;animation:none}}
+/* Multi-photograph product browsing, built to accept actual front/side/back photos per SKU. */
+.im-detail-page {padding-top:38px}
+.im-detail-grid {grid-template-columns:minmax(0,1.14fr) minmax(360px,.86fr);gap:clamp(36px,6vw,100px)}
+.im-product-gallery {min-width:0}
+.im-gallery-main {position:relative;background:#f5f3ef;overflow:hidden;aspect-ratio:1.02}
+.im-gallery-image-button {position:absolute;inset:0;width:100%;height:100%;border:0;background:none;padding:0;cursor:zoom-in}
+.im-gallery-image-button img {object-fit:cover;transition:transform .4s ease}
+.im-gallery-image-button:hover img {transform:scale(1.025)}
+.im-gallery-enlarge {position:absolute;right:17px;top:17px;display:inline-flex;align-items:center;gap:9px;background:#fffdf4ed;padding:12px 15px;color:#282a28;font:600 9px var(--sans);letter-spacing:.09em;box-shadow:0 2px 9px #2221}
+.im-gallery-step {position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border:1px solid #dddcd2;background:#fffffff0;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#222}
+.im-gallery-step.is-previous {left:12px}.im-gallery-step.is-next {right:12px}
+.im-gallery-step:hover {background:#fff}
+.im-gallery-count {position:absolute;bottom:13px;left:13px;background:#fffefaed;padding:10px 12px;font:600 10px var(--sans);letter-spacing:.08em;color:#333}
+.im-gallery-count span {font-weight:400;color:#777;font-size:10px;letter-spacing:0}
+.im-gallery-thumbnails {margin-top:12px;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}
+.im-gallery-thumbnails button {cursor:pointer;position:relative;min-width:0;aspect-ratio:.84;border:1px solid #e4e2d9;outline:2px solid transparent;outline-offset:1px;padding:0;background:#f2f0eb;overflow:hidden}
+.im-gallery-thumbnails button.is-active {outline-color:#67655e}
+.im-gallery-thumbnails button img {object-fit:cover}
+.im-gallery-thumbnails button span {position:absolute;bottom:0;left:0;right:0;min-height:25px;background:#ffffffe3;display:flex;align-items:center;justify-content:center;font:500 8px var(--sans);letter-spacing:.01em;color:#383934}
+.im-gallery-disclaimer {background:#f5f4f0;border-left:2px solid #b8a89a;padding:15px 16px;font:11px/1.65 var(--sans);color:#77746e;margin:20px 0}
+.im-gallery-disclaimer strong {color:#4b4b44}
+.im-detail-info h1 {font-family:Georgia,'Times New Roman',serif!important;letter-spacing:-.045em!important;font-weight:400!important;font-size:clamp(37px,4.2vw,60px)!important;line-height:1.06!important}
+.im-detail-info .nd-detail-description {font-size:13px;max-width:490px}
+.im-product-code,.im-price-heading {font:600 9px/1.5 var(--sans);letter-spacing:.12em;color:#77766f}
+.im-product-code {margin:12px 0 0}
+.im-detail-info .nd-detail-divider {margin:28px 0 22px}
+.im-detail-info .nd-detail-price {font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:27px;margin:8px 0 12px}
+.im-detail-info .nd-detail-specs {margin:24px 0}
+.im-pricing-note {font:11px/1.65 var(--sans);color:#85827d;max-width:450px;margin:6px 0 18px}
+.im-back-to-category {display:inline-flex;align-items:center;gap:10px;margin-top:34px;text-decoration:none;border-bottom:1px solid #333;padding-bottom:6px;font:600 10px var(--sans);letter-spacing:.09em}
+.im-complete-look {border-top:1px solid #e4e2d9;padding-top:65px}
+/* Screen-reader accessible gallery dialog / keyboard left-right controls. */
+.im-lightbox {position:fixed;inset:0;z-index:9999;background:#11120ff5;color:#fff;display:flex;flex-direction:column;align-items:stretch}
+.im-lightbox-top,.im-lightbox-bottom {display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:70px;padding:12px clamp(20px,3vw,55px);font:500 13px/1.5 var(--sans)}
+.im-lightbox-top small {font-size:10px;color:#bbb;letter-spacing:.08em}
+.im-lightbox-top>div {display:flex;gap:10px;align-items:center}
+.im-lightbox-top button,.im-lightbox-stage>button {border:1px solid #ffffff67;color:#fff;background:#1d1e1b;display:flex;align-items:center;justify-content:center;cursor:pointer;width:45px;height:45px}
+.im-lightbox-top button:hover,.im-lightbox-stage>button:hover {background:#383832}
+.im-lightbox-stage {display:grid;grid-template-columns:60px 1fr 60px;flex:1;min-height:0;align-items:center;padding:0 clamp(6px,3vw,65px);gap:15px}
+.im-lightbox-stage>button {justify-self:center}
+.im-lightbox-photo {position:relative;height:100%;min-height:0;max-width:100%;cursor:zoom-in;overflow:hidden}
+.im-lightbox-photo img {object-fit:contain;transition:transform .3s ease}
+.im-lightbox-photo.zoomed {cursor:zoom-out}.im-lightbox-photo.zoomed img {transform:scale(1.7)}
+.im-lightbox-bottom {min-height:77px;font-size:11px;color:#c9c8c3}
+.im-lightbox-dots {display:flex;gap:9px;flex-wrap:wrap;justify-content:flex-end}
+.im-lightbox-dots button {width:9px;height:9px;border-radius:50%;border:1px solid #ccc;background:transparent;cursor:pointer}
+.im-lightbox-dots button[aria-current="true"] {background:#fff}
+@media(max-width:1100px){.im-detail-grid {grid-template-columns:minmax(0,1fr) minmax(300px,.9fr);gap:35px}.im-gallery-thumbnails {grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:700px){.im-detail-page {padding-top:17px}.im-detail-grid {grid-template-columns:1fr;gap:25px}.im-gallery-main {aspect-ratio:1}.im-gallery-step {width:34px;height:39px}.im-gallery-thumbnails {display:flex;gap:8px;overflow-x:auto;padding:4px}.im-gallery-thumbnails button {flex:0 0 74px;height:79px}.im-detail-info h1 {font-size:40px!important}.im-lightbox-stage {grid-template-columns:38px 1fr 38px;gap:1px;padding:0 4px}.im-lightbox-stage>button{width:33px;height:39px}.im-lightbox-top,.im-lightbox-bottom {padding:12px 14px}.im-lightbox-bottom {flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center}.im-lightbox-photo.zoomed img {transform:scale(1.4)}}
+@media(prefers-reduced-motion:reduce){.im-gallery-image-button img,.im-lightbox-photo img {transition:none}}
+
+/* Use the client-provided Impress mark, never a recreated typographic logo. */
+.im-hero-brand-image {display:block;width:clamp(145px,16vw,215px);height:auto;max-height:235px;object-fit:contain;filter:drop-shadow(0 3px 14px rgba(0,0,0,.21))}
+@media(max-width:700px){.im-hero-brand-image {width:clamp(132px,35vw,180px);max-height:185px}}
+
+
+/* 2026-10-28 — Client approval refinements: unclipped laptop hero + home menu.
+   Only the homepage gets a desktop hamburger. Other pages keep their existing
+   full navigation / tablet breakpoint behaviour. */
+@media (min-width:701px) {
+  /* A shared vertical stack keeps the logo CLEAR of the headline at any laptop
+     height; unlike two separately absolute-positioned layers, they cannot overlap. */
+  .im-hero-center {
+    position:absolute;
+    inset:clamp(93px,12svh,126px) 22px clamp(170px,21svh,202px);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    min-height:0;
+    text-align:center;
+    pointer-events:none;
+  }
+  .im-hero-center .im-hero-identity {
+    position:static;
+    top:auto;
+    left:auto;
+    transform:none;
+    flex:0 1 auto;
+    min-height:0;
+  }
+  .im-hero-center .im-hero-brand-image {
+    display:block;
+    width:clamp(132px,12vw,180px);
+    height:auto;
+    max-height:160px;
+    object-fit:contain;
+  }
+  .im-hero-center .im-hero-story {
+    position:static;
+    left:auto;
+    right:auto;
+    bottom:auto;
+    width:100%;
+    flex:0 1 auto;
+    min-height:0;
+    pointer-events:auto;
+  }
+  .im-hero-center .im-hero-story h1 {
+    max-width:1050px;
+    font-size:clamp(42px,5vw,76px);
+    margin:10px 0;
+  }
+  .im-hero-center .im-hero-story p {margin-bottom:12px}
+}
+@media (min-width:701px) and (max-height:760px) {
+  .im-hero-center {inset:88px 20px 162px;gap:12px}
+  .im-hero-center .im-hero-brand-image {width:clamp(120px,11vw,145px);max-height:125px}
+  .im-hero-center .im-hero-story h1 {font-size:clamp(40px,4.6vw,68px);margin:8px 0}
+  .im-hero-center .im-hero-story p {font-size:13px;margin-bottom:8px}
+}
+@media (max-width:700px) {
+  /* Preserve the previously approved mobile hero positions. */
+  .im-hero-center {display:contents}
+}
+
+/* Homepage: menu icon sits in the top LEFT even on full desktop widths. */
+.im-home-header.nd-shell .nd-header {justify-content:space-between}
+.im-home-header.nd-shell .im-home-menu-button {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin-right:auto;
+  flex:0 0 auto;
+  width:44px;
+  height:44px;
+  color:#fff;
+  cursor:pointer;
+  border-radius:2px;
+  z-index:2;
+}
+.im-home-header.nd-shell .im-home-menu-button:hover {background:rgba(255,255,255,.14)}
+.im-home-header.nd-shell .im-home-menu-button:focus-visible {outline:2px solid #fff;outline-offset:3px}
+
+/* Desktop home drawer uses the SAME links/actions as the tablet/mobile drawer. */
+.im-home-header.nd-shell .nd-mobile-menu {
+  display:flex;
+  position:absolute;
+  z-index:180;
+  top:100%;
+  left:clamp(18px,3.4vw,65px);
+  right:auto;
+  width:min(388px,calc(100vw - 36px));
+  max-height:calc(100dvh - 105px);
+  overflow-y:auto;
+  flex-direction:column;
+  padding:17px 26px 26px;
+  background:rgba(251,250,247,.98);
+  color:#292e29;
+  border:1px solid rgba(225,221,214,.95);
+  box-shadow:0 22px 48px rgba(10,15,10,.22);
+}
+.im-home-header.nd-shell .nd-mobile-menu>a {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:14px 0;
+  border-bottom:1px solid #e8e6df;
+  color:#292e29;
+  font:600 11px/1.45 var(--sans);
+  letter-spacing:.06em;
+  text-decoration:none;
+}
+.im-home-header.nd-shell .nd-mobile-menu>a:hover,
+.im-home-header.nd-shell .nd-mobile-category-links a:hover {color:#9f796c}
+.im-home-header.nd-shell .nd-mobile-category-links {
+  display:flex;
+  flex-wrap:wrap;
+  gap:11px 16px;
+  padding:18px 0;
+  border-bottom:1px solid #e8e6df;
+}
+.im-home-header.nd-shell .nd-mobile-category-links a {
+  color:#6f736c;
+  font:400 11px/1.5 var(--sans);
+  text-decoration:none;
+}
+.im-home-header.nd-shell .nd-mobile-menu>a.nd-mobile-quote {
+  margin-top:14px;
+  padding:15px;
+  background:#343a33;
+  color:#fff;
+}
+@media (max-width:700px) {
+  .im-home-header.nd-shell .im-home-menu-button {width:38px;height:42px;padding:6px}
+  .im-home-header.nd-shell .nd-mobile-menu {
+    left:12px;
+    right:12px;
+    width:auto;
+    padding:12px 20px 20px;
+    max-height:calc(100dvh - 75px);
+  }
+}

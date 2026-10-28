@@ -7,69 +7,28 @@ import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import QuoteRequestModal from '@/components/QuoteRequestModal';
 import EventGallery from '@/components/EventGallery';
 import { eventPhotos } from '@/data/eventPhotos';
-import { categories } from '@/lib/catalogue';
+import HomeHero from '@/components/HomeHero';
+import ProductCard from '@/components/ProductCard';
+import { categories, products } from '@/lib/catalogue';
 
-const collectionNames = ['Chairs', 'Tablecloths', 'Chargers', 'Tables', 'Napkins', 'Glassware'];
+const quickCategories = ['Tablecloths', 'Napkins', 'Runners', 'Chairs', 'Tables', 'Chargers', 'Glassware', 'Placemats'];
+const features = [
+ { group: 'LINENS', name: 'Linens', title: 'The art of a beautiful table.', copy: 'Understated neutrals, considered textures and a beautiful spectrum of colour. Discover table linens made to set the tone for any occasion.', photo: '/images/client-home/tablecloth-setting.jpg', alt: 'Thoughtfully decorated tables with elegant linens', categories: ['Tablecloths','Napkins','Runners'], reverse: false },
+ { group: 'FURNITURE', name: 'Furniture', title: 'Beautiful spaces begin here.', copy: 'From timeless ceremony chairs to celebration tables, our rental furniture brings ease, harmony and character to your event.', photo: '/images/client-home/long-table.jpg', alt: 'Warmly styled long tables and chairs with flowers', categories: ['Chairs','Tables'], reverse: true },
+ { group: 'TABLETOP', name: 'Tabletop & Accessories', title: 'It’s all in the details.', copy: 'Finishing touches with personality. Thoughtful layers, statement chargers, glassware and tabletop accents make the setting your own.', photo: '/images/client-home/charger-place-setting.jpg', alt: 'Refined table arrangement with charger plate', categories: ['Chargers','Placemats','Glassware','Cutlery','Napkin Rings','Table Numbers'], reverse: false },
+];
 
 export default function Home() {
-  const [quoteOpen, setQuoteOpen] = useState(false);
-  const collections = collectionNames.map((name) => categories.find((category) => category.name === name)!).filter(Boolean);
-
-  return (
-    <>
-      <QuoteRequestModal open={quoteOpen} onClose={() => setQuoteOpen(false)} />
-      <section className="ie-hero" aria-labelledby="home-title">
-        <div className="ie-hero-inner page-container">
-          <div className="ie-hero-copy">
-            <span className="ie-eyebrow">Impress Luxury Event Rentals</span>
-            <h1 id="home-title">Beautiful Details.<br />Memorable Moments.</h1>
-            <p>Discover considered rentals for weddings and celebrations, and see how they look in real settings.</p>
-            <div className="ie-hero-actions">
-              <Link href="/rentals" className="ie-button ie-button-dark">Explore The Collection <ArrowUpRight size={17} /></Link>
-              <Link href="/lookbook" className="ie-text-link">View Events In Use <ArrowRight size={17} /></Link>
-            </div>
-            <span className="ie-hero-small">The Details Make The Difference.</span>
-          </div>
-          <div className="ie-hero-media">
-            <Image src={eventPhotos[0].src} alt={eventPhotos[0].alt} fill priority sizes="(max-width:700px) 100vw, (max-width:1400px) 50vw, 610px" className="ie-cover" />
-            <div className="ie-image-caption">Thoughtfully Styled Celebrations</div>
-          </div>
-        </div>
-      </section>
-
-      <section className="ie-section ie-collections page-container" aria-labelledby="collections-title">
-        <div className="ie-section-heading">
-          <div><span className="ie-eyebrow">The Rental Catalogue</span><h2 id="collections-title">Explore By Collection</h2></div>
-          <Link href="/rentals" className="ie-text-link">View All Rentals <ArrowUpRight size={17} /></Link>
-        </div>
-        <div className="ie-collection-grid">
-          {collections.map((category) => (
-            <Link className="ie-collection-card" href={`/rentals?category=${encodeURIComponent(category.name)}`} key={category.name}>
-              <div className="ie-collection-image"><Image src={category.image} alt={`${category.name} rental inspiration`} fill sizes="(max-width:600px) 50vw, (max-width:1050px) 33vw, 25vw" className="ie-cover" /></div>
-              <div className="ie-collection-label"><h3>{category.name}</h3><ArrowUpRight size={17} aria-hidden="true" /></div>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      <section className="ie-editorial-strip" aria-label="Our Approach">
-        <div className="page-container"><p>From The Smallest Detail To The Complete Setting.</p><Link href="/about" className="ie-text-link">Meet Impress <ArrowUpRight size={16} /></Link></div>
-      </section>
-
-      <section className="ie-section ie-events-section page-container" aria-labelledby="events-title">
-        <div className="ie-section-heading">
-          <div><span className="ie-eyebrow">Styled In Real Spaces</span><h2 id="events-title">See The Collection In Use</h2></div>
-          <Link href="/lookbook" className="ie-text-link">Explore The Lookbook <ArrowUpRight size={17} /></Link>
-        </div>
-        <EventGallery photos={eventPhotos} limit={4} />
-      </section>
-
-      <section className="ie-quote-band" aria-labelledby="quote-title">
-        <div className="page-container ie-quote-inner">
-          <div><span className="ie-eyebrow">Planning An Event?</span><h2 id="quote-title">Find Your Perfect Pieces.</h2><p>Choose your favourites or tell us what you have in mind.</p></div>
-          <button className="ie-button ie-button-dark" type="button" onClick={() => setQuoteOpen(true)}>Request A Quotation <ArrowUpRight size={17} /></button>
-        </div>
-      </section>
-    </>
-  );
+ const [quoteOpen, setQuoteOpen] = useState(false);
+ return <>
+   <QuoteRequestModal open={quoteOpen} onClose={() => setQuoteOpen(false)}/>
+   <HomeHero/>
+   <section className="nd-intro page-container" id="discover"><span className="nd-kicker">THE IMPRESS EDIT</span><h2>Thoughtful details. <em>Remarkable celebrations.</em></h2><p>Explore a thoughtfully curated world of event rentals, where every texture, detail and finishing touch is chosen to complement your vision.</p></section>
+   <section className="im-new-arrivals page-container" id="new-arrivals"><div className="nd-section-heading"><div><span className="nd-kicker">THE IMPRESS SELECTION</span><h2>Pieces to fall in love with</h2><p>Discover a few favourites from our growing rental catalogue.</p></div><Link className="nd-line-link" href="/rentals">BROWSE ALL PRODUCTS <ArrowUpRight size={15}/></Link></div><div className="im-arrivals-grid">{products.filter(p => p.featured).slice(0,4).map(p => <ProductCard key={p.id} product={p}/>)}</div></section>
+   <section className="nd-quick page-container"><div className="nd-section-heading"><div><span className="nd-kicker">THE COLLECTION</span><h2>Shop by category</h2></div><Link className="nd-line-link" href="/categories">VIEW ALL CATEGORIES <ArrowUpRight size={15}/></Link></div><div className="nd-quick-grid">{quickCategories.map(name=>{const cat=categories.find(c=>c.name===name)!;return <Link href={`/rentals?category=${encodeURIComponent(name)}`} key={name} className="nd-quick-card"><div className="nd-quick-image"><Image src={cat.image} alt={`${name} inspiration`} fill sizes="(max-width:700px) 44vw, (max-width:1100px) 24vw, 14vw"/></div><span>{name} <ArrowUpRight size={14}/></span></Link>})}</div></section>
+   {features.map(feature => <section key={feature.name} className={`nd-feature-section ${feature.reverse ? 'nd-feature-reverse':''}`}><div className="nd-feature-image"><Image src={feature.photo} alt={feature.alt} fill sizes="(max-width:900px) 100vw, 52vw"/></div><div className="nd-feature-content"><span className="nd-kicker">{feature.group}</span><h2>{feature.name}</h2><p className="nd-feature-title">{feature.title}</p><p className="nd-feature-copy">{feature.copy}</p><Link href={`/rentals?category=${encodeURIComponent(feature.categories[0])}`} className="nd-outline-button">SHOP {feature.name.toUpperCase()} <ArrowUpRight size={16}/></Link><div className="nd-feature-subcats"><b>BROWSE BY CATEGORY</b>{feature.categories.map(name=><Link key={name} href={`/rentals?category=${encodeURIComponent(name)}`}>{name} <ArrowRight size={14}/></Link>)}</div></div></section>)}
+   <section className="nd-stats-strip"><div className="page-container"><p>Beautiful occasions start with thoughtful choices.</p><span>{products.length} CURATED RENTAL PIECES & COUNTING</span></div></section>
+   <section className="nd-inspiration page-container"><div className="nd-section-heading"><div><span className="nd-kicker">GET INSPIRED</span><h2>Inspiration delivered</h2><p>Beautiful settings. Real celebrations. Possibilities to make your own.</p></div><Link className="nd-line-link" href="/lookbook">EXPLORE THE LOOKBOOK <ArrowUpRight size={15}/></Link></div><EventGallery photos={eventPhotos} limit={4}/></section>
+   <section className="nd-cta"><Image src="/images/client-home/warm-dining.jpg" fill sizes="100vw" alt="Warmly lit event table ready for a beautiful celebration"/><div className="nd-cta-overlay"/><div className="nd-cta-content"><span className="nd-kicker light">LET'S PLAN SOMETHING BEAUTIFUL</span><h2>Every beautiful event<br/><em>begins with an idea.</em></h2><p>Discover the perfect pieces for your celebration.</p><button type="button" onClick={() => setQuoteOpen(true)} className="nd-white-button">REQUEST A QUOTATION <ArrowRight size={17}/></button></div></section>
+ </>;
 }

@@ -71,3 +71,13 @@ Test desktop and phone sizes, navigate all category links, open/close the photo 
 - Verify the Next.js build and actual browser/email workflows in a network-enabled environment. Only TSX syntax, CSS parsing and supplied image integrity were statically checked during this package preparation because npm dependencies could not be downloaded in this runtime.
 
 See `docs/REDESIGN-2026-10-21.md` for file-level changes.
+
+## 2026-10-27 — Client reference redesign / demo
+
+A client-approval redesign has been added with a new Nuage-inspired editorial homepage, new `/categories` browsing hub, expandable desktop category menu, mobile navigation, refreshed product cards and SKU-detail galleries, existing quote bag and quotation workflow, and a central 257-row CSV master catalogue.
+
+**Start review at `/categories`.** Complete approval notes, product-data assumptions, CSV editing/sync instructions and launch limitations: [`docs/CLIENT_APPROVAL_GUIDE.md`](docs/CLIENT_APPROVAL_GUIDE.md).
+
+Commands: `npm run check:master` (validate), `npm run sync:master` (regenerate public `products.json` after CSV edits). Private prices/stock are never published in the public catalogue JSON.
+
+Do not promise Shopify/live price updates yet: this is a Next.js design demo, with Shopify production migration pending formal client approval. No product-specific photos or unverified prices are represented as final.
