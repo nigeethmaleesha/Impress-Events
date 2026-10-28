@@ -292,9 +292,9 @@ export default function CatalogueClient({
                 </button>
               )}
             </div>
-            <p className="catalogue-image-note">
+            {/* <p className="catalogue-image-note">
               Images show styling references, not confirmed photos of each individual SKU. Please confirm item details when requesting a quote.
-            </p>
+            </p> */}
             {filtered.length ? (
               <>
                 <div className="products-grid">
