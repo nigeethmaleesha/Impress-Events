@@ -1,0 +1,139 @@
+/* Impress Events – editorial Shop All Categories page.
+   All selectors are scoped to this route so existing catalogue filters,
+   mega menu, carousel, gallery and quote screens remain unchanged. */
+.im-categories-page {
+  background: #faf9f7;
+  color: #292725;
+}
+.im-categories-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.im-categories-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  min-height: clamp(440px, 32vw, 610px);
+}
+.im-categories-photo {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  min-height: inherit;
+  background: #dedbd3;
+}
+.im-categories-photo img {
+  object-fit: cover;
+  object-position: center;
+  transition: transform .65s cubic-bezier(.19,1,.22,1);
+}
+.im-categories-photo:hover img,
+.im-categories-photo:focus-visible img { transform: scale(1.035); }
+.im-categories-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 55px 36px;
+  text-align: center;
+}
+.im-categories-content-inner { width: 100%; max-width: 430px; }
+.im-categories-content h2 {
+  margin: 0 0 18px;
+  font: 400 clamp(40px, 3.9vw, 60px)/1.02 var(--im-serif, Georgia, serif);
+  letter-spacing: -.035em;
+}
+/* Keep the Tabletop & Accessories heading on one elegant, centered line. */
+#tabletop .im-categories-content-inner {
+  max-width: 100%;
+}
+#tabletop .im-categories-content h2 {
+  white-space: nowrap;
+  font-size: clamp(24px, 3vw, 44px);
+  letter-spacing: -.045em;
+}
+.im-categories-subcategories {
+  padding: 0;
+  margin: 0 0 30px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  align-items: center;
+}
+.im-categories-subcategories li { margin: 0; padding: 0; list-style: none; }
+.im-categories-subcategories a {
+  display: inline-block;
+  color: #242320;
+  text-decoration: none;
+  font: 500 clamp(12px, .94vw, 15px)/1.42 var(--im-sans, Arial, sans-serif);
+  letter-spacing: .035em;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  transition: border-color .22s ease;
+}
+.im-categories-subcategories a:hover,
+.im-categories-subcategories a:focus-visible {
+  border-color: currentColor;
+}
+.im-categories-cta {
+  display: inline-flex;
+  min-width: 205px;
+  min-height: 48px;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 25px;
+  border: 1px solid #393530;
+  color: #292725;
+  text-decoration: none;
+  background: transparent;
+  font: 500 12px/1.3 var(--im-sans, Arial, sans-serif);
+  letter-spacing: .08em;
+  transition: background-color .25s ease, color .25s ease;
+}
+.im-categories-cta:hover,
+.im-categories-cta:focus-visible {
+  background: #2c2a27;
+  color: #fff;
+}
+/* The middle editorial row is reversed: text first, photograph second. */
+.im-categories-feature--reverse .im-categories-photo { order: 2; }
+.im-categories-feature--reverse .im-categories-content { order: 1; }
+@media (max-width: 900px) {
+  .im-categories-feature { min-height: 410px; }
+  .im-categories-content { padding: 40px 24px; }
+  .im-categories-content h2 { font-size: clamp(35px, 5vw, 47px); }
+  .im-categories-subcategories { gap: 9px; margin-bottom: 24px; }
+  .im-categories-subcategories a { font-size: 12px; }
+  #tabletop .im-categories-content h2 { font-size: clamp(21px, 2.9vw, 32px); }
+}
+@media (max-width: 640px) {
+  .im-categories-feature,
+  .im-categories-feature--reverse { display: flex; flex-direction: column; min-height: 0; }
+  .im-categories-feature .im-categories-photo,
+  .im-categories-feature--reverse .im-categories-photo {
+    order: 0;
+    width: 100%;
+    min-height: 0;
+    aspect-ratio: 5 / 4;
+  }
+  .im-categories-feature .im-categories-content,
+  .im-categories-feature--reverse .im-categories-content {
+    order: 1;
+    padding: 40px 20px 48px;
+  }
+  .im-categories-content h2 { font-size: 47px; }
+  #tabletop .im-categories-content h2 { font-size: clamp(20px, 5.6vw, 31px); }
+  .im-categories-subcategories { gap: 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .im-categories-photo img,
+  .im-categories-cta,
+  .im-categories-subcategories a { transition: none; }
+}

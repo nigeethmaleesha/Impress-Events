@@ -35,6 +35,15 @@ export const categories = [
   { name: 'Cushion Covers', image: '/images/client-home/luxury-hall.png', group: 'Accessories', description: 'Comfort with a sophisticated finish.' },
 ] as const;
 
+// Category-family landing links match the three main reference-page columns.
+// These are real Impress catalogue categories, not invented collection pages.
+export const catalogueFamilies = {
+  linens: { title: 'Linens', categories: ['Tablecloths', 'Runners', 'Napkins', 'Placemats'] },
+  furniture: { title: 'Furniture', categories: ['Chairs', 'Tables', 'Chair Sashes', 'Cushion Covers'] },
+  tabletop: { title: 'Tabletop & Accessories', categories: ['Chargers', 'Glassware', 'Cutlery', 'Napkin Rings', 'Table Numbers'] },
+} as const;
+export type CatalogueFamily = keyof typeof catalogueFamilies;
+
 export function getProduct(id: string) {
   return products.find((p) => p.id === id);
 }

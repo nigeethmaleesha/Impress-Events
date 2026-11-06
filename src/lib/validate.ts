@@ -1,5 +1,6 @@
 import { products } from './catalogue';
 import type { QuoteItem } from '@/context/QuoteContext';
+import stockFacets from '@/data/stockFacets.json';
 
 export type QuoteRequest = {
   name: string;
@@ -49,7 +50,12 @@ export function validateQuote(raw: unknown): { ok: true; data: QuoteRequest } | 
     for (const i of r.items) {
       if (!i || typeof i !== 'object') return { ok: false, error: 'Invalid product selection.' };
       const p = products.find((p) => p.id === i.productId);
-      if (!p || typeof i.variant !== 'string' || !p.variants.includes(i.variant) || !Number.isInteger(i.quantity) || i.quantity < 1 || i.quantity > 999) {
+      // Keep classic variants valid, and also accept only real SKU colour values
+      // when a visitor chooses a swatch on the product-detail page.
+      const colors = p ? (stockFacets as Record<string, {color?: string[]}>)[p.sku]?.color ?? [] : [];
+      const validVariant = Boolean(p && typeof i.variant === 'string' &&
+        p.variants.some(option => i.variant === option || colors.some(color => i.variant === `${option} · ${color}`)));
+      if (!p || !validVariant || !Number.isInteger(i.quantity) || i.quantity < 1 || i.quantity > 999) {
         return { ok: false, error: 'An item has an invalid product, variant or quantity. Please review your quote.' };
       }
       if (items.some((x) => x.productId === i.productId && x.variant === i.variant)) return { ok: false, error: 'Your cart contains a repeated line item.' };

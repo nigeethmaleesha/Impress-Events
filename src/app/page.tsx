@@ -1,34 +1,55 @@
 'use client';
 
-import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, ArrowUpRight } from 'lucide-react';
-import QuoteRequestModal from '@/components/QuoteRequestModal';
-import EventGallery from '@/components/EventGallery';
-import { eventPhotos } from '@/data/eventPhotos';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { useState } from 'react';
 import HomeHero from '@/components/HomeHero';
-import ProductCard from '@/components/ProductCard';
-import { categories, products } from '@/lib/catalogue';
+import { designGallery } from '@/data/designGallery';
+import ShopTheLookGallery from '@/components/ShopTheLookGallery';
+import { impressStories } from '@/data/impressStories';
 
-const quickCategories = ['Tablecloths', 'Napkins', 'Runners', 'Chairs', 'Tables', 'Chargers', 'Glassware', 'Placemats'];
-const features = [
- { group: 'LINENS', name: 'Linens', title: 'The art of a beautiful table.', copy: 'Understated neutrals, considered textures and a beautiful spectrum of colour. Discover table linens made to set the tone for any occasion.', photo: '/images/client-home/tablecloth-setting.jpg', alt: 'Thoughtfully decorated tables with elegant linens', categories: ['Tablecloths','Napkins','Runners'], reverse: false },
- { group: 'FURNITURE', name: 'Furniture', title: 'Beautiful spaces begin here.', copy: 'From timeless ceremony chairs to celebration tables, our rental furniture brings ease, harmony and character to your event.', photo: '/images/client-home/long-table.jpg', alt: 'Warmly styled long tables and chairs with flowers', categories: ['Chairs','Tables'], reverse: true },
- { group: 'TABLETOP', name: 'Tabletop & Accessories', title: 'It’s all in the details.', copy: 'Finishing touches with personality. Thoughtful layers, statement chargers, glassware and tabletop accents make the setting your own.', photo: '/images/client-home/charger-place-setting.jpg', alt: 'Refined table arrangement with charger plate', categories: ['Chargers','Placemats','Glassware','Cutlery','Napkin Rings','Table Numbers'], reverse: false },
+const browseCategories=[
+ {name:'Linens',src:'/images/client-home/tablecloth-setting.jpg',href:'/rentals?family=linens'},
+ {name:'Napkins',src:'/images/client-home/napkin-setting.jpg',href:'/rentals?category=Napkins'},
+ {name:'Runners',src:'/images/client-home/long-table.jpg',href:'/rentals?category=Runners'},
+ {name:'Chargers',src:'/images/client-home/charger-place-setting.jpg',href:'/rentals?category=Chargers'},
+ {name:'Furniture',src:'/images/client-home/chair-ceremony.jpg',href:'/rentals?family=furniture'},
+ {name:'Tabletop',src:'/images/client-home/neutral-place-setting.jpg',href:'/rentals?family=tabletop'},
+ {name:'Glassware',src:'/images/client-home/glassware-table.jpg',href:'/rentals?category=Glassware'},
+ {name:'Placemats',src:'/images/client-home/soft-table.jpg',href:'/rentals?category=Placemats'},
 ];
 
-export default function Home() {
- const [quoteOpen, setQuoteOpen] = useState(false);
+
+function CarouselControls({value,onChange,max}:{value:number,onChange:(index:number)=>void,max:number}){
+ // The thumb stays continuous and glides across the entire track as the image window moves.
+ const thumbWidth=100/max;
+ const thumbLeft=max>1?(value/(max-1))*(100-thumbWidth):0;
+ return <div className="im-carousel-controls">
+   <button type="button" aria-label="Previous photos" onClick={()=>onChange(Math.max(0,value-1))} disabled={value===0}><ArrowLeft size={22}/></button>
+   <span className="im-carousel-track" role="progressbar" aria-label="Carousel position" aria-valuemin={1} aria-valuemax={max} aria-valuenow={value+1}><span className="im-carousel-thumb" style={{width:`${thumbWidth}%`,left:`${thumbLeft}%`}}/></span>
+   <button type="button" aria-label="Next photos" onClick={()=>onChange(Math.min(max-1,value+1))} disabled={value===max-1}><ArrowRight size={22}/></button>
+ </div>
+}
+
+export default function Home(){
+ const [browseIndex,setBrowseIndex]=useState(0);
+ const [eventIndex,setEventIndex]=useState(0);
+ const selectedCategories=browseCategories.slice(browseIndex,browseIndex+4);
  return <>
-   <QuoteRequestModal open={quoteOpen} onClose={() => setQuoteOpen(false)}/>
    <HomeHero/>
-   <section className="nd-intro page-container" id="discover"><span className="nd-kicker">THE IMPRESS EDIT</span><h2>Thoughtful details. <em>Remarkable celebrations.</em></h2><p>Explore a thoughtfully curated world of event rentals, where every texture, detail and finishing touch is chosen to complement your vision.</p></section>
-   <section className="im-new-arrivals page-container" id="new-arrivals"><div className="nd-section-heading"><div><span className="nd-kicker">THE IMPRESS SELECTION</span><h2>Pieces to fall in love with</h2><p>Discover a few favourites from our growing rental catalogue.</p></div><Link className="nd-line-link" href="/rentals">BROWSE ALL PRODUCTS <ArrowUpRight size={15}/></Link></div><div className="im-arrivals-grid">{products.filter(p => p.featured).slice(0,4).map(p => <ProductCard key={p.id} product={p}/>)}</div></section>
-   <section className="nd-quick page-container"><div className="nd-section-heading"><div><span className="nd-kicker">THE COLLECTION</span><h2>Shop by category</h2></div><Link className="nd-line-link" href="/categories">VIEW ALL CATEGORIES <ArrowUpRight size={15}/></Link></div><div className="nd-quick-grid">{quickCategories.map(name=>{const cat=categories.find(c=>c.name===name)!;return <Link href={`/rentals?category=${encodeURIComponent(name)}`} key={name} className="nd-quick-card"><div className="nd-quick-image"><Image src={cat.image} alt={`${name} inspiration`} fill sizes="(max-width:700px) 44vw, (max-width:1100px) 24vw, 14vw"/></div><span>{name} <ArrowUpRight size={14}/></span></Link>})}</div></section>
-   {features.map(feature => <section key={feature.name} className={`nd-feature-section ${feature.reverse ? 'nd-feature-reverse':''}`}><div className="nd-feature-image"><Image src={feature.photo} alt={feature.alt} fill sizes="(max-width:900px) 100vw, 52vw"/></div><div className="nd-feature-content"><span className="nd-kicker">{feature.group}</span><h2>{feature.name}</h2><p className="nd-feature-title">{feature.title}</p><p className="nd-feature-copy">{feature.copy}</p><Link href={`/rentals?category=${encodeURIComponent(feature.categories[0])}`} className="nd-outline-button">SHOP {feature.name.toUpperCase()} <ArrowUpRight size={16}/></Link><div className="nd-feature-subcats"><b>BROWSE BY CATEGORY</b>{feature.categories.map(name=><Link key={name} href={`/rentals?category=${encodeURIComponent(name)}`}>{name} <ArrowRight size={14}/></Link>)}</div></div></section>)}
-   <section className="nd-stats-strip"><div className="page-container"><p>Beautiful occasions start with thoughtful choices.</p><span>{products.length} CURATED RENTAL PIECES & COUNTING</span></div></section>
-   <section className="nd-inspiration page-container"><div className="nd-section-heading"><div><span className="nd-kicker">GET INSPIRED</span><h2>Inspiration delivered</h2><p>Beautiful settings. Real celebrations. Possibilities to make your own.</p></div><Link className="nd-line-link" href="/lookbook">EXPLORE THE LOOKBOOK <ArrowUpRight size={15}/></Link></div><EventGallery photos={eventPhotos} limit={4}/></section>
-   <section className="nd-cta"><Image src="/images/client-home/warm-dining.jpg" fill sizes="100vw" alt="Warmly lit event table ready for a beautiful celebration"/><div className="nd-cta-overlay"/><div className="nd-cta-content"><span className="nd-kicker light">LET'S PLAN SOMETHING BEAUTIFUL</span><h2>Every beautiful event<br/><em>begins with an idea.</em></h2><p>Discover the perfect pieces for your celebration.</p><button type="button" onClick={() => setQuoteOpen(true)} className="nd-white-button">REQUEST A QUOTATION <ArrowRight size={17}/></button></div></section>
- </>;
+   <div id="im-home-scroll-layer" className="im-home-scroll-layer">
+   <section className="im-home-browse im-home-padding" id="new-arrivals">
+     <div className="im-home-section-top"><h2>BROWSE OUR PRODUCTS</h2><Link href="/categories" className="im-shop-all-categories-button" aria-label="Shop all Impress rental categories">SHOP ALL CATEGORIES</Link></div>
+     <div className="im-home-four-grid">{selectedCategories.map(item=><Link className="im-browse-item" href={item.href} key={item.name}><div className="im-browse-pic"><Image src={item.src} alt={`${item.name} for events`} fill sizes="(max-width:700px) 50vw, 25vw"/></div><span>{item.name}</span></Link>)}</div>
+     <CarouselControls value={browseIndex} onChange={setBrowseIndex} max={browseCategories.length-3}/>
+   </section>
+   <section className="im-home-collection-banner"><Image src="/images/client-home/soft-table.jpg" alt="Refined linens, gold-rimmed plates and flowers at an event table" fill sizes="100vw"/><div className="im-home-banner-scrim"/><div><span>DISCOVER THE IMPRESS EDIT</span><h2>The Impress Collection</h2><Link href="/collections/impress">EXPLORE THE COLLECTION <ArrowRight size={15}/></Link></div></section>
+   <section className="im-home-design"><div className="im-home-design-image"><Image src="/images/client-home/outdoor-aisle.jpg" alt="Sunlit outdoor ceremony with beautiful flowers and event chairs" fill sizes="(max-width:700px) 100vw, 50vw"/></div><div className="im-home-design-copy"><h2>DESIGN MADE EASY, POWERED BY IDEAS</h2><div className="im-design-divider"/><p>Bring your event vision to life with thoughtfully selected furniture, linens and tabletop pieces. Explore our curated collection, find new inspiration and bring beautiful details together for a celebration that feels uniquely yours.</p><p>From an intimate garden gathering to an unforgettable wedding reception, Impress Events is here to help you create the perfect setting.</p><Link href="/contact">GET IN TOUCH <ArrowRight size={14}/></Link></div></section>
+   <section className="im-home-real-events im-home-padding"><div className="im-home-centered-title"><h2>Inspiration straight from real events</h2><Link href="/gallery">SHOP OUR DESIGN GALLERY</Link></div><ShopTheLookGallery variant="home" looks={designGallery.slice(eventIndex, eventIndex + 4)}/><CarouselControls value={eventIndex} onChange={setEventIndex} max={designGallery.length-3}/></section>
+   <section className="im-home-furniture-banner"><Image src="/images/client-home/luxury-hall.png" alt="Grand wedding reception with elegant chairs and lavish table settings" fill sizes="100vw"/><div className="im-home-banner-scrim"/><div><h2>The Furniture Edit</h2><Link href="/furniture">EXPLORE OUR FURNITURE COLLECTION <ArrowRight size={15}/></Link></div></section>
+   <section className="im-home-stories im-home-padding"><div className="im-home-section-top"><h2>FEATURED STORIES: <em>The Impress Journal</em></h2><Link href="/stories">BROWSE ALL STORIES <ArrowRight size={14}/></Link></div><div className="im-home-four-grid">{impressStories.map(story=><Link className="im-home-story-card" key={story.slug} href={`/stories/${story.slug}`}><div><Image src={story.hero} alt={story.heroAlt} fill sizes="(max-width:700px) 50vw, 25vw"/></div><p>{story.title}</p></Link>)}</div></section>
+   <section className="im-home-professional"><h2>Are you an event professional?</h2><p>Discover the Impress trade partnership experience.</p><Link href="/trade" className="im-home-trade-link">EXPLORE TRADE PARTNERSHIPS <ArrowRight size={15}/></Link></section>
+   </div>
+ </>
 }

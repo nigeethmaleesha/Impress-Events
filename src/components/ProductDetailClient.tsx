@@ -2,124 +2,202 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight, ArrowUpRight, Check, ChevronLeft, ChevronRight, Maximize2, Minus, Plus, ShoppingBag, X, ZoomIn, ZoomOut } from 'lucide-react';
+import { Check, ChevronDown, ChevronLeft, ChevronRight, Grid2X2, Maximize2, Minus, Plus, ShoppingBag, X, ZoomIn, ZoomOut } from 'lucide-react';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { Product } from '@/lib/catalogue';
 import { getProductGallery, products } from '@/lib/catalogue';
+import stockFacets from '@/data/stockFacets.json';
 import { useQuote } from '@/context/QuoteContext';
-import ProductCard from './ProductCard';
+
+type Facet = { color?: string[]; fabric?: string; pattern?: string[] };
+const facets = stockFacets as Record<string, Facet>;
+
+// Display-only swatch approximations; Excel provides colour names, not colour codes/photographs.
+const colorPalette: Record<string, string> = {
+  White: '#f3f2eb', 'Beige/Cream': '#d8c7a9', Ivory: '#eee8d7',
+  Black: '#2c2929', Blue: '#577e9b', 'Green/Teal': '#488477',
+  'Copper/Brown': '#9f674d', 'Champagne/Gold': '#c5a661',
+  'Silver/Grey': '#9b9f9c', Pink: '#d991a7', Red: '#a53b48',
+  Orange: '#d98e52', Yellow: '#e1bf56', Purple: '#7e6691',
+};
+
+const eventPhotos = [
+  { src: '/images/client-home/outdoor-aisle.jpg', alt: 'Outdoor event setting with floral details' },
+  { src: '/images/client-home/neutral-place-setting.jpg', alt: 'Elegant neutral dining place setting' },
+  { src: '/images/client-home/long-table.jpg', alt: 'Long banquet table prepared for an event' },
+  { src: '/images/client-home/romantic-florals.jpg', alt: 'Romantic floral styling for a celebration' },
+  { src: '/images/client-home/candle-centerpiece.jpg', alt: 'Candlelit table centerpiece' },
+  { src: '/images/client-home/warm-dining.jpg', alt: 'Warm and intimate event dining setup' },
+];
+
+function productFamily(product: Product) {
+  // Only group clearly matching names in the same category and fabric.
+  // Do not imply unrelated stock products are colours of one design.
+  const cleaned = product.title.toLowerCase()
+    .replace(/^(white|classic off white|warm white|ivory|cream|light beige|dark beige|sand beige|beige|black|red|blue|navy blue|dusty blue|green|gold|silver|pink|yellow|orange|purple|grey|gray|turquoise|champagne|coffee cream|chocolate brown|olive|maroon|burgundy|hot pink|light gold|dark gold)\s+/i, '')
+    .replace(/\s+/g, ' ').trim();
+  return `${product.category.toLowerCase()}|${product.fabric.toLowerCase()}|${cleaned}`;
+}
 
 export default function ProductDetailClient({ product }: { product: Product }) {
   const photos = useMemo(() => getProductGallery(product), [product]);
-  const hasVerifiedPhotos = photos.length > 0 && photos.every(photo => photo.verified);
-  const [variant, setVariant] = useState(product.variants[0] ?? 'Standard');
+  const photoVerified = photos.every(photo => photo.verified);
+  const ownColors = facets[product.sku]?.color ?? [];
+  const [chosenColor, setChosenColor] = useState(ownColors[0] ?? '');
+  const [moreColors, setMoreColors] = useState(false);
+  const [chosenSize, setChosenSize] = useState(product.variants.length === 1 ? product.variants[0] : '');
+  const [sizeOpen, setSizeOpen] = useState(false);
   const [quantity, setQuantity] = useState(1);
   const [added, setAdded] = useState(false);
   const [activeImage, setActiveImage] = useState(0);
   const [lightbox, setLightbox] = useState(false);
-  const [zoom, setZoom] = useState(false);
-  const closeButton = useRef<HTMLButtonElement>(null);
-  const sourceButton = useRef<HTMLButtonElement>(null);
+  const [zoomed, setZoomed] = useState(false);
+  const [inspirationAt, setInspirationAt] = useState(0);
+  const [mobileInspiration, setMobileInspiration] = useState(false);
+  useEffect(() => {
+    const check = () => setMobileInspiration(window.innerWidth <= 750);
+    check(); window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
+  const inspirationMax = eventPhotos.length - (mobileInspiration ? 2 : 4);
+  useEffect(() => { setInspirationAt(i => Math.min(i, inspirationMax)); }, [inspirationMax]);
+  const firstClose = useRef<HTMLButtonElement>(null);
+  const imageOpener = useRef<HTMLButtonElement>(null);
+  const sizePicker = useRef<HTMLDivElement>(null);
+  const swipeX = useRef<number | null>(null);
   const { addItem } = useQuote();
-  const related = useMemo(() => products.filter(p => p.id !== product.id && p.category === product.category).slice(0, 4), [product]);
-  const otherPieces = useMemo(() => products.filter(p => p.id !== product.id && p.category !== product.category && p.featured).slice(0, 4), [product]);
-  const move = useCallback((delta: number) => {
-    setZoom(false);
-    setActiveImage(previous => (previous + delta + photos.length) % photos.length);
-  }, [photos.length]);
-  const swipeStart = useRef<number | null>(null);
-  const onTouchStart = (event: React.TouchEvent) => { swipeStart.current = event.touches[0]?.clientX ?? null; };
-  const onTouchEnd = (event: React.TouchEvent) => {
-    if (swipeStart.current === null) return;
-    const distance = (event.changedTouches[0]?.clientX ?? swipeStart.current) - swipeStart.current;
-    swipeStart.current = null;
-    if (Math.abs(distance) > 55) move(distance < 0 ? 1 : -1);
-  };
-  const show = (index: number) => {setActiveImage(index); setZoom(false);};
-  const openGallery = () => { setZoom(false); setLightbox(true); };
-  const add = () => {
-    addItem(product.id, variant, quantity);
-    setAdded(true);
-    window.setTimeout(() => setAdded(false), 2300);
-  };
 
+  const siblingColors = useMemo(() => products.filter(candidate =>
+    candidate.id !== product.id && productFamily(candidate) === productFamily(product) && (facets[candidate.sku]?.color?.length ?? 0) > 0
+  ).slice(0, 12), [product]);
+  const realColorChoices = useMemo(() => {
+    const output: { name: string; href?: string }[] = ownColors.map(name => ({ name }));
+    siblingColors.forEach(p => (facets[p.sku]?.color ?? []).forEach(name => {
+      if (!output.some(item => item.name === name)) output.push({ name, href: `/rentals/${p.id}` });
+    }));
+    return output;
+  }, [ownColors, siblingColors]);
+  const visibleColors = moreColors ? realColorChoices : realColorChoices.slice(0, 7);
+  const complementary = useMemo(() => {
+    const preferred = product.category === 'Napkins' ? ['Tablecloths', 'Chargers', 'Chairs', 'Glassware']
+      : product.category === 'Tablecloths' ? ['Napkins', 'Chargers', 'Glassware', 'Chairs']
+      : ['Napkins', 'Tablecloths', 'Chargers', 'Chairs'];
+    return preferred.map(category => products.find(p => p.id !== product.id && p.category === category && p.featured)
+      ?? products.find(p => p.id !== product.id && p.category === category)).filter((p): p is Product => Boolean(p)).slice(0, 4);
+  }, [product]);
+
+  const movePhoto = useCallback((delta: number) => {
+    setZoomed(false);
+    setActiveImage(current => (current + delta + photos.length) % photos.length);
+  }, [photos.length]);
   useEffect(() => {
     if (!lightbox) return;
-    const originalOverflow = document.body.style.overflow;
+    const original = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
-    closeButton.current?.focus();
-    const handleKey = (event: KeyboardEvent) => {
+    firstClose.current?.focus();
+    const key = (event: KeyboardEvent) => {
       if (event.key === 'Escape') setLightbox(false);
-      if (event.key === 'ArrowRight') move(1);
-      if (event.key === 'ArrowLeft') move(-1);
+      if (event.key === 'ArrowLeft') movePhoto(-1);
+      if (event.key === 'ArrowRight') movePhoto(1);
     };
-    document.addEventListener('keydown', handleKey);
-    return () => {
-      document.body.style.overflow = originalOverflow;
-      document.removeEventListener('keydown', handleKey);
-      sourceButton.current?.focus();
-    };
-  }, [lightbox, move]);
+    document.addEventListener('keydown', key);
+    return () => { document.body.style.overflow = original; document.removeEventListener('keydown', key); imageOpener.current?.focus(); };
+  }, [lightbox, movePhoto]);
+  useEffect(() => {
+    if (!sizeOpen) return;
+    const close = (event: PointerEvent) => { if (!sizePicker.current?.contains(event.target as Node)) setSizeOpen(false); };
+    const escape = (event: KeyboardEvent) => { if (event.key === 'Escape') setSizeOpen(false); };
+    document.addEventListener('pointerdown', close);
+    document.addEventListener('keydown', escape);
+    return () => { document.removeEventListener('pointerdown', close); document.removeEventListener('keydown', escape); };
+  }, [sizeOpen]);
+  const touchStart = (event: React.TouchEvent) => { swipeX.current = event.touches[0]?.clientX ?? null; };
+  const touchEnd = (event: React.TouchEvent) => {
+    if (swipeX.current === null) return;
+    const distance = (event.changedTouches[0]?.clientX ?? swipeX.current) - swipeX.current;
+    swipeX.current = null;
+    if (Math.abs(distance) > 55) movePhoto(distance < 0 ? 1 : -1);
+  };
+  const addToInquiry = () => {
+    if (!chosenSize) return;
+    const choice = chosenColor ? `${chosenSize} · ${chosenColor}` : chosenSize;
+    addItem(product.id, choice, quantity);
+    setAdded(true);
+  };
+  const galleryImage = photos[activeImage];
+  const familyLabel = product.category === 'Tablecloths' || product.category === 'Runners' || product.category === 'Napkins' ? 'LINENS' : product.subcategory.toUpperCase();
 
-  return <>
-    <div className="page-container nd-detail-container im-detail-page">
-      <nav className="breadcrumbs" aria-label="Breadcrumb"><Link href="/">Home</Link><ChevronRight size={13}/><Link href="/categories">Categories</Link><ChevronRight size={13}/><Link href={`/rentals?category=${encodeURIComponent(product.category)}`}>{product.category}</Link><ChevronRight size={13}/><span>{product.title}</span></nav>
-      <div className="nd-detail-grid im-detail-grid">
-        <section className="nd-detail-gallery im-product-gallery" aria-label="Product image gallery">
-          <div className="im-gallery-main" onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
-            <button ref={sourceButton} className="im-gallery-image-button" type="button" onClick={openGallery} aria-label={`Enlarge ${photos[activeImage]?.label ?? 'product image'}`}>
-              {photos[activeImage] && <Image key={photos[activeImage].src} src={photos[activeImage].src} alt={photos[activeImage].alt} fill sizes="(max-width:900px) 100vw, 55vw" priority/>}
-              <span className="im-gallery-enlarge"><Maximize2 size={18}/> VIEW LARGE</span>
-            </button>
-            {photos.length > 1 && <>
-              <button type="button" className="im-gallery-step is-previous" onClick={() => move(-1)} aria-label="Previous photograph"><ChevronLeft size={24}/></button>
-              <button type="button" className="im-gallery-step is-next" onClick={() => move(1)} aria-label="Next photograph"><ChevronRight size={24}/></button>
-            </>}
-            <div className="im-gallery-count">{String(activeImage + 1).padStart(2,'0')} / {String(photos.length).padStart(2,'0')} <span>· {photos[activeImage]?.label}</span></div>
-          </div>
-          <div className="im-gallery-thumbnails" aria-label="Select a photograph">
-            {photos.map((photo, i) => <button key={`${photo.src}-${i}`} type="button" className={i === activeImage ? 'is-active' : ''} onClick={() => show(i)} aria-label={`Show ${photo.label}`} aria-pressed={i === activeImage}>
-              <Image src={photo.src} alt="" fill sizes="100px"/>
-              <span>{photo.label}</span>
+  return <div className="im-pdp">
+    <div className="im-pdp-inner">
+      <nav className="im-pdp-crumbs" aria-label="Breadcrumb">
+        <Link href="/categories" aria-label="All product categories"><Grid2X2 size={13} fill="currentColor" strokeWidth={1}/></Link>
+        <span>/</span><Link href={`/rentals?category=${encodeURIComponent(product.category)}`}>{familyLabel}</Link>
+        <span>/</span><Link href={`/rentals?category=${encodeURIComponent(product.category)}`}>{product.category === 'Tablecloths' ? 'TABLECLOTHS AND OVERLAYS' : product.category.toUpperCase()}</Link>
+      </nav>
+      <div className="im-pdp-main">
+        <section className="im-pdp-gallery" aria-label="Product gallery">
+          <div className="im-pdp-rail" aria-label="Product photos">
+            {photos.map((photo, index) => <button type="button" key={`${photo.src}-${index}`} onClick={() => setActiveImage(index)} className={index === activeImage ? 'is-active' : ''} aria-label={`View image ${index + 1}`} aria-pressed={index === activeImage}>
+              <Image src={photo.src} alt="" fill sizes="120px"/>
             </button>)}
           </div>
-          {/* {!hasVerifiedPhotos && <p className="im-gallery-disclaimer"><strong>Demo photography:</strong> These are different event-styling reference photos, not confirmed front / side / back photographs of this SKU. The interactive multi-view gallery is ready for actual item photography.</p>} */}
+          <div className="im-pdp-visual" onTouchStart={touchStart} onTouchEnd={touchEnd}>
+            <button ref={imageOpener} type="button" className="im-pdp-visual-open" onClick={() => { setLightbox(true); setZoomed(false); }} aria-label="Enlarge product photograph">
+              {galleryImage && <Image key={galleryImage.src} src={galleryImage.src} alt={galleryImage.alt} fill sizes="(max-width: 800px) 100vw, 44vw" priority/>}
+              <span className="im-pdp-expand"><Maximize2 size={18}/></span>
+            </button>
+            {!photoVerified && <span className="im-pdp-photo-note">EVENT STYLING REFERENCE · SKU PHOTO PENDING</span>}
+          </div>
         </section>
-        <section className="nd-detail-info im-detail-info">
-          <span className="nd-kicker">IMPRESS EVENTS / {product.category.toUpperCase()}</span>
+        <section className="im-pdp-info" aria-label="Product information">
           <h1>{product.title}</h1>
-          <p className="im-product-code">REFERENCE {product.sku}</p>
-          <div className="nd-detail-divider"/>
-          <span className="im-price-heading">RENTAL PRICE</span>
-          <div className="nd-detail-price">Price on request</div>
-          <p className="nd-detail-description">{product.description}</p>
-          <div className="nd-detail-specs">
-            <div><span>CATEGORY</span><b>{product.category}</b></div>
-            <div><span>MATERIAL</span><b>{product.fabric || 'To be confirmed'}</b></div>
-            <div><span>AVAILABLE STYLES</span><b>{product.variants.length} {product.variants.length === 1 ? 'option' : 'options'} available for enquiry</b></div>
+          <p className="im-pdp-price">RENTAL PRICE ON REQUEST</p>
+          <p className="im-pdp-collection">MATERIAL: {product.fabric || 'TO BE CONFIRMED'} <span> · SKU {product.sku}</span></p>
+          <div className="im-pdp-rule"/>
+          <div className="im-pdp-swatches" aria-label="Available product colours">
+            {realColorChoices.length ? <>
+              <div className="im-pdp-swatch-list">
+                {visibleColors.map(item => item.href ?
+                  <Link key={item.name} href={item.href} title={`View ${item.name} version`} aria-label={`View ${item.name} version`} className="im-pdp-swatch" style={{backgroundColor: colorPalette[item.name] ?? '#d1c5b4'}}/> :
+                  <button key={item.name} type="button" onClick={() => { setChosenColor(item.name); setAdded(false); }} aria-label={`Choose ${item.name}`} aria-pressed={chosenColor === item.name} title={item.name} className={`im-pdp-swatch ${chosenColor === item.name ? 'is-selected' : ''}`} style={{backgroundColor: colorPalette[item.name] ?? '#d1c5b4'}}/>
+                )}
+              </div>
+              {realColorChoices.length > 7 && <button className="im-pdp-show-colors" type="button" onClick={() => setMoreColors(s => !s)} aria-expanded={moreColors}>{moreColors ? 'Less' : `+${realColorChoices.length - 7}`} <ChevronDown size={14}/></button>}
+            </> : <p className="im-pdp-color-unknown">Colour details available on request</p>}
+            {chosenColor && <span className="im-pdp-selected-color">{chosenColor} <small>· indicative swatch</small></span>}
           </div>
-          <div className="nd-detail-controls">
-            <label htmlFor="item-option">PRODUCTS & SIZES</label>
-            <div className="nd-detail-select"><select id="item-option" value={variant} onChange={e => {setVariant(e.target.value); setAdded(false);}}>{product.variants.map(v => <option key={v} value={v}>{v}</option>)}</select><ChevronRight size={17}/></div>
-            <label htmlFor="item-quantity">QUANTITY</label>
-            <div className="nd-detail-qty"><button type="button" aria-label="Decrease quantity" disabled={quantity === 1} onClick={() => setQuantity(q => Math.max(1,q - 1))}><Minus size={17}/></button><input id="item-quantity" type="number" min={1} max={999} inputMode="numeric" value={quantity} onChange={e => setQuantity(Math.max(1, Math.min(999, Number.parseInt(e.target.value) || 1)))}/><button type="button" aria-label="Increase quantity" disabled={quantity === 999} onClick={() => setQuantity(q => Math.min(999,q + 1))}><Plus size={17}/></button></div>
-            <button type="button" className="nd-detail-add" onClick={add}>{added ? <><Check size={18}/> ADDED TO YOUR INQUIRY</> : <><ShoppingBag size={18}/> ADD TO INQUIRY</>}<ArrowRight size={17}/></button>
-            {added && <Link href="/quote" className="nd-line-link">VIEW YOUR INQUIRY BAG <ArrowUpRight size={15}/></Link>}
-            <p className="im-pricing-note">Our team will confirm availability, product details and a personalized rental quotation before booking.</p>
+          <Link className="im-pdp-order-swatch" href="/contact">REQUEST A SWATCH</Link>
+          <div className="im-pdp-buy">
+            <label id="im-pdp-size-label">Products and Sizes</label>
+            <div className="im-pdp-size" ref={sizePicker}>
+              <button type="button" className="im-pdp-size-trigger" aria-haspopup="listbox" aria-expanded={sizeOpen} aria-labelledby="im-pdp-size-label" onClick={() => setSizeOpen(o => !o)}>
+                <span>{chosenSize ? `${product.title} — ${chosenSize}` : 'Please select a size'} <small>Price on request</small></span><ChevronDown size={18}/>
+              </button>
+              {sizeOpen && <div className="im-pdp-size-options" role="listbox" aria-label="Available products and sizes">
+                {product.variants.map(size => <button type="button" role="option" aria-selected={chosenSize === size} key={size} onClick={() => { setChosenSize(size); setSizeOpen(false); setAdded(false); }}><span>{product.title} — {size}</span><small>Price on request</small>{chosenSize === size && <Check size={15}/>}</button>)}
+              </div>}
+            </div>
+            <label className="im-pdp-quantity-label">Quantity</label>
+            <div className="im-pdp-purchase-row">
+              <div className="im-pdp-quantity" aria-label="Quantity selector"><button type="button" onClick={() => { setQuantity(v => Math.max(1, v - 1)); setAdded(false); }} disabled={quantity === 1} aria-label="Decrease quantity"><ChevronLeft size={21}/></button><output aria-live="polite">{quantity}</output><button type="button" onClick={() => { setQuantity(v => Math.min(999, v + 1)); setAdded(false); }} disabled={quantity === 999} aria-label="Increase quantity"><ChevronRight size={21}/></button></div>
+              <button type="button" className={`im-pdp-add ${added ? 'is-added' : ''}`} onClick={addToInquiry} disabled={!chosenSize}>{added ? <><Check size={17}/> ADDED TO INQUIRY</> : 'ADD TO INQUIRY'}</button>
+            </div>
+            {added && <div className="im-pdp-confirmation" role="status"><Check size={17}/> {quantity} {quantity === 1 ? 'item' : 'items'} added to your inquiry bag. <Link href="/quote">VIEW BAG <ShoppingBag size={14}/></Link></div>}
+            <p className="im-pdp-pricing-note">Availability, exact colour and rental pricing will be confirmed with your quotation. No payment is taken here.</p>
           </div>
-          {/* <details className="nd-detail-accordion" open><summary>ABOUT THIS RENTAL <Plus size={16}/></summary><p>Choose your preferred size and quantity, then add the item to your inquiry. We will confirm rental availability for your event date, along with delivery information.</p></details>
-          <details className="nd-detail-accordion"><summary>PRODUCT INFORMATION <Plus size={16}/></summary><p>Reference: {product.sku}. Material: {product.fabric || 'Awaiting confirmation'}. Product finishes, sizes and colours will be verified with Impress Events.</p></details>
-          <details className="nd-detail-accordion"><summary>REQUEST A QUOTE <Plus size={16}/></summary><p>No payment is taken online. Browse the collection and send a single inquiry for all your selected pieces.</p><Link href="/quote" className="nd-line-link">YOUR INQUIRY BAG <ArrowRight size={14}/></Link></details>
-          <Link className="im-back-to-category" href={`/rentals?category=${encodeURIComponent(product.category)}`}><ArrowLeft size={16}/> BACK TO {product.category.toUpperCase()}</Link> */}
         </section>
       </div>
     </div>
-    {related.length > 0 && <section className="nd-related-section page-container"><div className="nd-section-heading"><div><span className="nd-kicker">EXPLORE THE COLLECTION</span><h2>More from {product.category}</h2></div><Link href={`/rentals?category=${encodeURIComponent(product.category)}`} className="nd-line-link">VIEW ALL {product.category.toUpperCase()} <ArrowUpRight size={15}/></Link></div><div className="nd-related-grid">{related.map(p => <ProductCard key={p.id} product={p}/>)}</div></section>}
-    {otherPieces.length > 0 && <section className="nd-related-section page-container im-complete-look"><div className="nd-section-heading"><div><span className="nd-kicker">INSPIRATION FOR YOUR EVENT</span><h2>Complete the look</h2></div><Link href="/rentals" className="nd-line-link">EXPLORE ALL PIECES <ArrowUpRight size={15}/></Link></div><div className="nd-related-grid">{otherPieces.map(p => <ProductCard key={p.id} product={p}/>)}</div></section>}
-    {lightbox && <div className="im-lightbox" role="dialog" aria-modal="true" aria-label="Product image viewer" onClick={event => {if(event.target === event.currentTarget) setLightbox(false)}}>
-      <div className="im-lightbox-top"><span>{product.title} <small>· {activeImage + 1} OF {photos.length}</small></span><div><button type="button" aria-label={zoom ? 'Zoom out' : 'Zoom in'} onClick={() => setZoom(z => !z)}>{zoom ? <ZoomOut size={22}/> : <ZoomIn size={22}/>}</button><button ref={closeButton} type="button" onClick={() => setLightbox(false)} aria-label="Close gallery"><X size={25}/></button></div></div>
-      <div className="im-lightbox-stage" onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}><button type="button" aria-label="Previous image" onClick={() => move(-1)}><ChevronLeft size={30}/></button><div className={`im-lightbox-photo ${zoom ? 'zoomed' : ''}`} onClick={() => setZoom(z => !z)}>{photos[activeImage] && <Image src={photos[activeImage].src} alt={photos[activeImage].alt} fill sizes="100vw"/>}</div><button type="button" aria-label="Next image" onClick={() => move(1)}><ChevronRight size={30}/></button></div>
-      <div className="im-lightbox-bottom"><span>{photos[activeImage]?.label}{!hasVerifiedPhotos ? ' · Editorial styling reference, not verified product photography' : ''}</span><div className="im-lightbox-dots">{photos.map((photo,i)=><button key={`${photo.src}-${i}`} type="button" aria-label={`Go to image ${i + 1}`} aria-current={i === activeImage ? 'true' : undefined} onClick={() => show(i)}/>)}</div></div>
+    <section className="im-pdp-inspiration" aria-label="Inspiration in the wild">
+      <div className="im-pdp-section-head"><h2>INSPIRATION IN THE WILD</h2><div><button type="button" onClick={() => setInspirationAt(i => Math.max(0, i - 1))} disabled={inspirationAt === 0} aria-label="Previous inspiration photographs"><ChevronLeft size={20}/></button><button type="button" onClick={() => setInspirationAt(i => Math.min(inspirationMax, i + 1))} disabled={inspirationAt >= inspirationMax} aria-label="Next inspiration photographs"><ChevronRight size={20}/></button></div></div>
+      <div className="im-pdp-inspiration-window"><div className="im-pdp-inspiration-track" style={{transform:`translateX(-${inspirationAt * (mobileInspiration ? 50 : 25)}%)`}}>{eventPhotos.map(photo => <div className="im-pdp-inspiration-photo" key={photo.src}><Image src={photo.src} alt={photo.alt} fill sizes="(max-width: 650px) 80vw, 25vw"/></div>)}</div></div>
+    </section>
+    {complementary.length > 0 && <section className="im-pdp-complete"><div className="im-pdp-complete-inner"><h2>COMPLETE THE LOOK</h2><div className="im-pdp-complete-grid">{complementary.map(item => { const photo = getProductGallery(item)[0]; return <Link href={`/rentals/${item.id}`} key={item.id} className="im-pdp-complete-card"><span className="im-pdp-complete-photo"><Image src={photo.src} alt={`${item.category} event styling reference`} fill sizes="(max-width:650px) 48vw, 25vw"/></span><span>{item.title}</span></Link>; })}</div></div></section>}
+    <section className="im-pdp-professional"><h2>Are you an event professional?</h2><p>We would love to help with your next event.</p><Link href="/contact">GET IN TOUCH</Link></section>
+    {lightbox && <div className="im-lightbox" role="dialog" aria-label="Product gallery viewer" aria-modal="true" onClick={e => {if (e.target === e.currentTarget) setLightbox(false);}}>
+      <div className="im-lightbox-top"><span>{product.title} <small>· {activeImage + 1} OF {photos.length}</small></span><div><button type="button" aria-label={zoomed ? 'Zoom out' : 'Zoom in'} onClick={() => setZoomed(v => !v)}>{zoomed ? <ZoomOut size={22}/> : <ZoomIn size={22}/>}</button><button ref={firstClose} type="button" aria-label="Close gallery" onClick={() => setLightbox(false)}><X size={25}/></button></div></div>
+      <div className="im-lightbox-stage" onTouchStart={touchStart} onTouchEnd={touchEnd}><button type="button" onClick={() => movePhoto(-1)} aria-label="Previous photo"><ChevronLeft size={28}/></button><div className={`im-lightbox-photo ${zoomed ? 'zoomed' : ''}`} onClick={() => setZoomed(v => !v)}>{galleryImage && <Image src={galleryImage.src} alt={galleryImage.alt} fill sizes="100vw"/>}</div><button type="button" onClick={() => movePhoto(1)} aria-label="Next photo"><ChevronRight size={28}/></button></div>
+      <div className="im-lightbox-bottom"><span>{galleryImage?.label}{!photoVerified ? ' · Event styling image; not a verified image of this SKU' : ''}</span><div className="im-lightbox-dots">{photos.map((photo, i) => <button type="button" key={photo.src + i} aria-label={`Photo ${i+1}`} aria-current={i === activeImage ? 'true' : undefined} onClick={() => setActiveImage(i)}/>)}</div></div>
     </div>}
-  </>;
+  </div>;
 }

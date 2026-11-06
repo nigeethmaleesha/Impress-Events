@@ -1,350 +1,258 @@
 'use client';
 
 import { useEffect, useMemo, useRef, useState } from 'react';
-import {
-  ArrowDown,
-  ArrowRight,
-  Check,
-  ChevronDown,
-  Search,
-  SlidersHorizontal,
-  X,
-} from 'lucide-react';
-import { categories, products } from '@/lib/catalogue';
-import ProductCard from './ProductCard';
+import Link from 'next/link';
+import { Check, ChevronDown, Search, X } from 'lucide-react';
+import { categories, catalogueFamilies, products } from '@/lib/catalogue';
+import stockData from '@/data/stockFacets.json';
+import CategoryProductCard from './CategoryProductCard';
 
-const groups = ['All', 'Table Linen', 'Tabletop', 'Furniture', 'Accessories'];
-const SORT_OPTIONS = [
-  { value: 'featured', label: 'Featured First' },
-  { value: 'az', label: 'Name: A To Z' },
-  { value: 'za', label: 'Name: Z To A' },
-] as const;
-const PER_PAGE = 12;
+type FilterKey = 'color' | 'fabric' | 'pattern';
+type FilterSelections = Record<FilterKey, string[]>;
+type StockFacet = { color: string[]; fabric: string; pattern: string[]; sourceDescription?: string };
+const stock = stockData as Record<string, StockFacet>;
+const FILTERS: {key: FilterKey; label: string}[] = [
+  { key: 'color', label: 'COLOR' },
+  { key: 'fabric', label: 'FABRIC' },
+  { key: 'pattern', label: 'PATTERN' },
+];
+const EMPTY_FILTERS = (): FilterSelections => ({color: [], fabric: [], pattern: []});
+const LOAD_BATCH = 24;
+const COLOR_ORDER = ['Black','Blue','Champagne/Gold','Copper/Brown','Green/Teal','Ivory','Orange','Pink','Purple','Red','Silver/Grey','White','Yellow','Beige/Cream','Clear'];
+const PATTERN_ORDER = ['Floral','Stripe','Plain','Geometric','Checkered','Lace','Sequin','Crinkle','Pintuck','Pinwheel','Embroidered','Leaf','Rosette','Scalloped','Beaded','Textured'];
+const DISPLAY_CATEGORIES: Record<string, string> = {
+  Tablecloths: 'TABLECLOTHS AND OVERLAYS',
+  Napkins: 'NAPKINS', Runners: 'RUNNERS',
+};
 
-type SortValue = (typeof SORT_OPTIONS)[number]['value'];
+function getFacetValues(sku: string, key: FilterKey) {
+  const row = stock[sku];
+  if (!row) return [];
+  return key === 'fabric' ? (row.fabric ? [row.fabric] : []) : row[key];
+}
+function matchFilter(sku: string, selection: FilterSelections) {
+  return FILTERS.every(({key}) =>
+    selection[key].length === 0 || selection[key].some(value => getFacetValues(sku, key).includes(value))
+  );
+}
 
-export default function CatalogueClient({
-  initialCategory,
-  initialQuery,
-}: {
+export default function CatalogueClient({initialCategory, initialQuery, initialFamily = ''}: {
   initialCategory: string;
   initialQuery: string;
+  initialFamily?: string;
 }) {
+  const validCategory = categories.some(c => c.name === initialCategory) ? initialCategory : 'All';
+  const activeFamily = Object.prototype.hasOwnProperty.call(catalogueFamilies, initialFamily)
+    ? catalogueFamilies[initialFamily as keyof typeof catalogueFamilies]
+    : null;
+  const [activeFilters, setActiveFilters] = useState<FilterSelections>(EMPTY_FILTERS);
+  const [draftFilters, setDraftFilters] = useState<FilterSelections>(EMPTY_FILTERS);
+  const [openFilter, setOpenFilter] = useState<FilterKey | null>(null);
+  const [filterSearch, setFilterSearch] = useState('');
+  const [columns, setColumns] = useState<3 | 4 | 5>(3);
+  const [shown, setShown] = useState(LOAD_BATCH);
   const [query, setQuery] = useState(initialQuery);
-  const [category, setCategory] = useState(initialCategory);
-  const [group, setGroup] = useState('All');
-  const [sort, setSort] = useState<SortValue>('featured');
-  const [page, setPage] = useState(1);
-  const [filtersOpen, setFiltersOpen] = useState(false);
-  const [sortOpen, setSortOpen] = useState(false);
-  const sortRef = useRef<HTMLDivElement>(null);
-  const sortButtonRef = useRef<HTMLButtonElement>(null);
-  const filterCloseRef = useRef<HTMLButtonElement>(null);
-  const filterTriggerRef = useRef<HTMLButtonElement>(null);
-  const filterPanelRef = useRef<HTMLElement>(null);
+  const filterRowRef = useRef<HTMLDivElement>(null);
+  const dropdownTriggerRef = useRef<Record<FilterKey, HTMLButtonElement | null>>({color: null, fabric: null, pattern: null});
 
-  // Next.js preserves client component state when only the URL's search parameters change.
-  // Keep the visible catalogue in sync with navigation from the category mega menu,
-  // search links and the browser's Back/Forward buttons.
+  // Selecting a category from the home mega-menu, or Browser Back/Forward,
+  // must reset filters belonging to the previous category.
   useEffect(() => {
-    setCategory(initialCategory);
+    setActiveFilters(EMPTY_FILTERS());
+    setDraftFilters(EMPTY_FILTERS());
+    setOpenFilter(null);
+    setShown(LOAD_BATCH);
     setQuery(initialQuery);
-    setGroup('All');
-    setPage(1);
-    setSortOpen(false);
-    setFiltersOpen(false);
-  }, [initialCategory, initialQuery]);
+  }, [initialCategory, initialFamily, initialQuery]);
 
-  const validCat = categories.some((c) => c.name === category) ? category : 'All';
-  const filtered = useMemo(() => {
-    const normalized = query.toLowerCase().trim();
-    const matches = products.filter(
-      (p) =>
-        (validCat === 'All' || p.category === validCat) &&
-        (group === 'All' || p.subcategory === group) &&
-        `${p.title} ${p.category} ${p.fabric} ${p.sku}`.toLowerCase().includes(normalized),
-    );
-    if (sort === 'az') return matches.sort((a, b) => a.title.localeCompare(b.title));
-    if (sort === 'za') return matches.sort((a, b) => b.title.localeCompare(a.title));
-    return matches.sort((a, b) => Number(b.featured) - Number(a.featured));
-  }, [validCat, group, query, sort]);
+  const baseProducts = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return products.filter(product => {
+      const categoryMatch = validCategory === 'All' || product.category === validCategory;
+      const familyMatch = !activeFamily || (activeFamily.categories as readonly string[]).includes(product.category);
+      const searchMatch = !q || `${product.title} ${product.sku} ${product.fabric} ${product.category} ${stock[product.sku]?.sourceDescription || ''}`.toLowerCase().includes(q);
+      return categoryMatch && familyMatch && searchMatch;
+    });
+  }, [validCategory, activeFamily, query]);
 
-  const maxPages = Math.max(1, Math.ceil(filtered.length / PER_PAGE));
-  const currentPage = Math.min(page, maxPages);
-  const visible = filtered.slice((currentPage - 1) * PER_PAGE, currentPage * PER_PAGE);
-  const sortLabel = SORT_OPTIONS.find((option) => option.value === sort)?.label ?? 'Featured First';
+  const filterOptions = useMemo(() => {
+    const result = {} as Record<FilterKey, {label: string; count: number}[]>;
+    for (const {key} of FILTERS) {
+      const count = new Map<string, number>();
+      for (const product of baseProducts) {
+        for (const value of getFacetValues(product.sku, key)) {
+          count.set(value, (count.get(value) || 0) + 1);
+        }
+      }
+      const preferred = key === 'color' ? COLOR_ORDER : key === 'pattern' ? PATTERN_ORDER : [];
+      result[key] = [...count.entries()]
+        .sort((a,b) => {
+          const ia = preferred.indexOf(a[0]); const ib = preferred.indexOf(b[0]);
+          if (ia >= 0 && ib >= 0) return ia - ib;
+          if (ia >= 0) return -1;
+          if (ib >= 0) return 1;
+          return a[0].localeCompare(b[0]);
+        })
+        .map(([label, value]) => ({label, count: value}));
+    }
+    return result;
+  }, [baseProducts]);
 
+  const matched = useMemo(() => baseProducts.filter(product => matchFilter(product.sku, activeFilters)), [baseProducts, activeFilters]);
+  const previewCount = useMemo(() => baseProducts.filter(product => matchFilter(product.sku, draftFilters)).length, [baseProducts, draftFilters]);
+  const shownProducts = matched.slice(0, shown);
+  const hasFilters = FILTERS.some(({key}) => activeFilters[key].length > 0);
+  const categoryTitle = validCategory !== 'All'
+    ? (DISPLAY_CATEGORIES[validCategory] || validCategory.toUpperCase())
+    : (activeFamily?.title ?? (query ? 'SEARCH RESULTS' : 'ALL RENTAL PIECES')).toUpperCase();
+  const breadcrumbCategory = validCategory !== 'All' ? validCategory : activeFamily?.title ?? 'All Collections';
+
+  const closeFilter = () => {
+    setOpenFilter(null);
+    setFilterSearch('');
+    setDraftFilters({
+      color: [...activeFilters.color], fabric: [...activeFilters.fabric], pattern: [...activeFilters.pattern],
+    });
+  };
   useEffect(() => {
-    if (!sortOpen) return;
-    const onOutsideClick = (event: PointerEvent) => {
-      if (!sortRef.current?.contains(event.target as Node)) setSortOpen(false);
+    if (!openFilter) return;
+    const pointerOutside = (event: PointerEvent) => {
+      if (!filterRowRef.current?.contains(event.target as Node)) closeFilter();
     };
-    const onEscape = (event: KeyboardEvent) => {
+    const escape = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
-        setSortOpen(false);
-        sortButtonRef.current?.focus();
+        const current = openFilter;
+        closeFilter();
+        dropdownTriggerRef.current[current]?.focus();
       }
     };
-    document.addEventListener('pointerdown', onOutsideClick);
-    document.addEventListener('keydown', onEscape);
+    document.addEventListener('pointerdown', pointerOutside);
+    document.addEventListener('keydown', escape);
     return () => {
-      document.removeEventListener('pointerdown', onOutsideClick);
-      document.removeEventListener('keydown', onEscape);
+      document.removeEventListener('pointerdown', pointerOutside);
+      document.removeEventListener('keydown', escape);
     };
-  }, [sortOpen]);
+  }, [openFilter, activeFilters]);
 
-  useEffect(() => {
-    if (!filtersOpen) return;
-    const media = window.matchMedia('(max-width: 1024px)');
-    const oldOverflow = document.body.style.overflow;
-    const syncScrollLock = () => {
-      document.body.style.overflow = media.matches ? 'hidden' : oldOverflow;
-    };
-    syncScrollLock();
-    filterCloseRef.current?.focus();
-
-    const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') {
-        setFiltersOpen(false);
-        return;
-      }
-      if (event.key !== 'Tab' || !media.matches) return;
-      const focusables = filterPanelRef.current?.querySelectorAll<HTMLElement>(
-        'button:not([disabled]), a[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled])',
-      );
-      if (!focusables?.length) return;
-      const first = focusables[0];
-      const last = focusables[focusables.length - 1];
-      if (event.shiftKey && document.activeElement === first) {
-        event.preventDefault();
-        last.focus();
-      } else if (!event.shiftKey && document.activeElement === last) {
-        event.preventDefault();
-        first.focus();
-      }
-    };
-    media.addEventListener('change', syncScrollLock);
-    document.addEventListener('keydown', onKeyDown);
-    return () => {
-      document.body.style.overflow = oldOverflow;
-      media.removeEventListener('change', syncScrollLock);
-      document.removeEventListener('keydown', onKeyDown);
-      filterTriggerRef.current?.focus();
-    };
-  }, [filtersOpen]);
-
-  const setCat = (nextCategory: string) => {
-    setCategory(nextCategory);
-    setPage(1);
+  const openOrClose = (key: FilterKey) => {
+    if (openFilter === key) { closeFilter(); return; }
+    if (!openFilter) setDraftFilters({
+      color: [...activeFilters.color], fabric: [...activeFilters.fabric], pattern: [...activeFilters.pattern],
+    });
+    setOpenFilter(key);
+    setFilterSearch('');
   };
-  const chooseGroup = (nextGroup: string) => {
-    setGroup(nextGroup);
-    setCat('All');
+  const toggleDraft = (key: FilterKey, label: string) => {
+    setDraftFilters(old => ({
+      ...old,
+      [key]: old[key].includes(label) ? old[key].filter(value => value !== label) : [...old[key], label],
+    }));
   };
-  const changeSort = (nextSort: SortValue) => {
-    setSort(nextSort);
-    setPage(1);
-    setSortOpen(false);
-    sortButtonRef.current?.focus();
+  const applyFilters = () => {
+    setActiveFilters({color: [...draftFilters.color], fabric: [...draftFilters.fabric], pattern: [...draftFilters.pattern]});
+    setOpenFilter(null);
+    setFilterSearch('');
+    setShown(LOAD_BATCH);
   };
-  const changePage = (nextPage: number) => {
-    setPage(nextPage);
-    document.querySelector('.catalogue-main-head')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  const clearFilters = () => {
+    setActiveFilters(EMPTY_FILTERS());
+    setDraftFilters(EMPTY_FILTERS());
+    setOpenFilter(null);
+    setFilterSearch('');
+    setShown(LOAD_BATCH);
   };
 
-  return (
-    <>
-      <div className="page-container catalogue-area">
-        <div className="catalogue-toolbar">
-          <div className="catalogue-breadcrumb">
-            Home <ArrowRight size={12} /> Rentals <span>/ {validCat === 'All' ? 'All Collections' : validCat}</span>
-          </div>
-          <button
-            ref={filterTriggerRef}
-            type="button"
-            className="filters-mobile-button"
-            aria-controls="rental-filters"
-            aria-expanded={filtersOpen}
-            onClick={() => {
-              setSortOpen(false);
-              setFiltersOpen(true);
-            }}
-          >
-            <SlidersHorizontal size={17} aria-hidden="true" /> Filters
-          </button>
-
-          <div className="sort-control" ref={sortRef}>
-            <span className="pieces-count">{filtered.length} pieces</span>
-            <span className="sort-label">Sort By</span>
+  return <section className="im-cat-page" aria-label="Impress rental product catalogue">
+    <div className="im-cat-page-inner">
+      <h1 className="im-cat-heading">{categoryTitle}</h1>
+      <div className="im-cat-filters" ref={filterRowRef}>
+        {FILTERS.map(({key, label}) => {
+          const options = filterOptions[key].filter(option => option.label.toLowerCase().includes(filterSearch.trim().toLowerCase()));
+          const expanded = openFilter === key;
+          const selectedCount = activeFilters[key].length;
+          return <div className={`im-cat-filter ${expanded ? 'is-open' : ''}`} key={key}>
             <button
               type="button"
-              ref={sortButtonRef}
-              className="sort-trigger"
-              aria-expanded={sortOpen}
+              ref={node => {dropdownTriggerRef.current[key] = node;}}
+              className="im-cat-filter-trigger"
+              onClick={() => openOrClose(key)}
+              aria-expanded={expanded}
+              aria-controls={`im-filter-panel-${key}`}
               aria-haspopup="true"
-              aria-controls="sort-options"
-              onClick={() => setSortOpen((open) => !open)}
             >
-              <span>{sortLabel}</span>
-              <ChevronDown size={16} aria-hidden="true" />
+              <span>{label}{selectedCount ? ` (${selectedCount})` : ''}</span>
+              <ChevronDown size={21} strokeWidth={1.6} aria-hidden="true" />
             </button>
-            {sortOpen && (
-              <div id="sort-options" className="sort-menu" role="group" aria-label="Sort rental products">
-                {SORT_OPTIONS.map((option) => (
-                  <button
-                    type="button"
-                    className={sort === option.value ? 'selected' : ''}
-                    aria-pressed={sort === option.value}
-                    key={option.value}
-                    onClick={() => changeSort(option.value)}
-                  >
-                    <span>{option.label}</span>
-                    {sort === option.value && <Check size={17} aria-hidden="true" />}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-        </div>
-
-        <div className="catalogue-layout">
-          {filtersOpen && (
-            <button
-              className="filters-backdrop"
-              type="button"
-              onClick={() => setFiltersOpen(false)}
-              aria-label="Close filters"
-              tabIndex={-1}
-            />
-          )}
-          <aside
-            ref={filterPanelRef}
-            id="rental-filters"
-            className={`catalogue-sidebar ${filtersOpen ? 'show' : ''}`}
-            role={filtersOpen ? 'dialog' : undefined}
-            aria-modal={filtersOpen || undefined}
-            aria-label="Filter rental products"
-          >
-            <div className="filter-mobile-header">
-              <h3>Filters</h3>
-              <button type="button" ref={filterCloseRef} onClick={() => setFiltersOpen(false)} aria-label="Close filters">
-                <X size={24} />
-              </button>
-            </div>
-            <div className="filter-scroll-content">
-              <h3>Find Your Pieces</h3>
-              <div className="filter-search">
-                <Search size={16} aria-hidden="true" />
+            {expanded && <div className="im-cat-dropdown" id={`im-filter-panel-${key}`}>
+              <div className="im-cat-dropdown-search">
+                <Search size={21} strokeWidth={1.4} aria-hidden="true" />
                 <input
-                  aria-label="Search products"
-                  value={query}
-                  placeholder="Search the collection..."
-                  onChange={(e) => {
-                    setQuery(e.target.value);
-                    setPage(1);
-                  }}
+                  autoFocus
+                  value={filterSearch}
+                  onChange={event => setFilterSearch(event.target.value)}
+                  aria-label={`Search ${label.toLowerCase()} options`}
+                  placeholder={`Search ${label.toLowerCase()}`}
                 />
+                {filterSearch && <button type="button" aria-label="Clear search" onClick={() => setFilterSearch('')}><X size={16}/></button>}
               </div>
-              <h4>Collection</h4>
-              <div className="filter-options">
-                {groups.map((g) => (
-                  <button key={g} type="button" className={group === g ? 'selected' : ''} onClick={() => chooseGroup(g)}>
-                    {g}
-                    <span>{g === 'All' ? products.length : products.filter((p) => p.subcategory === g).length}</span>
-                  </button>
-                ))}
+              <div className="im-cat-dropdown-list" role="group" aria-label={`${label.toLowerCase()} choices`}>
+                {options.length ? options.map(option => {
+                  const selected = draftFilters[key].includes(option.label);
+                  return <button
+                    key={option.label}
+                    type="button"
+                    role="checkbox"
+                    aria-checked={selected}
+                    className={selected ? 'is-selected' : ''}
+                    onClick={() => toggleDraft(key, option.label)}
+                  >
+                    <span>{option.label} ({option.count})</span>
+                    {selected && <Check size={18} aria-hidden="true" />}
+                  </button>;
+                }) : <p className="im-cat-options-empty">{filterOptions[key].length === 0 ? `No ${label.toLowerCase()} details listed in the stock sheet for this category.` : 'No matching options'}</p>}
               </div>
-              <h4>Categories</h4>
-              <div className="filter-options">
-                {['All', ...categories.map((c) => c.name)]
-                  .filter((c) => group === 'All' || c === 'All' || categories.find((x) => x.name === c)?.group === group)
-                  .map((c) => (
-                    <button key={c} type="button" className={validCat === c ? 'selected' : ''} onClick={() => setCat(c)}>
-                      {c === 'All' ? 'All categories' : c}
-                      <span>{c === 'All' ? products.length : products.filter((p) => p.category === c).length}</span>
-                    </button>
-                  ))}
+              <div className="im-cat-dropdown-actions">
+                <button type="button" onClick={clearFilters}>CLEAR ALL</button>
+                <button type="button" className="im-cat-show-results" onClick={applyFilters}>SHOW RESULTS ({previewCount})</button>
               </div>
-              <div className="sidebar-help">
-                <span>NEED A HAND?</span>
-                <p>Not sure what to choose? Tell us about your celebration.</p>
-                <a href="/contact">
-                  Get in touch <ArrowRight size={14} />
-                </a>
-              </div>
-            </div>
-            <div className="filter-mobile-footer">
-              <button className="button button-dark" type="button" onClick={() => setFiltersOpen(false)}>
-                Show {filtered.length} {filtered.length === 1 ? 'piece' : 'pieces'} <ArrowRight size={17} />
-              </button>
-            </div>
-          </aside>
+            </div>}
+          </div>;
+        })}
+      </div>
 
-          <div className="catalogue-main">
-            <div className="catalogue-main-head">
-              <div>
-                <span className="eyebrow">The Rental Catalogue</span>
-                <h2>{validCat === 'All' ? 'All Rental Pieces' : validCat}</h2>
-              </div>
-              {validCat !== 'All' && (
-                <button className="clear-filter" type="button" onClick={() => setCat('All')}>
-                  Clear category <X size={13} aria-hidden="true" />
-                </button>
-              )}
-            </div>
-            {/* <p className="catalogue-image-note">
-              Images show styling references, not confirmed photos of each individual SKU. Please confirm item details when requesting a quote.
-            </p> */}
-            {filtered.length ? (
-              <>
-                <div className="products-grid">
-                  {visible.map((p) => (
-                    <ProductCard product={p} key={p.id} />
-                  ))}
-                </div>
-                <div className="pagination">
-                  <span>
-                    Showing {(currentPage - 1) * PER_PAGE + 1}–{Math.min(currentPage * PER_PAGE, filtered.length)} of{' '}
-                    {filtered.length}
-                  </span>
-                  <div>
-                    <button type="button" disabled={currentPage === 1} onClick={() => changePage(currentPage - 1)} aria-label="Previous page">
-                      ‹
-                    </button>
-                    {Array.from({ length: maxPages }, (_, i) => i + 1)
-                      .filter((n) => n === 1 || n === maxPages || Math.abs(n - currentPage) < 2)
-                      .map((n) => (
-                        <button type="button" className={n === currentPage ? 'active' : ''} key={n} onClick={() => changePage(n)} aria-label={`Go to page ${n}`} aria-current={n === currentPage ? 'page' : undefined}>
-                          {n}
-                        </button>
-                      ))}
-                    <button type="button" disabled={currentPage === maxPages} onClick={() => changePage(currentPage + 1)} aria-label="Next page">
-                      ›
-                    </button>
-                  </div>
-                </div>
-              </>
-            ) : (
-              <div className="empty-catalogue">
-                <Search size={34} />
-                <h3>No Matching Pieces Found.</h3>
-                <p>Try Searching By Colour, Category, Material Or SKU.</p>
-                <button
-                  type="button"
-                  className="button button-dark"
-                  onClick={() => {
-                    setQuery('');
-                    setCat('All');
-                    setGroup('All');
-                  }}
-                >
-                  Show All Pieces <ArrowDown size={16} />
-                </button>
-              </div>
-            )}
+      <div className="im-cat-grid-toolbar">
+        <div className="im-cat-crumb">
+          <Link href="/rentals" aria-label="All collections" className="im-cat-crumb-grid"><span/><span/><span/><span/></Link>
+          <span className="im-cat-crumb-slash">/</span>
+          <span>{breadcrumbCategory.toUpperCase()}</span>
+          {hasFilters && <button onClick={clearFilters} type="button" className="im-cat-active-clear">CLEAR FILTERS <X size={13}/></button>}
+        </div>
+        <div className="im-cat-grid-tools">
+          <span className="im-cat-count">{matched.length} {matched.length === 1 ? 'PIECE' : 'PIECES'}</span>
+          <div className="im-cat-grid-views" role="group" aria-label="Product grid columns">
+            {([3, 4, 5] as const).map(count => <button type="button" key={count}
+              onClick={() => setColumns(count)} className={columns === count ? 'is-current' : ''}
+              aria-label={`Show ${count} columns`} aria-pressed={columns === count} title={`${count} column view`}>
+              {Array.from({length: count}, (_, index) => <i key={index}/>)}
+            </button>)}
           </div>
         </div>
       </div>
-    </>
-  );
+
+      {query && <div className="im-cat-search-current">Showing matches for “{query}”</div>}
+      {matched.length ? <>
+        <div className={`im-cat-products im-cat-columns-${columns}`}>
+          {shownProducts.map(product => <CategoryProductCard key={product.id} product={product} stock={stock[product.sku]}/>)}
+        </div>
+        {shown < matched.length && <div className="im-cat-load-more">
+          <p>Showing {shownProducts.length} of {matched.length} products</p>
+          <button type="button" onClick={() => setShown(old => old + LOAD_BATCH)}>LOAD MORE PRODUCTS</button>
+        </div>}
+      </> : <div className="im-cat-no-products">
+        <h2>No matching pieces found.</h2>
+        <p>Try a different color, fabric, or pattern combination.</p>
+        <button type="button" onClick={() => {clearFilters(); setQuery('');}}>CLEAR ALL FILTERS</button>
+      </div>}
+    </div>
+  </section>;
 }

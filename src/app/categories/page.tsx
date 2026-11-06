@@ -1,20 +1,83 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import type { Metadata } from 'next';
-import { categories, products } from '@/lib/catalogue';
-export const metadata: Metadata = { title: 'Shop by Category', description: 'Discover rental linens, furniture, tabletop pieces and event accessories at Impress Events.' };
-const groups = [
- { id:'linens', eyebrow:'LINENS', title:'Linens', desc:'A beautifully dressed table tells a story. Discover a curated selection of tablecloths, runners and napkins in versatile textures and styles.', image:'/images/client-home/tablecloth-setting.jpg', alt:'Wedding table set with fine linens, white plates and florals', cats:['Tablecloths','Napkins','Runners'], reverse:false },
- { id:'furniture', eyebrow:'FURNITURE', title:'Furniture', desc:'Build the perfect gathering place. Discover thoughtfully chosen chairs and tables for occasions both intimate and grand.', image:'/images/client-home/long-table.jpg', alt:'Long outdoor dining tables and woven chairs decorated with flowers', cats:['Chairs','Tables'],reverse:true },
- { id:'tabletop', eyebrow:'TABLETOP', title:'Tabletop & Accessories', desc:'A little personality in every detail. From charger plates to glassware and elegant finishing pieces, discover the art of a considered table setting.', image:'/images/client-home/charger-place-setting.jpg', alt:'Close-up of a charger plate and tabletop setting', cats:['Chargers','Placemats','Glassware','Cutlery','Napkin Rings','Table Numbers'],reverse:false },
- { id:'accessories', eyebrow:'FINISHING TOUCHES', title:'Finishing Touches', desc:'Bring cohesion and character to your chosen setting with subtle finishing accents designed to make every space feel complete.', image:'/images/client-home/napkin-setting.jpg', alt:'Elegant finishing touches on a decorated event table', cats:['Chair Sashes','Cushion Covers'],reverse:true },
-];
-export default function CategoriesPage(){return <>
-  <nav className="nd-category-jump page-container" aria-label="Category sections">{groups.map(g=><a key={g.id} href={`#${g.id}`}>{g.title}<ArrowRight size={14}/></a>)}</nav>
-  {groups.map(g=><section id={g.id} key={g.id} className={`nd-category-row ${g.reverse ? 'nd-category-reverse' : ''}`}>
-    <div className="nd-category-photo"><Image src={g.image} alt={g.alt} fill sizes="(max-width:850px) 100vw, 54vw"/></div>
-    <div className="nd-category-copy"><span className="nd-kicker">{g.eyebrow}</span><h2>{g.title}</h2><p>{g.desc}</p><Link className="nd-outline-button" href={`/rentals?category=${encodeURIComponent(g.cats[0])}`}>EXPLORE {g.title.toUpperCase()} <ArrowUpRight size={17}/></Link><div className="nd-category-links"><span>BROWSE BY CATEGORY</span>{g.cats.filter(name=>categories.some(c=>c.name===name)).map(name=><Link href={`/rentals?category=${encodeURIComponent(name)}`} key={name}><span>{name}</span><span>{products.filter(p=>p.category===name).length} PIECES <ArrowRight size={15}/></span></Link>)}</div></div>
-  </section>)}
-  <section className="nd-category-bottom page-container"><div><span className="nd-kicker">CAN'T FIND WHAT YOU'RE LOOKING FOR?</span><h2>Let us help you curate <em>the details.</em></h2></div><Link href="/contact" className="nd-outline-button">CONTACT US <ArrowRight size={17}/></Link></section>
-</>}
+import { categories, catalogueFamilies } from '@/lib/catalogue';
+import './categories.css';
+
+export const metadata: Metadata = {
+  title: 'Shop All Categories',
+  description: 'Explore Impress Events rental linens, furniture, tabletop and accessories for weddings and celebrations.',
+};
+
+// Only show categories present in the Impress catalogue. Each category
+// links to the existing /rentals filters; this page is an editorial index.
+const categorySections = [
+  {
+    id: 'linens',
+    heading: 'Linens',
+    image: '/images/client-home/romantic-florals.jpg',
+    imageAlt: 'Long celebration table with white linen, greenery and elegant tableware',
+    cta: 'SHOP LINENS',
+    href: '/rentals?family=linens',
+    categories: catalogueFamilies.linens.categories,
+  },
+  {
+    id: 'furniture',
+    heading: 'Furniture',
+    image: '/images/client-home/brand-showcase-event.jpg',
+    imageAlt: 'Impress event seating and beautifully furnished reception setting',
+    cta: 'SHOP FURNITURE',
+    href: '/furniture',
+    categories: catalogueFamilies.furniture.categories,
+  },
+  {
+    id: 'tabletop',
+    heading: 'Tabletop & Accessories',
+    image: '/images/client-home/neutral-place-setting.jpg',
+    imageAlt: 'Impress glassware, plates and table details arranged for a celebration',
+    cta: 'SHOP TABLETOP',
+    href: '/rentals?family=tabletop',
+    categories: catalogueFamilies.tabletop.categories,
+  },
+] as const;
+
+export default function CategoriesPage() {
+  const availableCategories = new Set<string>(categories.map((category) => category.name));
+
+  return (
+    <div className="im-categories-page">
+      <h1 className="im-categories-sr-only">Shop Impress Event Rental Categories</h1>
+      {categorySections.map((section, index) => (
+        <section
+          className={`im-categories-feature${index % 2 === 1 ? ' im-categories-feature--reverse' : ''}`}
+          key={section.id}
+          id={section.id}
+          aria-labelledby={`im-category-title-${section.id}`}
+        >
+          <Link className="im-categories-photo" href={section.href} aria-label={`Explore Impress ${section.heading}`}>
+            <Image
+              src={section.image}
+              alt={section.imageAlt}
+              fill
+              priority={index === 0}
+              sizes="(max-width: 720px) 100vw, 50vw"
+            />
+          </Link>
+          <div className="im-categories-content">
+            <div className="im-categories-content-inner">
+              <h2 id={`im-category-title-${section.id}`}>{section.heading}</h2>
+              <ul className="im-categories-subcategories">
+                {section.categories.filter((name) => availableCategories.has(name)).map((name) => (
+                  <li key={name}>
+                    <Link href={`/rentals?category=${encodeURIComponent(name)}`}>{name}</Link>
+                  </li>
+                ))}
+              </ul>
+              <Link className="im-categories-cta" href={section.href}>{section.cta}</Link>
+            </div>
+          </div>
+        </section>
+      ))}
+    </div>
+  );
+}

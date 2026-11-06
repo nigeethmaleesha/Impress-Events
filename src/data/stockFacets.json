@@ -1,0 +1,2657 @@
+{
+  "TWHT01": {
+    "color": [
+      "White"
+    ],
+    "fabric": "Polyester",
+    "pattern": [
+      "Crinkle"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 2,
+    "sourceDescription": "White Crinkle"
+  },
+  "TWHT02": {
+    "color": [
+      "White"
+    ],
+    "fabric": "Velvet",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 3,
+    "sourceDescription": "White Velvet"
+  },
+  "TWHT03": {
+    "color": [
+      "White"
+    ],
+    "fabric": "Cotton",
+    "pattern": [
+      "Textured"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 4,
+    "sourceDescription": "White Linen Texture"
+  },
+  "TWHT04": {
+    "color": [
+      "White"
+    ],
+    "fabric": "Net",
+    "pattern": [
+      "Lace",
+      "Leaf"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 5,
+    "sourceDescription": "White Leaf Lace"
+  },
+  "TWHT05": {
+    "color": [
+      "White"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 6,
+    "sourceDescription": "Classic Off White"
+  },
+  "TWHT06": {
+    "color": [
+      "White"
+    ],
+    "fabric": "Cotton",
+    "pattern": [
+      "Textured"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 7,
+    "sourceDescription": "Warm White Linen Texture"
+  },
+  "TAMR01": {
+    "color": [],
+    "fabric": "Cotton",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 8,
+    "sourceDescription": "Amuredi"
+  },
+  "TCRM01": {
+    "color": [
+      "Beige/Cream"
+    ],
+    "fabric": "Polyester",
+    "pattern": [
+      "Pinwheel"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 9,
+    "sourceDescription": "Cream Pinwheel"
+  },
+  "TCRM02": {
+    "color": [
+      "Beige/Cream"
+    ],
+    "fabric": "Polyester",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 10,
+    "sourceDescription": "Cream Petal"
+  },
+  "TCRM03": {
+    "color": [
+      "Beige/Cream"
+    ],
+    "fabric": "Polyester",
+    "pattern": [
+      "Rosette"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 11,
+    "sourceDescription": "Cream Rosette"
+  },
+  "TCRM04": {
+    "color": [
+      "Beige/Cream"
+    ],
+    "fabric": "Polyester",
+    "pattern": [
+      "Crinkle"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 12,
+    "sourceDescription": "Cream Crinkle"
+  },
+  "TCRM05": {
+    "color": [
+      "Copper/Brown",
+      "Beige/Cream"
+    ],
+    "fabric": "Polyester",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 13,
+    "sourceDescription": "Coffee Cream"
+  },
+  "TBGE01": {
+    "color": [
+      "Beige/Cream"
+    ],
+    "fabric": "Valentina",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 14,
+    "sourceDescription": "Beige Shine"
+  },
+  "TBGE02": {
+    "color": [
+      "Beige/Cream"
+    ],
+    "fabric": "Pajero",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 15,
+    "sourceDescription": "Beige Matt"
+  },
+  "TBGE03": {
+    "color": [
+      "Beige/Cream"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 16,
+    "sourceDescription": "Beige"
+  },
+  "TBGE04": {
+    "color": [
+      "Beige/Cream"
+    ],
+    "fabric": "Cotton",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 17,
+    "sourceDescription": "Khaki Beige"
+  },
+  "TBGE05": {
+    "color": [
+      "Beige/Cream"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 18,
+    "sourceDescription": "Nude Cloth"
+  },
+  "TGLD01": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "Polyester",
+    "pattern": [
+      "Plain"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 19,
+    "sourceDescription": "Champain Gold Plain"
+  },
+  "TGLD02": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "Polyester",
+    "pattern": [
+      "Crinkle"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 20,
+    "sourceDescription": "Champain Gold Crinkle"
+  },
+  "TGLD03": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "Polyester",
+    "pattern": [
+      "Pintuck"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 21,
+    "sourceDescription": "Champage Gold Pintuck"
+  },
+  "TGLD04": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "Polyester",
+    "pattern": [
+      "Pinwheel"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 22,
+    "sourceDescription": "Champain Gold Pinwheel"
+  },
+  "TGLD05": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "Polyester",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 23,
+    "sourceDescription": "Gold Rain"
+  },
+  "TGLD06": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 24,
+    "sourceDescription": "Dark Gold"
+  },
+  "TGLD07": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "Valentina",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 25,
+    "sourceDescription": "Antique Gold"
+  },
+  "TGLD08": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "Net",
+    "pattern": [
+      "Lace",
+      "Sequin",
+      "Embroidered"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 26,
+    "sourceDescription": "Gold Sequin Embroidery Lace"
+  },
+  "TGLD09": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "Sequin",
+    "pattern": [
+      "Sequin"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 27,
+    "sourceDescription": "Rose Gold Sequin"
+  },
+  "TGLD10": {
+    "color": [
+      "Copper/Brown"
+    ],
+    "fabric": "Polyester",
+    "pattern": [
+      "Crinkle"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 28,
+    "sourceDescription": "Copper Crinkle"
+  },
+  "TBRW01": {
+    "color": [
+      "Copper/Brown"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 29,
+    "sourceDescription": "Chocolate Brown"
+  },
+  "TYLW01": {
+    "color": [
+      "Yellow"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 30,
+    "sourceDescription": "Buttermilk Yellow"
+  },
+  "TYLW02": {
+    "color": [
+      "Yellow"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 31,
+    "sourceDescription": "Canary Yellow"
+  },
+  "TYLW03": {
+    "color": [
+      "White",
+      "Yellow"
+    ],
+    "fabric": "Polyester",
+    "pattern": [
+      "Floral"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 32,
+    "sourceDescription": "Yellow & white Floral Print"
+  },
+  "TYLW04": {
+    "color": [
+      "Yellow"
+    ],
+    "fabric": "Polyester",
+    "pattern": [
+      "Crinkle"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 33,
+    "sourceDescription": "Mustard Crinkle"
+  },
+  "TYLW05": {
+    "color": [
+      "Orange"
+    ],
+    "fabric": "Polyester",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 34,
+    "sourceDescription": "Island Citrus"
+  },
+  "TORG01": {
+    "color": [
+      "Orange"
+    ],
+    "fabric": "Velvet",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 35,
+    "sourceDescription": "Orange Velvet"
+  },
+  "TORG02": {
+    "color": [
+      "Orange"
+    ],
+    "fabric": "Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 36,
+    "sourceDescription": "Brick Orange"
+  },
+  "TRED01": {
+    "color": [
+      "Red"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 37,
+    "sourceDescription": "Christmas Red"
+  },
+  "TRED02": {
+    "color": [
+      "Red"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 38,
+    "sourceDescription": "Maroon"
+  },
+  "TRED03": {
+    "color": [
+      "Red"
+    ],
+    "fabric": "Velvet",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 39,
+    "sourceDescription": "Deep Red Velvet"
+  },
+  "TRED04": {
+    "color": [
+      "Red",
+      "White"
+    ],
+    "fabric": "Polyester",
+    "pattern": [
+      "Stripe"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 40,
+    "sourceDescription": "Red and White Thick Stripe"
+  },
+  "TRED05": {
+    "color": [
+      "Red"
+    ],
+    "fabric": "Cotton",
+    "pattern": [
+      "Checkered"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 41,
+    "sourceDescription": "Red Christmas Checkers"
+  },
+  "TPCH01": {
+    "color": [
+      "Pink"
+    ],
+    "fabric": "Sequin",
+    "pattern": [
+      "Sequin"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 42,
+    "sourceDescription": "Peach Sequin"
+  },
+  "TPCH02": {
+    "color": [
+      "Pink"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 43,
+    "sourceDescription": "Peach"
+  },
+  "TPNK01": {
+    "color": [
+      "Pink"
+    ],
+    "fabric": "Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 44,
+    "sourceDescription": "Misty Rose"
+  },
+  "TPNK02": {
+    "color": [
+      "Pink"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 45,
+    "sourceDescription": "Blush Pink"
+  },
+  "TPNK03": {
+    "color": [
+      "Pink"
+    ],
+    "fabric": "Polyester",
+    "pattern": [
+      "Crinkle"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 46,
+    "sourceDescription": "Ice Pink Crinkle"
+  },
+  "TPNK04": {
+    "color": [
+      "Pink"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 47,
+    "sourceDescription": "Baby Pink"
+  },
+  "TPNK05": {
+    "color": [
+      "Pink"
+    ],
+    "fabric": "Valentina",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 48,
+    "sourceDescription": "Dark Dusty Pink"
+  },
+  "TPNK06": {
+    "color": [
+      "Pink"
+    ],
+    "fabric": "Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 49,
+    "sourceDescription": "Hot Pink"
+  },
+  "TPNK07": {
+    "color": [
+      "Orange",
+      "Pink"
+    ],
+    "fabric": "Polyester",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 50,
+    "sourceDescription": "Hot Pink & Orange Indi Print"
+  },
+  "TPNK08": {
+    "color": [
+      "Pink"
+    ],
+    "fabric": "Sequin",
+    "pattern": [
+      "Sequin"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 51,
+    "sourceDescription": "Hot Pink Sequin"
+  },
+  "TPNK09": {
+    "color": [
+      "Pink"
+    ],
+    "fabric": "Polyester",
+    "pattern": [
+      "Floral"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 52,
+    "sourceDescription": "Dusty Pink Floral Printed"
+  },
+  "TPPL01": {
+    "color": [
+      "Purple"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 53,
+    "sourceDescription": "Mauve (Purple)"
+  },
+  "TPPL02": {
+    "color": [
+      "Purple"
+    ],
+    "fabric": "Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 54,
+    "sourceDescription": "Lilac Purple"
+  },
+  "TPPL03": {
+    "color": [
+      "Purple"
+    ],
+    "fabric": "Valentina",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 55,
+    "sourceDescription": "Orchid Purple"
+  },
+  "TPPL04": {
+    "color": [
+      "Purple"
+    ],
+    "fabric": "Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 56,
+    "sourceDescription": "Dark Purple"
+  },
+  "TPPL05": {
+    "color": [
+      "Purple"
+    ],
+    "fabric": "Polyester",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 57,
+    "sourceDescription": "Dark Greyish Purple"
+  },
+  "TGRN01": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 58,
+    "sourceDescription": "Light Sage Green"
+  },
+  "TGRN02": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 59,
+    "sourceDescription": "Mint Green (Charm extra)"
+  },
+  "TGRN03": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 60,
+    "sourceDescription": "Dark Sage Green"
+  },
+  "TGRN04": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 61,
+    "sourceDescription": "Lime Green"
+  },
+  "TGRN05": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 62,
+    "sourceDescription": "Olive Green"
+  },
+  "TGRN06": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "Velvet",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 63,
+    "sourceDescription": "Emerald Green Velvet"
+  },
+  "TGRN07": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 64,
+    "sourceDescription": "Emerald Green"
+  },
+  "TGRN08": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 65,
+    "sourceDescription": "Forest Green"
+  },
+  "TGRN09": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "Cotton",
+    "pattern": [
+      "Leaf"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 66,
+    "sourceDescription": "Green Leaf Print"
+  },
+  "TGRN10": {
+    "color": [
+      "Green/Teal",
+      "White"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 67,
+    "sourceDescription": "Green & White Forest Print"
+  },
+  "TGRN11": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "Polyester",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 68,
+    "sourceDescription": "Teal Cloth"
+  },
+  "TBLU01": {
+    "color": [
+      "Blue"
+    ],
+    "fabric": "Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 69,
+    "sourceDescription": "Turquoise Blue"
+  },
+  "TBLU02": {
+    "color": [
+      "Black",
+      "Blue"
+    ],
+    "fabric": "Velvet",
+    "pattern": [
+      "Floral"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 70,
+    "sourceDescription": "Turquoise & Black Floral Velvet"
+  },
+  "TBLU03": {
+    "color": [
+      "Blue",
+      "Pink"
+    ],
+    "fabric": "Polyester",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 71,
+    "sourceDescription": "Blue & Peach Sprinkles"
+  },
+  "TBLU04": {
+    "color": [
+      "Blue"
+    ],
+    "fabric": "Stretch",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 72,
+    "sourceDescription": "Dusty Blue Matt"
+  },
+  "TBLU05": {
+    "color": [
+      "Blue"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 73,
+    "sourceDescription": "Dusty Blue"
+  },
+  "TBLU06": {
+    "color": [
+      "Blue",
+      "White"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 74,
+    "sourceDescription": "Dusty Blue & White Damask Print"
+  },
+  "TBLU07": {
+    "color": [
+      "Blue"
+    ],
+    "fabric": "Polyester",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 75,
+    "sourceDescription": "Sky Blue"
+  },
+  "TBLU08": {
+    "color": [
+      "Blue"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 76,
+    "sourceDescription": "Ocean Blue"
+  },
+  "TBLU09": {
+    "color": [
+      "Blue"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 77,
+    "sourceDescription": "Dark Dusty Blue"
+  },
+  "TBLU10": {
+    "color": [
+      "Silver/Grey"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 78,
+    "sourceDescription": "Dark Bluish Gray"
+  },
+  "TBLU11": {
+    "color": [
+      "Blue"
+    ],
+    "fabric": "Stretch",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 79,
+    "sourceDescription": "Royal Blue"
+  },
+  "TBLU12": {
+    "color": [
+      "Blue"
+    ],
+    "fabric": "Velvet",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 80,
+    "sourceDescription": "Navy Blue Velvet"
+  },
+  "TBLU13": {
+    "color": [
+      "Blue"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 81,
+    "sourceDescription": "Navy Blue"
+  },
+  "TBLU14": {
+    "color": [
+      "Blue",
+      "White"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [
+      "Floral"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 82,
+    "sourceDescription": "Blue & White Floral Print"
+  },
+  "TBLU15": {
+    "color": [
+      "Blue",
+      "White"
+    ],
+    "fabric": "Cotton",
+    "pattern": [
+      "Stripe"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 83,
+    "sourceDescription": "Blue and White Stripe"
+  },
+  "TGRY01": {
+    "color": [
+      "Silver/Grey"
+    ],
+    "fabric": "Sequin",
+    "pattern": [
+      "Sequin"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 84,
+    "sourceDescription": "Silver Sequin"
+  },
+  "TGRY02": {
+    "color": [
+      "Silver/Grey"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 85,
+    "sourceDescription": "Light Grey"
+  },
+  "TGRY03": {
+    "color": [
+      "Silver/Grey"
+    ],
+    "fabric": "Polyester",
+    "pattern": [
+      "Pinwheel"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 86,
+    "sourceDescription": "Light Grey Pinwheel"
+  },
+  "TGRY04": {
+    "color": [
+      "Silver/Grey"
+    ],
+    "fabric": "Velvet",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 87,
+    "sourceDescription": "Grey Velvet"
+  },
+  "TGRY05": {
+    "color": [
+      "Silver/Grey"
+    ],
+    "fabric": "Polyester",
+    "pattern": [
+      "Crinkle"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 88,
+    "sourceDescription": "Charcoal Grey Crinkle"
+  },
+  "TGRY06": {
+    "color": [
+      "Silver/Grey"
+    ],
+    "fabric": "Polyester",
+    "pattern": [
+      "Pintuck"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 89,
+    "sourceDescription": "Charcoal Grey Pintuck"
+  },
+  "TBLK01": {
+    "color": [
+      "Black"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 90,
+    "sourceDescription": "Black"
+  },
+  "TBLK02": {
+    "color": [
+      "Black"
+    ],
+    "fabric": "Velvet",
+    "pattern": [],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 91,
+    "sourceDescription": "Black Velvet"
+  },
+  "TBLK03": {
+    "color": [
+      "Black"
+    ],
+    "fabric": "Sequin",
+    "pattern": [
+      "Sequin"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 92,
+    "sourceDescription": "Black Sequin"
+  },
+  "TBLK04": {
+    "color": [
+      "Black",
+      "White"
+    ],
+    "fabric": "Cotton",
+    "pattern": [
+      "Stripe"
+    ],
+    "sourceSheet": "Tablecloths",
+    "sourceRow": 93,
+    "sourceDescription": "Black & White Stripe"
+  },
+  "RWHT01": {
+    "color": [
+      "White"
+    ],
+    "fabric": "Chiffon",
+    "pattern": [],
+    "sourceSheet": "Runners",
+    "sourceRow": 4,
+    "sourceDescription": "Brilliant White"
+  },
+  "RWHT02": {
+    "color": [
+      "White"
+    ],
+    "fabric": "Chiffon",
+    "pattern": [],
+    "sourceSheet": "Runners",
+    "sourceRow": 5,
+    "sourceDescription": "Off White"
+  },
+  "RAMR01": {
+    "color": [],
+    "fabric": "Cotton",
+    "pattern": [],
+    "sourceSheet": "Runners",
+    "sourceRow": 6,
+    "sourceDescription": "Amuredi"
+  },
+  "RBGE01": {
+    "color": [
+      "Beige/Cream"
+    ],
+    "fabric": "Cotton",
+    "pattern": [],
+    "sourceSheet": "Runners",
+    "sourceRow": 7,
+    "sourceDescription": "Light Beige"
+  },
+  "RBGE02": {
+    "color": [
+      "Beige/Cream"
+    ],
+    "fabric": "Chiffon",
+    "pattern": [],
+    "sourceSheet": "Runners",
+    "sourceRow": 8,
+    "sourceDescription": "Bisque Beige"
+  },
+  "RBGE03": {
+    "color": [
+      "Beige/Cream"
+    ],
+    "fabric": "Chiffon",
+    "pattern": [],
+    "sourceSheet": "Runners",
+    "sourceRow": 9,
+    "sourceDescription": "Almond Beige"
+  },
+  "RBGE04": {
+    "color": [
+      "Beige/Cream"
+    ],
+    "fabric": "Chiffon",
+    "pattern": [],
+    "sourceSheet": "Runners",
+    "sourceRow": 10,
+    "sourceDescription": "Tan Beige"
+  },
+  "RBGE05": {
+    "color": [
+      "Beige/Cream"
+    ],
+    "fabric": "Chiffon",
+    "pattern": [],
+    "sourceSheet": "Runners",
+    "sourceRow": 11,
+    "sourceDescription": "French Beige"
+  },
+  "RGLD01": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "Polyester",
+    "pattern": [
+      "Crinkle"
+    ],
+    "sourceSheet": "Runners",
+    "sourceRow": 12,
+    "sourceDescription": "Crinkle Champaign Gold"
+  },
+  "RGLD02": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "Sequin",
+    "pattern": [
+      "Sequin"
+    ],
+    "sourceSheet": "Runners",
+    "sourceRow": 13,
+    "sourceDescription": "Rose Gold Sequin"
+  },
+  "RGLD03": {
+    "color": [
+      "Champagne/Gold",
+      "Yellow"
+    ],
+    "fabric": "Sequin",
+    "pattern": [
+      "Sequin"
+    ],
+    "sourceSheet": "Runners",
+    "sourceRow": 14,
+    "sourceDescription": "Yellow Gold Sequin"
+  },
+  "RGLD04": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "Lace",
+    "pattern": [
+      "Floral",
+      "Lace"
+    ],
+    "sourceSheet": "Runners",
+    "sourceRow": 15,
+    "sourceDescription": "Gold Floral Lace"
+  },
+  "RYLW01": {
+    "color": [
+      "White",
+      "Yellow"
+    ],
+    "fabric": "Polyester",
+    "pattern": [],
+    "sourceSheet": "Runners",
+    "sourceRow": 16,
+    "sourceDescription": "Yellow &  White Circle Print"
+  },
+  "RYLW02": {
+    "color": [
+      "White",
+      "Yellow"
+    ],
+    "fabric": "Polyester",
+    "pattern": [
+      "Floral"
+    ],
+    "sourceSheet": "Runners",
+    "sourceRow": 17,
+    "sourceDescription": "Yellow &  White Floral Print"
+  },
+  "RORG01": {
+    "color": [
+      "Orange"
+    ],
+    "fabric": "Raw Silk",
+    "pattern": [],
+    "sourceSheet": "Runners",
+    "sourceRow": 18,
+    "sourceDescription": "Orange"
+  },
+  "RORG02": {
+    "color": [
+      "Orange"
+    ],
+    "fabric": "Chiffon",
+    "pattern": [],
+    "sourceSheet": "Runners",
+    "sourceRow": 19,
+    "sourceDescription": "Brick Orange"
+  },
+  "RRED01": {
+    "color": [
+      "Red"
+    ],
+    "fabric": "Velvet",
+    "pattern": [],
+    "sourceSheet": "Runners",
+    "sourceRow": 20,
+    "sourceDescription": "Deep Red Velvet"
+  },
+  "RRED02": {
+    "color": [
+      "Red"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Runners",
+    "sourceRow": 21,
+    "sourceDescription": "Maroon"
+  },
+  "RPNK01": {
+    "color": [
+      "Pink"
+    ],
+    "fabric": "Chiffon",
+    "pattern": [],
+    "sourceSheet": "Runners",
+    "sourceRow": 22,
+    "sourceDescription": "Blush Pink"
+  },
+  "RPNK02": {
+    "color": [
+      "Pink"
+    ],
+    "fabric": "Chiffon",
+    "pattern": [],
+    "sourceSheet": "Runners",
+    "sourceRow": 23,
+    "sourceDescription": "Hot Pink"
+  },
+  "RPNK03": {
+    "color": [
+      "Orange",
+      "Pink"
+    ],
+    "fabric": "Polyester",
+    "pattern": [],
+    "sourceSheet": "Runners",
+    "sourceRow": 24,
+    "sourceDescription": "Hot Pink & Orange Indi Print"
+  },
+  "RPPL01": {
+    "color": [
+      "Purple"
+    ],
+    "fabric": "Chiffon",
+    "pattern": [],
+    "sourceSheet": "Runners",
+    "sourceRow": 25,
+    "sourceDescription": "Mauve"
+  },
+  "RGRN01": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "Chiffon",
+    "pattern": [],
+    "sourceSheet": "Runners",
+    "sourceRow": 26,
+    "sourceDescription": "Sage Green"
+  },
+  "RGRN02": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "Chiffon",
+    "pattern": [],
+    "sourceSheet": "Runners",
+    "sourceRow": 27,
+    "sourceDescription": "Emerald Green"
+  },
+  "RGRN03": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "Velvet",
+    "pattern": [],
+    "sourceSheet": "Runners",
+    "sourceRow": 28,
+    "sourceDescription": "Emerald Green Velvet"
+  },
+  "RGRN04": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "Satin",
+    "pattern": [],
+    "sourceSheet": "Runners",
+    "sourceRow": 29,
+    "sourceDescription": "Mint Green"
+  },
+  "RGRN05": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "Satin",
+    "pattern": [],
+    "sourceSheet": "Runners",
+    "sourceRow": 30,
+    "sourceDescription": "Olive Green"
+  },
+  "RBLU01": {
+    "color": [
+      "Blue"
+    ],
+    "fabric": "Chiffon",
+    "pattern": [],
+    "sourceSheet": "Runners",
+    "sourceRow": 31,
+    "sourceDescription": "Dusty Blue"
+  },
+  "RBLU02": {
+    "color": [
+      "Blue",
+      "White"
+    ],
+    "fabric": "Cotton",
+    "pattern": [
+      "Stripe"
+    ],
+    "sourceSheet": "Runners",
+    "sourceRow": 32,
+    "sourceDescription": "Navy Blue & White Stripe"
+  },
+  "RBLU03": {
+    "color": [
+      "Blue"
+    ],
+    "fabric": "Chiffon",
+    "pattern": [],
+    "sourceSheet": "Runners",
+    "sourceRow": 33,
+    "sourceDescription": "Navy Blue"
+  },
+  "RBLU04": {
+    "color": [
+      "Blue",
+      "Green/Teal"
+    ],
+    "fabric": "Cotton",
+    "pattern": [
+      "Checkered"
+    ],
+    "sourceSheet": "Runners",
+    "sourceRow": 34,
+    "sourceDescription": "Blue & Green Checkered"
+  },
+  "RGRY01": {
+    "color": [
+      "Silver/Grey",
+      "White"
+    ],
+    "fabric": "Cotton",
+    "pattern": [
+      "Stripe"
+    ],
+    "sourceSheet": "Runners",
+    "sourceRow": 35,
+    "sourceDescription": "Grey & White Stripe"
+  },
+  "RGRY02": {
+    "color": [
+      "Silver/Grey"
+    ],
+    "fabric": "Cotton",
+    "pattern": [],
+    "sourceSheet": "Runners",
+    "sourceRow": 36,
+    "sourceDescription": "Dove Grey"
+  },
+  "RGRY03": {
+    "color": [
+      "Silver/Grey"
+    ],
+    "fabric": "Polyester",
+    "pattern": [
+      "Crinkle"
+    ],
+    "sourceSheet": "Runners",
+    "sourceRow": 37,
+    "sourceDescription": "Charcoal Grey Crinkle"
+  },
+  "RGRY04": {
+    "color": [
+      "Silver/Grey"
+    ],
+    "fabric": "Cotton",
+    "pattern": [],
+    "sourceSheet": "Runners",
+    "sourceRow": 38,
+    "sourceDescription": "Dark Grey"
+  },
+  "RBLK01": {
+    "color": [
+      "Black"
+    ],
+    "fabric": "Chiffon",
+    "pattern": [],
+    "sourceSheet": "Runners",
+    "sourceRow": 39,
+    "sourceDescription": "Black"
+  },
+  "RBLK02": {
+    "color": [
+      "Black",
+      "White"
+    ],
+    "fabric": "Cotton",
+    "pattern": [
+      "Stripe"
+    ],
+    "sourceSheet": "Runners",
+    "sourceRow": 40,
+    "sourceDescription": "Black & White Stripe"
+  },
+  "RBLK03": {
+    "color": [
+      "Black"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Runners",
+    "sourceRow": 41,
+    "sourceDescription": "Black"
+  },
+  "NWHT01": {
+    "color": [
+      "White"
+    ],
+    "fabric": "Organza",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 4,
+    "sourceDescription": "White Tulle"
+  },
+  "NWHT02": {
+    "color": [
+      "Pink",
+      "White"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 5,
+    "sourceDescription": "White Single Rose"
+  },
+  "NWHT03": {
+    "color": [
+      "White"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 6,
+    "sourceDescription": "Classic Off White"
+  },
+  "NWHT04": {
+    "color": [
+      "Ivory"
+    ],
+    "fabric": "Cotton",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 7,
+    "sourceDescription": "Ivory Fringed"
+  },
+  "NAMR01": {
+    "color": [],
+    "fabric": "Amuredi",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 8,
+    "sourceDescription": "Amuredi"
+  },
+  "NCRM01": {
+    "color": [
+      "Beige/Cream"
+    ],
+    "fabric": "Cheese Cloth",
+    "pattern": [
+      "Crinkle"
+    ],
+    "sourceSheet": "Napkins",
+    "sourceRow": 9,
+    "sourceDescription": "Cream Crinkle"
+  },
+  "NCRM02": {
+    "color": [
+      "Beige/Cream"
+    ],
+    "fabric": "Twill",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 10,
+    "sourceDescription": "Classic Cream"
+  },
+  "NCRM03": {
+    "color": [
+      "Copper/Brown",
+      "Beige/Cream"
+    ],
+    "fabric": "Polyester",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 11,
+    "sourceDescription": "Coffee Cream"
+  },
+  "NBGE01": {
+    "color": [
+      "Beige/Cream"
+    ],
+    "fabric": "Twill",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 12,
+    "sourceDescription": "Light Beige"
+  },
+  "NBGE02": {
+    "color": [
+      "Beige/Cream"
+    ],
+    "fabric": "Twill",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 13,
+    "sourceDescription": "Sand Beige"
+  },
+  "NBGE03": {
+    "color": [
+      "Beige/Cream"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 14,
+    "sourceDescription": "Beige"
+  },
+  "NBGE04": {
+    "color": [
+      "Beige/Cream"
+    ],
+    "fabric": "Twill",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 15,
+    "sourceDescription": "Dark Beige"
+  },
+  "NBGE05": {
+    "color": [
+      "Beige/Cream"
+    ],
+    "fabric": "Twill",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 16,
+    "sourceDescription": "Kakhi Beige"
+  },
+  "NBGE06": {
+    "color": [
+      "Beige/Cream"
+    ],
+    "fabric": "Twill",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 43,
+    "sourceDescription": "Nude"
+  },
+  "NGLD01": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 18,
+    "sourceDescription": "Light Gold"
+  },
+  "NGLD02": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 19,
+    "sourceDescription": "Dark Gold"
+  },
+  "NGLD03": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "Twill",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 20,
+    "sourceDescription": "Gold"
+  },
+  "NBRW01": {
+    "color": [
+      "Copper/Brown"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 21,
+    "sourceDescription": "Chocolate Brown"
+  },
+  "NYLW01": {
+    "color": [
+      "Yellow"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 22,
+    "sourceDescription": "Buttermilk Yellow"
+  },
+  "NYLW02": {
+    "color": [
+      "Yellow"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 23,
+    "sourceDescription": "Canary Yellow"
+  },
+  "NYLW03": {
+    "color": [
+      "Orange",
+      "Yellow"
+    ],
+    "fabric": "Twill",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 24,
+    "sourceDescription": "Saffron Yellow"
+  },
+  "NYLW04": {
+    "color": [
+      "Yellow"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 25,
+    "sourceDescription": "Mustard Yellow"
+  },
+  "NORG01": {
+    "color": [
+      "Orange"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 26,
+    "sourceDescription": "Burnt Orange"
+  },
+  "NORG02": {
+    "color": [
+      "Orange"
+    ],
+    "fabric": "Twill",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 27,
+    "sourceDescription": "Brick Orange 1"
+  },
+  "NORG03": {
+    "color": [
+      "Orange"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 28,
+    "sourceDescription": "Brick Orange 2"
+  },
+  "NRED01": {
+    "color": [
+      "Red"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 29,
+    "sourceDescription": "Christmas Red"
+  },
+  "NRED02": {
+    "color": [
+      "Red"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 30,
+    "sourceDescription": "Maroon"
+  },
+  "NRED03": {
+    "color": [
+      "Red"
+    ],
+    "fabric": "Pajero",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 31,
+    "sourceDescription": "Dark Maroon"
+  },
+  "NPCH01": {
+    "color": [
+      "Pink"
+    ],
+    "fabric": "Twill",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 32,
+    "sourceDescription": "Peach"
+  },
+  "NPCH02": {
+    "color": [
+      "Orange"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 33,
+    "sourceDescription": "Light Coral"
+  },
+  "NPCH03": {
+    "color": [
+      "Orange"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 34,
+    "sourceDescription": "Dark Coral"
+  },
+  "NPNK01": {
+    "color": [
+      "Pink",
+      "White"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 35,
+    "sourceDescription": "White Pink Piping"
+  },
+  "NPNK02": {
+    "color": [
+      "Pink"
+    ],
+    "fabric": "Twill",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 36,
+    "sourceDescription": "Pale Pink"
+  },
+  "NPNK03": {
+    "color": [
+      "Pink"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 37,
+    "sourceDescription": "Blush Pink"
+  },
+  "NPNK04": {
+    "color": [
+      "Pink"
+    ],
+    "fabric": "Cotton",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 38,
+    "sourceDescription": "Baby Pink"
+  },
+  "NPNK05": {
+    "color": [
+      "Pink"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 39,
+    "sourceDescription": "Ice Pink"
+  },
+  "NPNK06": {
+    "color": [
+      "Pink"
+    ],
+    "fabric": "Cotton",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 40,
+    "sourceDescription": "Dark Dusty Pink 1"
+  },
+  "NPNK07": {
+    "color": [
+      "Pink"
+    ],
+    "fabric": "Valentina",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 41,
+    "sourceDescription": "Dark Dusty Pink 2"
+  },
+  "NPNK08": {
+    "color": [
+      "Pink"
+    ],
+    "fabric": "Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 42,
+    "sourceDescription": "Salmon pink"
+  },
+  "NBGE06-DUP2": {
+    "color": [
+      "Beige/Cream"
+    ],
+    "fabric": "",
+    "pattern": []
+  },
+  "NPNK09": {
+    "color": [
+      "Pink"
+    ],
+    "fabric": "Twill",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 44,
+    "sourceDescription": "Dark Blush Pink"
+  },
+  "NPNK10": {
+    "color": [
+      "Pink"
+    ],
+    "fabric": "Twill",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 45,
+    "sourceDescription": "Hot Pink"
+  },
+  "NPNK11": {
+    "color": [
+      "Pink"
+    ],
+    "fabric": "Twill",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 46,
+    "sourceDescription": "Raspberry Pink"
+  },
+  "NPPL01": {
+    "color": [
+      "Purple"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 47,
+    "sourceDescription": "Mauve"
+  },
+  "NPPL02": {
+    "color": [
+      "Purple"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 48,
+    "sourceDescription": "Lilac"
+  },
+  "NPPL03": {
+    "color": [
+      "Purple"
+    ],
+    "fabric": "Twill",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 49,
+    "sourceDescription": "Dark Purple"
+  },
+  "NPPL04": {
+    "color": [
+      "Purple"
+    ],
+    "fabric": "Valentina",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 50,
+    "sourceDescription": "Dark Plum"
+  },
+  "NGRN01": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "Cotton",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 51,
+    "sourceDescription": "Light Sage Green"
+  },
+  "NGRN02": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 52,
+    "sourceDescription": "Dark Sage Green"
+  },
+  "NGRN03": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 53,
+    "sourceDescription": "Mint Green"
+  },
+  "NGRN04": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "Twill",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 54,
+    "sourceDescription": "Pistachio Green"
+  },
+  "NGRN05": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 55,
+    "sourceDescription": "Lime Green"
+  },
+  "NGRN06": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 56,
+    "sourceDescription": "Olive Green"
+  },
+  "NGRN07": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "Twill",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 57,
+    "sourceDescription": "Jade Green"
+  },
+  "NGRN08": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "Twill",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 58,
+    "sourceDescription": "Emerald Green"
+  },
+  "NGRN09": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "Twill",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 59,
+    "sourceDescription": "Army Green"
+  },
+  "NGRN10": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "Valentina",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 60,
+    "sourceDescription": "Juniper Green"
+  },
+  "NGRN11": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [
+      "Leaf"
+    ],
+    "sourceSheet": "Napkins",
+    "sourceRow": 61,
+    "sourceDescription": "Green Leaf Print"
+  },
+  "NGRN12": {
+    "color": [
+      "Green/Teal",
+      "White"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 62,
+    "sourceDescription": "Green & White Forest Print"
+  },
+  "NGRN13": {
+    "color": [
+      "Green/Teal",
+      "Pink"
+    ],
+    "fabric": "Cotton",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 63,
+    "sourceDescription": "Green & Peach Water colour"
+  },
+  "NGRN14": {
+    "color": [],
+    "fabric": "Cotton",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 64,
+    "sourceDescription": "Cactus Print"
+  },
+  "NGRN15": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "Cotton",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 65,
+    "sourceDescription": "Teal"
+  },
+  "NBLU01": {
+    "color": [
+      "Blue"
+    ],
+    "fabric": "Twill",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 66,
+    "sourceDescription": "Cement Blue"
+  },
+  "NBLU02": {
+    "color": [
+      "Blue"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 67,
+    "sourceDescription": "Dusty Blue"
+  },
+  "NBLU03": {
+    "color": [
+      "Blue"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 68,
+    "sourceDescription": "Light Blue"
+  },
+  "NBLU04": {
+    "color": [
+      "Blue"
+    ],
+    "fabric": "Twill",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 69,
+    "sourceDescription": "Royal Blue"
+  },
+  "NBLU05": {
+    "color": [
+      "Blue"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 70,
+    "sourceDescription": "Navy Blue"
+  },
+  "NBLU06": {
+    "color": [
+      "Blue",
+      "Beige/Cream"
+    ],
+    "fabric": "Cotton",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 71,
+    "sourceDescription": "Dusty Blue & Cream Paisley Print"
+  },
+  "NBLU07": {
+    "color": [
+      "Blue",
+      "White"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 72,
+    "sourceDescription": "Blue & White flower print"
+  },
+  "NGRY01": {
+    "color": [
+      "Silver/Grey"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 73,
+    "sourceDescription": "Light Grey"
+  },
+  "NGRY02": {
+    "color": [
+      "Silver/Grey"
+    ],
+    "fabric": "Twill",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 74,
+    "sourceDescription": "Stone Grey"
+  },
+  "NGRY03": {
+    "color": [
+      "Silver/Grey"
+    ],
+    "fabric": "Valentina",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 75,
+    "sourceDescription": "Pewter Grey"
+  },
+  "NBLK01": {
+    "color": [
+      "Silver/Grey",
+      "White"
+    ],
+    "fabric": "Cotton",
+    "pattern": [
+      "Stripe"
+    ],
+    "sourceSheet": "Napkins",
+    "sourceRow": 76,
+    "sourceDescription": "Grey & White stripe"
+  },
+  "NBLK02": {
+    "color": [
+      "Black"
+    ],
+    "fabric": "Curtain Satin",
+    "pattern": [],
+    "sourceSheet": "Napkins",
+    "sourceRow": 77,
+    "sourceDescription": "Black"
+  },
+  "PLT01": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "",
+    "pattern": [
+      "Beaded"
+    ],
+    "sourceSheet": "Chargers",
+    "sourceRow": 3,
+    "sourceDescription": "Gold Beaded Glass Charges"
+  },
+  "PLT02": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "",
+    "pattern": [
+      "Floral"
+    ],
+    "sourceSheet": "Chargers",
+    "sourceRow": 4,
+    "sourceDescription": "Gold Floral Glass Charges"
+  },
+  "PLT03": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Chargers",
+    "sourceRow": 5,
+    "sourceDescription": "Gold Rimmed Glass Charges"
+  },
+  "PLT04": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "",
+    "pattern": [
+      "Scalloped"
+    ],
+    "sourceSheet": "Chargers",
+    "sourceRow": 6,
+    "sourceDescription": "Gold Scalloped rimmed Glass Charges"
+  },
+  "PLT05": {
+    "color": [
+      "Champagne/Gold",
+      "Clear"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Chargers",
+    "sourceRow": 7,
+    "sourceDescription": "Gold Crystal rimmed Glass Charges"
+  },
+  "PLT06": {
+    "color": [
+      "Champagne/Gold",
+      "Copper/Brown"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Chargers",
+    "sourceRow": 8,
+    "sourceDescription": "Copper / Rose Gold Painted edge Glass Charges"
+  },
+  "PLT07": {
+    "color": [
+      "Silver/Grey"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Chargers",
+    "sourceRow": 9,
+    "sourceDescription": "Silver Rimmed Glass Chargers"
+  },
+  "PLT08": {
+    "color": [
+      "Clear"
+    ],
+    "fabric": "",
+    "pattern": [
+      "Floral"
+    ],
+    "sourceSheet": "Chargers",
+    "sourceRow": 10,
+    "sourceDescription": "Crystal Floral Glass Chargers"
+  },
+  "PLT09": {
+    "color": [
+      "Pink"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Chargers",
+    "sourceRow": 11,
+    "sourceDescription": "Light Pink  Glass Chargers"
+  },
+  "MAT01": {
+    "color": [],
+    "fabric": "",
+    "pattern": [
+      "Floral"
+    ],
+    "sourceSheet": "Chargers",
+    "sourceRow": 16,
+    "sourceDescription": "Multi Color Floral"
+  },
+  "MAT02": {
+    "color": [
+      "Pink"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Chargers",
+    "sourceRow": 17,
+    "sourceDescription": "Light Pink"
+  },
+  "MAT03": {
+    "color": [
+      "Pink"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Chargers",
+    "sourceRow": 18,
+    "sourceDescription": "Hot Pink"
+  },
+  "MAT04": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Chargers",
+    "sourceRow": 19,
+    "sourceDescription": "Teal"
+  },
+  "MAT05": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Chargers",
+    "sourceRow": 20,
+    "sourceDescription": "Olive Green"
+  },
+  "MAT06": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Chargers",
+    "sourceRow": 21,
+    "sourceDescription": "Light Gold"
+  },
+  "MAT07": {
+    "color": [
+      "Beige/Cream"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Chargers",
+    "sourceRow": 22,
+    "sourceDescription": "Dark Beige"
+  },
+  "MAT08": {
+    "color": [
+      "Copper/Brown"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Chargers",
+    "sourceRow": 23,
+    "sourceDescription": "Dark Brown                                          (Stretch - 268)"
+  },
+  "MAT09": {
+    "color": [
+      "Black"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Chargers",
+    "sourceRow": 24,
+    "sourceDescription": "Black"
+  },
+  "MAT10": {
+    "color": [],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Chargers",
+    "sourceRow": 25,
+    "sourceDescription": "Rattan Mat"
+  },
+  "MAT11": {
+    "color": [],
+    "fabric": "",
+    "pattern": [
+      "Floral"
+    ],
+    "sourceSheet": "Chargers",
+    "sourceRow": 26,
+    "sourceDescription": "Cane Floral Mat"
+  },
+  "GLS01": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Tabletop",
+    "sourceRow": 3,
+    "sourceDescription": "Green Glass"
+  },
+  "GLS02": {
+    "color": [
+      "Silver/Grey"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Tabletop",
+    "sourceRow": 5,
+    "sourceDescription": "Smoky Grey Glass"
+  },
+  "GLS03": {
+    "color": [
+      "Blue"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Tabletop",
+    "sourceRow": 7,
+    "sourceDescription": "Dusty Blue Glass"
+  },
+  "GLS04": {
+    "color": [
+      "Pink"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Tabletop",
+    "sourceRow": 8,
+    "sourceDescription": "Dusty Pink Glass"
+  },
+  "GLS05": {
+    "color": [
+      "Clear"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Tabletop",
+    "sourceRow": 9,
+    "sourceDescription": "Transparent Glass"
+  },
+  "TBN01": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Tabletop",
+    "sourceRow": 13,
+    "sourceDescription": "Gold Square"
+  },
+  "TBN02": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Tabletop",
+    "sourceRow": 14,
+    "sourceDescription": "Gold Square (New)"
+  },
+  "TBN03": {
+    "color": [],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Tabletop",
+    "sourceRow": 15,
+    "sourceDescription": "Plastic"
+  },
+  "TBN04": {
+    "color": [
+      "Black"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Tabletop",
+    "sourceRow": 16,
+    "sourceDescription": "Black Square"
+  },
+  "TBN05": {
+    "color": [
+      "Silver/Grey"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Tabletop",
+    "sourceRow": 17,
+    "sourceDescription": "Gray Square"
+  },
+  "TBN06": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Tabletop",
+    "sourceRow": 18,
+    "sourceDescription": "Gold Vintage"
+  },
+  "CTL01": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Tabletop",
+    "sourceRow": 22,
+    "sourceDescription": "Mirror Gold Old Cutlery (5pc)"
+  },
+  "CTL02": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Tabletop",
+    "sourceRow": 23,
+    "sourceDescription": "Mat Gold Cutlery  (8 pc)"
+  },
+  "CTL03": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Tabletop",
+    "sourceRow": 24,
+    "sourceDescription": "Mirror Gold Cutlery (new Stock) 8pc"
+  },
+  "CTL04": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Tabletop",
+    "sourceRow": 25,
+    "sourceDescription": "Rose Gold Cutlery (6pc)"
+  },
+  "CTL05": {
+    "color": [
+      "Black"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Tabletop",
+    "sourceRow": 26,
+    "sourceDescription": "Black Cutlery (6pc)"
+  },
+  "NRG01": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "",
+    "pattern": [
+      "Floral"
+    ],
+    "sourceSheet": "Tabletop",
+    "sourceRow": 31,
+    "sourceDescription": "Gold Floral"
+  },
+  "NRG02": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "",
+    "pattern": [
+      "Leaf"
+    ],
+    "sourceSheet": "Tabletop",
+    "sourceRow": 32,
+    "sourceDescription": "Gold Leaf"
+  },
+  "NRG03": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Tabletop",
+    "sourceRow": 33,
+    "sourceDescription": "Gold Coil"
+  },
+  "IMP-CHAIR-244": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "",
+    "pattern": []
+  },
+  "IMP-CHAIR-245": {
+    "color": [
+      "White"
+    ],
+    "fabric": "",
+    "pattern": []
+  },
+  "IMP-CHAIR-246": {
+    "color": [
+      "Black"
+    ],
+    "fabric": "",
+    "pattern": []
+  },
+  "IMP-CHAIR-247": {
+    "color": [],
+    "fabric": "",
+    "pattern": []
+  },
+  "IMP-CHAIR-248": {
+    "color": [],
+    "fabric": "",
+    "pattern": []
+  },
+  "CCWRD01": {
+    "color": [
+      "Red",
+      "White"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Furniture",
+    "sourceRow": 12,
+    "sourceDescription": "White & Red Sripe"
+  },
+  "CCBGS01": {
+    "color": [
+      "Black",
+      "Champagne/Gold"
+    ],
+    "fabric": "",
+    "pattern": [
+      "Sequin"
+    ],
+    "sourceSheet": "Furniture",
+    "sourceRow": 13,
+    "sourceDescription": "Black & Gold Sequine"
+  },
+  "CCGLD01": {
+    "color": [
+      "Champagne/Gold"
+    ],
+    "fabric": "",
+    "pattern": [],
+    "sourceSheet": "Furniture",
+    "sourceRow": 14,
+    "sourceDescription": "Gold"
+  },
+  "IMP-TABLE-252": {
+    "color": [],
+    "fabric": "",
+    "pattern": []
+  },
+  "IMP-TABLE-253": {
+    "color": [],
+    "fabric": "",
+    "pattern": []
+  },
+  "IMP-TABLE-254": {
+    "color": [],
+    "fabric": "",
+    "pattern": []
+  },
+  "IMP-CHAIR-255": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "",
+    "pattern": []
+  },
+  "IMP-CHAIR-256": {
+    "color": [
+      "Green/Teal"
+    ],
+    "fabric": "",
+    "pattern": []
+  },
+  "RBLK04": {
+    "color": [
+      "Black"
+    ],
+    "fabric": "Satin",
+    "pattern": [],
+    "sourceSheet": "Chair Sashes",
+    "sourceRow": 11,
+    "sourceDescription": "Black"
+  }
+}

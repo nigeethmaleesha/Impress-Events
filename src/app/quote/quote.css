@@ -1,0 +1,93 @@
+/* Impress Events quotation cart – Nuage-inspired empty state.
+   Scoped to /quote so product catalogue, header and form styles stay untouched. */
+.im-quote-empty {
+  width: 100%;
+  min-height: clamp(430px, 53svh, 610px);
+  display: grid;
+  place-items: center;
+  padding: clamp(70px, 9vh, 130px) 22px;
+  background: #fbfaf8;
+  color: #282828;
+  text-align: center;
+}
+
+.im-quote-empty-inner {
+  width: min(100%, 650px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.im-quote-empty h1 {
+  font-family: var(--im-sans, Arial, sans-serif);
+  font-size: clamp(30px, 3.3vw, 43px);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+  margin: 0 0 18px;
+}
+
+.im-quote-empty-inner > p:first-of-type {
+  margin: 0;
+  color: #606064;
+  font: 400 clamp(14px, 1.2vw, 17px)/1.6 var(--im-sans, Arial, sans-serif);
+}
+
+.im-quote-empty-browse {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 260px;
+  min-height: 48px;
+  max-width: 100%;
+  padding: 13px 30px;
+  margin-top: 32px;
+  background: #c4cede;
+  border: 1px solid #c4cede;
+  color: #20232a;
+  font: 600 12px/1.2 var(--im-sans, Arial, sans-serif);
+  letter-spacing: .08em;
+  text-decoration: none;
+  transition: background-color .25s ease, color .25s ease, border-color .25s ease;
+}
+
+.im-quote-empty-browse:hover,
+.im-quote-empty-browse:focus-visible {
+  background: #27292c;
+  border-color: #27292c;
+  color: white;
+}
+
+.im-quote-empty-inner .im-quote-empty-helper {
+  font: 400 13px/1.7 var(--im-sans, Arial, sans-serif);
+  color: #6d6d6d;
+  margin: 25px 0 0;
+}
+
+.im-quote-empty-helper button {
+  color: #262626;
+  background: transparent;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid currentColor;
+  border-radius: 0;
+  font: inherit;
+  cursor: pointer;
+  text-underline-offset: 3px;
+}
+
+.im-quote-empty-helper button:hover { color: #536c86; }
+
+@media (max-width: 600px) {
+  .im-quote-empty {
+    min-height: 440px;
+    padding: 74px 20px 84px;
+  }
+  .im-quote-empty h1 { font-size: clamp(27px, 8vw, 36px); }
+  .im-quote-empty-browse { width: min(100%, 275px); }
+  .im-quote-empty-inner .im-quote-empty-helper { max-width: 300px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .im-quote-empty-browse { transition: none; }
+}

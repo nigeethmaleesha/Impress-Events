@@ -1,0 +1,102 @@
+/* Impress Events | Our Story (reference-inspired editorial layout)
+   All selectors are page-scoped to avoid affecting the existing catalogue,
+   homepage, shared navigation, and footer. */
+.im-about-page {
+  --im-about-ink: #292724;
+  --im-about-muted: #6b6560;
+  --im-about-cream: #f8f5f0;
+  color: var(--im-about-ink);
+  background: #faf9f7;
+}
+.im-about-page .im-about-cover { object-fit: cover; }
+.im-about-hero {
+  position: relative;
+  height: clamp(370px, 42vw, 590px);
+  min-height: 370px;
+  display: grid;
+  place-items: center;
+  isolation: isolate;
+  background: #756f63;
+  overflow: hidden;
+}
+.im-about-hero .im-about-cover { z-index: -2; object-position: center 53%; }
+.im-about-hero-shade { position: absolute; inset: 0; background: linear-gradient(0deg, #201c1966, #14151312 65%, #14151322); z-index: -1; }
+.im-about-hero h1 {
+  margin: 0;
+  padding: 0 20px;
+  color: #fff;
+  font: 400 clamp(35px, 4vw, 62px)/1.08 var(--im-sans, Arial, sans-serif);
+  letter-spacing: .012em;
+  text-align: center;
+  text-shadow: 0 1px 18px #17151166;
+}
+.im-about-intro { max-width: 860px; margin: 0 auto; padding: clamp(54px, 6vw, 92px) 28px 0; text-align: center; }
+.im-about-intro p { margin: 0 auto; max-width: 790px; font: 400 clamp(16px, 1.24vw, 19px)/1.82 var(--im-sans, Arial, sans-serif); color: var(--im-about-muted); }
+.im-about-intro-rule { height: 1px; margin: clamp(45px, 5vw, 79px) auto 0; background: #e0dad3; }
+.im-about-values {
+  width: min(1320px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, .96fr);
+  align-items: center;
+  column-gap: clamp(55px, 8.5vw, 135px);
+  padding: clamp(60px, 7vw, 110px) clamp(26px, 5vw, 80px) clamp(48px, 6.3vw, 96px);
+}
+.im-about-values-copy h2,
+.im-about-origin-copy h2 {
+  font: 400 clamp(33px, 3.2vw, 51px)/1.15 var(--im-serif, Georgia, serif);
+  letter-spacing: -.037em;
+  margin: 0 0 28px;
+}
+.im-about-values-copy ul { list-style: none; margin: 0; padding: 0; }
+.im-about-values-copy li { padding: 0 0 16px 19px; position: relative; }
+.im-about-values-copy li::before { content: '•'; position: absolute; left: 0; top: 1px; color: #5d625f; font-size: 18px; }
+.im-about-values-copy h3 { margin: 0 0 5px; font: 600 clamp(15px, 1.08vw, 17px)/1.4 var(--im-sans, Arial, sans-serif); letter-spacing: .012em; }
+.im-about-values-copy li p { margin: 0; max-width: 440px; color: var(--im-about-muted); font: 400 clamp(14px, 1.02vw, 16px)/1.62 var(--im-sans, Arial, sans-serif); }
+.im-about-values-photo { position: relative; min-height: 560px; width: 100%; background: #e7e0d9; overflow: hidden; }
+.im-about-values-photo .im-about-cover { object-position: center 45%; }
+.im-about-quote { padding: clamp(32px, 4.8vw, 70px) 24px clamp(70px, 8vw, 120px); text-align: center; max-width: 1020px; margin: 0 auto; }
+.im-about-quote blockquote { margin: 0 auto 23px; max-width: 900px; font: italic 400 clamp(21px, 2.1vw, 32px)/1.5 var(--im-serif, Georgia, serif); letter-spacing: -.025em; }
+.im-about-quote p { font: 500 11px/1.5 var(--im-sans, Arial, sans-serif); letter-spacing: .17em; color: #80766d; margin: 0; }
+.im-about-origin { background: #f1ede6; }
+.im-about-origin-inner { width: min(1400px, 100%); margin: 0 auto; display: grid; grid-template-columns: 1.08fr .92fr; gap: clamp(55px, 7vw, 110px); align-items: center; padding: clamp(54px, 7.5vw, 118px) clamp(26px, 6vw, 96px); }
+.im-about-eyebrow { display: inline-block; font: 600 11px/1.4 var(--im-sans, Arial, sans-serif); color: #82776b; letter-spacing: .16em; margin-bottom: 20px; }
+.im-about-origin-copy h2 { max-width: 570px; }
+.im-about-origin-copy p { max-width: 580px; margin: 0 0 19px; color: #5c554f; font: 400 clamp(14px, 1.02vw, 16px)/1.8 var(--im-sans, Arial, sans-serif); }
+.im-about-text-link { display: inline-flex; align-items: center; gap: 10px; margin-top: 12px; padding-bottom: 6px; border-bottom: 1px solid currentColor; font: 500 12px/1.4 var(--im-sans, Arial, sans-serif); letter-spacing: .09em; text-transform: uppercase; text-decoration: none; }
+.im-about-text-link svg { transition: transform .2s ease; }
+.im-about-text-link:hover svg { transform: translate(3px, -3px); }
+.im-about-origin-photo { position: relative; min-height: 590px; overflow: hidden; background: #d8d1c9; }
+.im-about-origin-photo .im-about-cover { object-position: center; }
+.im-about-team { background: #f7f2e9; padding: clamp(64px, 6vw, 100px) 24px clamp(70px, 7vw, 110px); text-align: center; }
+.im-about-team h2 { font: italic 400 clamp(30px, 3vw, 46px)/1.18 var(--im-serif, Georgia, serif); letter-spacing: -.025em; margin: 0 0 15px; }
+.im-about-team p { margin: 0 auto 30px; font: 400 clamp(15px, 1.1vw, 17px)/1.65 var(--im-sans, Arial, sans-serif); color: #65605b; }
+.im-about-button { display: inline-flex; justify-content: center; align-items: center; gap: 9px; min-width: 220px; min-height: 47px; padding: 14px 25px; background: #bac7d8; color: #222831; font: 600 11px/1.2 var(--im-sans, Arial, sans-serif); letter-spacing: .09em; text-decoration: none; transition: background .2s ease, transform .2s ease; }
+.im-about-button:hover { background: #a8b9ce; transform: translateY(-2px); }
+.im-about-button:focus-visible, .im-about-text-link:focus-visible { outline: 2px solid #222; outline-offset: 4px; }
+@media (max-width: 940px) {
+  .im-about-values { gap: 36px; padding-inline: 32px; }
+  .im-about-values-photo { min-height: 500px; }
+  .im-about-origin-inner { gap: 32px; padding-inline: 32px; }
+  .im-about-origin-photo { min-height: 500px; }
+}
+@media (max-width: 760px) {
+  .im-about-hero { height: 420px; min-height: 0; }
+  .im-about-intro { padding-top: 48px; }
+  .im-about-values { grid-template-columns: 1fr; gap: 31px; padding: 54px 23px 40px; }
+  .im-about-values-copy h2 { margin-bottom: 24px; }
+  .im-about-values-photo { min-height: 0; aspect-ratio: 4/4.2; max-height: 600px; }
+  .im-about-quote { padding: 45px 25px 72px; }
+  .im-about-origin-inner { grid-template-columns: 1fr; padding: 60px 23px; gap: 33px; }
+  .im-about-origin-photo { min-height: 0; aspect-ratio: 4/4.1; max-height: 610px; }
+  .im-about-team { padding: 64px 24px 74px; }
+}
+@media (max-width: 420px) {
+  .im-about-hero { height: 350px; }
+  .im-about-values { padding-inline: 20px; }
+  .im-about-origin-inner { padding-inline: 20px; }
+  .im-about-quote blockquote { font-size: 23px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .im-about-button, .im-about-text-link svg { transition: none; }
+}

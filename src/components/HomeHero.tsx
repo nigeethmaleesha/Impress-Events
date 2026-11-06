@@ -2,65 +2,148 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowDown, ArrowRight, ChevronLeft, ChevronRight, Pause, Play } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
+import { heroMenuTabs } from '@/data/homeMegaMenu';
+import MegaMenuLinkGrid from '@/components/MegaMenuLinkGrid';
 
-// Licensed/client-supplied Impress photographs. Never use Nuage images or brand assets.
 const slides = [
-  { image: '/images/client-home/hero-event-table.jpg', eyebrow: 'IMPRESS EVENTS · THE EVENT EDIT', title: 'A celebration, beautifully considered.', caption: 'The little details make the biggest impression.', link: '/categories', action: 'EXPLORE THE COLLECTION', alt: 'Warm elegant wedding table with candles and flowers' },
-  { image: '/images/client-home/romantic-florals.jpg', eyebrow: 'INSPIRATION · THE ART OF GATHERING', title: 'Every detail tells your story.', caption: 'Thoughtfully curated pieces for unforgettable moments.', link: '/lookbook', action: 'DISCOVER INSPIRATION', alt: 'Romantic flowers and styling details at an event' },
-  { image: '/images/client-home/long-table.jpg', eyebrow: 'THE FURNITURE COLLECTION', title: 'Made for moments together.', caption: 'Elevate your gathering with pieces chosen with care.', link: '/rentals?category=Tables', action: 'BROWSE FURNITURE', alt: 'Long dining tables arranged for a special gathering' },
-];
-const browse = [
-  { text: 'NEW ARRIVALS', url: '/#new-arrivals' },
-  { text: 'LINENS', url: '/rentals?category=Tablecloths' },
-  { text: 'FURNITURE', url: '/rentals?category=Chairs' },
-  { text: 'TABLETOP', url: '/rentals?category=Chargers' },
-  { text: 'ACCESSORIES', url: '/rentals?category=Napkin%20Rings' },
-  { text: 'INSPIRATION', url: '/lookbook' },
+  { src: '/images/client-home/hero-event-table.jpg', title: 'The Impress Collection', alt: 'Elegant wedding table with floral centerpiece' },
+  { src: '/images/client-home/long-table.jpg', title: 'Inspired Gatherings', alt: 'A beautifully arranged long reception table' },
+  { src: '/images/client-home/warm-dining.jpg', title: 'Timeless Celebrations', alt: 'Candlelit wedding dining and elegant event furniture' },
 ];
 
 export default function HomeHero() {
-  const [index, setIndex] = useState(0);
-  const [paused, setPaused] = useState(false);
+  const [slide, setSlide] = useState(0);
+  const [active, setActive] = useState<number | null>(null);
+  const [pointerX, setPointerX] = useState<number | null>(null);
+  const heroRef = useRef<HTMLElement>(null);
+  const navLinks = useRef<(HTMLAnchorElement | null)[]>([]);
+  const closeTimer = useRef<number | null>(null);
+
+  const cancelClose = () => {
+    if (closeTimer.current !== null) {
+      window.clearTimeout(closeTimer.current);
+      closeTimer.current = null;
+    }
+  };
+  const scheduleClose = () => {
+    cancelClose();
+    closeTimer.current = window.setTimeout(() => setActive(null), 170);
+  };
+  const openPreview = (index: number) => {
+    cancelClose();
+    const hero = heroRef.current?.getBoundingClientRect();
+    const item = navLinks.current[index]?.getBoundingClientRect();
+    if (hero && item) setPointerX(item.left - hero.left + item.width / 2);
+    setActive(index);
+  };
+
+  // The slider stays still while shoppers explore a category panel.
   useEffect(() => {
-    if (paused) return;
-    const interval = window.setInterval(() => setIndex((current) => (current + 1) % slides.length), 7500);
-    return () => window.clearInterval(interval);
-  }, [paused]);
-  const move = (delta: number) => setIndex((current) => (current + delta + slides.length) % slides.length);
+    if (active !== null) return;
+    const timer = window.setInterval(() => setSlide((index) => (index + 1) % slides.length), 4500);
+    return () => window.clearInterval(timer);
+  }, [active]);
+
+  useEffect(() => {
+    const onEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        cancelClose();
+        setActive(null);
+      }
+    };
+    window.addEventListener('keydown', onEscape);
+    return () => {
+      window.removeEventListener('keydown', onEscape);
+      if (closeTimer.current !== null) window.clearTimeout(closeTimer.current);
+    };
+  }, []);
+
+  const preview = active === null ? null : heroMenuTabs[active];
   return (
-    <section className="im-hero" aria-label="Discover Impress Events" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onFocusCapture={() => setPaused(true)} onBlurCapture={(event) => { if (!event.currentTarget.contains(event.relatedTarget as Node)) setPaused(false); }}>
-      {slides.map((slide, i) => (
-        <div key={slide.image} className={`im-hero-slide ${i === index ? 'is-current' : ''}`} aria-hidden={i !== index}>
-          <Image src={slide.image} alt={i === index ? slide.alt : ''} fill priority={i === 0} sizes="100vw" quality={85}/>
+    <section
+      ref={heroRef}
+      className="im-ref-hero"
+      aria-label="Impress Events featured collections"
+      onMouseLeave={scheduleClose}
+    >
+      {slides.map((item, index) => (
+        <div
+          className={`im-ref-hero-slide${index === slide ? ' visible' : ''}`}
+          aria-hidden={index !== slide}
+          key={item.src}
+        >
+          <Image src={item.src} alt={index === slide ? item.alt : ''} fill sizes="100vw" priority={index === 0} />
         </div>
       ))}
-      <div className="im-hero-shade" aria-hidden="true"/>
-      {/* Keep the logo and hero message in one responsive stack on laptop/desktop.
-          On smaller screens the layout retains the existing mobile positioning. */}
-      <div className="im-hero-center">
-        <div className="im-hero-identity">
-          <Image src="/images/brand/impress-logo-white.png" width={210} height={179} alt="Impress Events — Luxury Event Rentals" priority className="im-hero-brand-image" />
-        </div>
-        <div className="im-hero-story" aria-live="polite">
-          <span className="im-hero-eyebrow">{slides[index].eyebrow}</span>
-          <h1 key={`title-${index}`}>{slides[index].title}</h1>
-          <p>{slides[index].caption}</p>
-          <Link className="im-hero-action" href={slides[index].link}>{slides[index].action}<ArrowRight size={16}/></Link>
-        </div>
+      <div className="im-ref-hero-dark" />
+      <h1>{slides[slide].title}</h1>
+      <div className="im-ref-hero-controls">
+        <button type="button" aria-label="Previous hero image" onClick={() => setSlide((index) => (index + slides.length - 1) % slides.length)}>
+          <ChevronLeft size={20} />
+        </button>
+        <button type="button" aria-label="Next hero image" onClick={() => setSlide((index) => (index + 1) % slides.length)}>
+          <ChevronRight size={20} />
+        </button>
       </div>
-      <div className="im-hero-controls">
-        <button type="button" onClick={() => move(-1)} aria-label="Previous featured photograph"><ChevronLeft size={20}/></button>
-        <span aria-label={`Slide ${index + 1} of ${slides.length}`}>{String(index + 1).padStart(2, '0')} / {String(slides.length).padStart(2, '0')}</span>
-        <button type="button" onClick={() => move(1)} aria-label="Next featured photograph"><ChevronRight size={20}/></button>
-        <button className="im-hero-pause" type="button" onClick={() => setPaused((value) => !value)} aria-label={paused ? 'Play slideshow' : 'Pause slideshow'}>{paused ? <Play size={15}/> : <Pause size={15}/>}</button>
-      </div>
-      <nav className="im-hero-nav" aria-label="Browse the collection">
-        {browse.map((item) => <Link href={item.url} key={item.text}>{item.text}</Link>)}
-        <Link className="im-hero-nav-all" href="/categories">ALL CATEGORIES <ArrowRight size={14}/></Link>
+
+      {preview && (
+        <>
+          <div
+            className={`im-mega-hover im-mega-hover--${preview.variant}`}
+            id="im-home-mega-menu"
+            role="region"
+            aria-label={`${preview.title} categories`}
+            onMouseEnter={cancelClose}
+            onMouseLeave={scheduleClose}
+          >
+            <Link className="im-mega-photo" href={preview.href} onClick={() => setActive(null)} aria-label={`Explore ${preview.title}`}>
+              <Image src={preview.photo} alt={`${preview.title} styling by Impress Events`} fill sizes="(max-width: 700px) 100vw, 34vw" />
+            </Link>
+            <div className="im-mega-body" key={preview.label}>
+              <h2>{preview.title}</h2>
+              <div className="im-mega-rule" />
+              <p>{preview.copy}</p>
+              <Link href={preview.href} className="im-mega-cta" onClick={() => setActive(null)}>{preview.cta}</Link>
+
+              <div className="im-mega-content">
+                {preview.sections.map((section, sectionIndex) => (
+                  <section className={`im-mega-section im-mega-section-${sectionIndex}`} key={`${preview.label}-${section.title}`}>
+                    {section.title && <h3>{section.title}</h3>}
+                    <MegaMenuLinkGrid
+                      links={section.links}
+                      columns={section.columns ?? 1}
+                      onNavigate={() => setActive(null)}
+                    />
+                  </section>
+                ))}
+              </div>
+            </div>
+          </div>
+          {pointerX !== null && <span className="im-mega-pointer" style={{ left: pointerX }} aria-hidden="true" />}
+        </>
+      )}
+
+      <nav className={`im-hero-bottom-nav${active !== null ? ' is-expanded' : ''}`} aria-label="Shop product categories">
+        <div className="im-hero-nav-links">
+          {heroMenuTabs.map((tab, index) => (
+            <Link
+              ref={(node) => { navLinks.current[index] = node; }}
+              href={tab.href}
+              key={tab.label}
+              className={active === index ? 'active' : ''}
+              aria-controls={active !== null ? "im-home-mega-menu" : undefined}
+              aria-expanded={active === index}
+              onMouseEnter={() => openPreview(index)}
+              onFocus={() => openPreview(index)}
+              onClick={() => { cancelClose(); setActive(null); }}
+            >
+              {tab.label}
+            </Link>
+          ))}
+        </div>
       </nav>
-      <a className="im-hero-scroll" href="#discover">SCROLL TO DISCOVER <ArrowDown size={15}/></a>
     </section>
   );
 }
