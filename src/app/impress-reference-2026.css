@@ -529,3 +529,14 @@ body:has(.im-ref-hero .im-mega-hover) .im-shell-home .im-header-logo {
 @media (prefers-reduced-motion: reduce) {
   .im-home-browse .im-home-section-top > a.im-shop-all-categories-button { transition: none; }
 }
+
+/* Impress mobile hero: follow the Nuage mobile reference.
+   The category navigation remains available on desktop and via the site menu
+   on mobile; only the floating hero navigation and its hover popup are hidden. */
+@media screen and (max-width: 700px) {
+  .im-ref-hero .im-hero-bottom-nav,
+  .im-ref-hero .im-mega-hover,
+  .im-ref-hero .im-mega-pointer {
+    display: none;
+  }
+}
