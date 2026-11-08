@@ -36,7 +36,6 @@ export function Header() {
   const [query,setQuery]=useState('');
   const [scrolled,setScrolled]=useState(false);
   const [headerHovered,setHeaderHovered]=useState(false);
-  const [scrollProgress,setScrollProgress]=useState(0);
   const searchRef=useRef<HTMLInputElement>(null);
   const menuButtonRef=useRef<HTMLButtonElement>(null);
   const firstMenuRef=useRef<HTMLAnchorElement>(null);
@@ -51,8 +50,6 @@ export function Header() {
       } else {
         setScrolled(window.scrollY > 28);
       }
-      const availableScroll = document.documentElement.scrollHeight - window.innerHeight;
-      setScrollProgress(availableScroll > 0 ? Math.min(1,Math.max(0,window.scrollY / availableScroll)) : 0);
     };
     listener();
     window.addEventListener('scroll', listener, { passive: true });
@@ -69,7 +66,6 @@ export function Header() {
   const home=pathname==='/' && !scrolled && !headerHovered && !menuOpen && !searchOpen;
   const selected=mainLinks.find(item=>item.group===activeGroup);
   return <div className={`im-shell${pathname==='/'?' im-shell-home':''}${pathname==='/' && !scrolled?' im-shell-precontent':''}${home?' im-shell-transparent':''}`}>
-    <div className="im-page-progress" aria-hidden="true"><span style={{transform:`scaleX(${scrollProgress})`}}/></div>
     <header className="im-site-header" onMouseEnter={()=>setHeaderHovered(true)} onMouseLeave={()=>setHeaderHovered(false)}>
       <div className="im-head-start">
         <button ref={menuButtonRef} type="button" aria-expanded={menuOpen} aria-controls="im-drawer" aria-label={menuOpen?'Close navigation':'Open navigation'} className="im-icon im-menu-toggle" onClick={()=>{setMenuOpen(v=>!v);setSearchOpen(false);setActiveGroup(null)}}>{menuOpen?<X strokeWidth={1.35}/>:<Menu strokeWidth={1.35}/>}<span className="im-menu-word">{menuOpen?'Close':''}</span></button>

@@ -11,5 +11,6 @@ import './category-catalogue.css';
 import './impress-product-detail.css';
 import './design-gallery.css';
 import './stories/stories.css';
+import './impress-visual-refinement.css';
 export const metadata:Metadata={title:{default:'Impress Events | Wedding & Event Rentals',template:'%s | Impress Events'},description:'Explore thoughtfully selected wedding and event rental essentials, including table linen, glassware, chargers, chairs and more. Request a tailored rental quotation.',robots:{index:false,follow:false}};
-export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body><QuoteProvider><Header/><main>{children}</main><Footer/></QuoteProvider></body></html>}
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en" data-scroll-behavior="smooth"><body><QuoteProvider><Header/><main>{children}</main><Footer/></QuoteProvider></body></html>}
